@@ -3,8 +3,8 @@ title: "DollarWise — Personal Finance for Beginners"
 description: "Simple, practical personal finance guides for beginners in the US and UK: budgeting, saving money, and side hustles."
 ---
 
-## Why DollarWise exists
+## Free guides and free tools for your money
 
-Most money advice is either too complicated or trying to sell you something. We write plain-English guides that a complete beginner can follow on day one — how to build a budget that actually sticks, how to save your first emergency fund, and how to earn extra income without upfront costs.
+Everything on DollarWise is free — practical guides and handy tools that help you budget, save, and earn more, written in plain English for complete beginners.
 
-Start with our most popular guides above, or try the free [budget calculator](/tools/budget-calculator/).
+Browse the latest guides above, or start with the free [budget calculator](/tools/budget-calculator/).

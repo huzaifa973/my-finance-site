@@ -1,10 +1,10 @@
 ---
-title: "Recommended Tools"
-description: "Hand-picked budgeting apps, savings accounts, and money tools for US/UK beginners — with honest pros and cons."
+title: "Free Money Tools"
+description: "Free budgeting apps, savings accounts, and money tools for US/UK beginners — with honest pros and cons."
 date: 2026-09-29
 ---
 
-The tools below are the ones we'd suggest to a friend starting from zero. We may earn a commission if you sign up through some links — it costs you nothing extra and keeps our guides free. See our [affiliate disclosure](/affiliate-disclosure/) for details.
+Here are free tools and resources we'd happily suggest to a friend starting from zero — picked because they're genuinely helpful, not because of any sales pitch. We may earn a commission if you sign up through some links — it costs you nothing extra and keeps everything here free. See our [affiliate disclosure](/affiliate-disclosure/) for details.
 
 ## 1. YNAB (You Need a Budget)
 

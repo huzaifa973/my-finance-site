@@ -1,5 +1,11 @@
 {{/* Post card — used by the homepage grid, archive lists, and related posts. Context: a Page. */}}
 <article class="card">
+  {{/* Featured-image thumbnail: only when the post sets an image param */}}
+  {{ with .Params.image }}
+  <a class="card-thumb" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </a>
+  {{ end }}
   <div class="card-body">
     {{ range first 1 (.Params.tags | default slice) }}<span class="card-tag">#{{ . }}</span>{{ end }}
     <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>

@@ -23,8 +23,17 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 
+<!-- Featured image: only when the page sets an image param -->
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+
 <!-- Twitter cards -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{{ if .Params.image }}summary_large_image{{ else }}summary{{ end }}">
+
+<!-- Google Search Console site verification: only rendered when set in hugo.toml [params] -->
+{{ with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 
@@ -154,6 +163,12 @@ nav.main a:hover{color:var(--accent); background:var(--accent-soft); text-decora
 .card-title a:hover{color:var(--accent)}
 .card-excerpt{color:var(--muted); font-size:.95rem; margin:0; flex:1}
 .card-link{font-weight:700; font-size:.92rem}
+
+/* ---------- Card thumbnails / article featured image ---------- */
+.card-thumb{display:block; line-height:0}
+.card-thumb img{display:block; width:100%; height:auto; border-radius:var(--radius) var(--radius) 0 0}
+.post-featured{margin:0 0 1.6rem}
+.post-featured img{display:block; width:100%; height:auto; border-radius:var(--radius)}
 .meta{color:var(--muted); font-size:.85rem}
 
 /* ---------- Featured post ---------- */

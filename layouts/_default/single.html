@@ -16,6 +16,13 @@
         <h1>{{ .Title }}</h1>
         <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read · By the DollarWise team</div>
 
+        {{/* Featured image when the page sets an image param */}}
+        {{ with .Params.image }}
+        <figure class="post-featured">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        </figure>
+        {{ end }}
+
         {{/* Table of contents on posts */}}
         {{ if and (eq .Section "posts") .TableOfContents }}
         <div class="toc">

@@ -1,16 +1,17 @@
 ---
-title: "Newsletter"
-description: "Join the DollarWise newsletter and get the free Budget Starter Kit: a 50/30/20 worksheet, a 30-day savings checklist, and one practical money email per week."
+title: "Free Budget Starter Kit"
+description: "Grab our free Budget Starter Kit: a 50/30/20 worksheet and a 30-day savings checklist — plus one short, practical money email per week."
 date: 2026-09-29
 ---
 
 ## Get the free Budget Starter Kit
 
-Join the DollarWise newsletter and we'll send you our **free Budget Starter Kit**:
+A free gift for readers — no catch, no upsell. The starter kit includes:
 
 - **The 50/30/20 worksheet** — plug in your income and see exactly where your money should go
 - **The 30-day savings checklist** — small daily actions that add up fast
-- **One short money email per week** — one idea, one action step, no fluff
+
+Leave your email below and we'll send it over. You'll also get one short, practical money email a week — one idea, one action step, no fluff.
 
 <!--
   NEWSLETTER SIGNUP — wire this form to your email provider:

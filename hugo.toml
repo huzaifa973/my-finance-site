@@ -27,4 +27,5 @@ enableRobotsTXT = true
 # Site params
 [params]
   adsense_publisher_id = "" # paste your AdSense publisher ID (ca-pub-...) here to enable ad slots
+  google_site_verification = "" # paste your Google Search Console verification code here
   # newsletter_provider = "" # e.g. "buttondown" or "convertkit" — see homepage newsletter section comments
