@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DollarWise logo">
+  <!-- Coin -->
+  <circle cx="32" cy="32" r="30" fill="#0b6e4f"/>
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="#c9a227" stroke-width="2.5" opacity="0.9"/>
+  <!-- Rising chart arrow -->
+  <polyline points="18,41 28,31 35,36 47,21" fill="none" stroke="#c9a227" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="38,21 47,21 47,30" fill="none" stroke="#c9a227" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
