@@ -3,13 +3,12 @@ title = "DollarWise — Personal Finance for Beginners"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 
+# SEO: let Hugo generate sitemap.xml (on by default) and robots.txt
+enableRobotsTXT = true
+
 # Clean permalinks for posts
 [permalinks]
   posts = "/posts/:slug/"
-
-# SEO: let Hugo generate sitemap.xml (on by default) and robots.txt
-enableRobotsTXT = true
-disableRobotsTXT = false
 
 # Taxonomies
 [taxonomies]
