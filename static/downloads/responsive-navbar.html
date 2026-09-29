@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar — Free Source Code</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .navbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #0b6e4f; padding: 0 1.5rem; height: 64px;
+  }
+  .brand { color: #fff; font-weight: 700; font-size: 1.25rem; text-decoration: none; }
+  .brand span { color: #c9a227; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a { color: #fff; text-decoration: none; font-size: 1rem; }
+  .nav-links a:hover { color: #c9a227; }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; }
+  .hamburger span { display: block; width: 26px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px; }
+  @media (max-width: 640px) {
+    .hamburger { display: block; }
+    .nav-links {
+      display: none; position: absolute; top: 64px; left: 0; right: 0;
+      flex-direction: column; background: #0b6e4f; padding: 1rem 1.5rem 1.5rem; gap: 1rem;
+    }
+    .nav-links.open { display: flex; }
+  }
+  main { padding: 2rem 1.5rem; max-width: 720px; margin: 0 auto; }
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <a class="brand" href="#">My<span>Site</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<main>
+  <h1>Responsive Navbar</h1>
+  <p>Resize your browser window below 640px wide to see the hamburger menu appear. Free source code — use it in any project.</p>
+</main>
+<script>
+  var btn = document.getElementById('hamburger');
+  var links = document.getElementById('navLinks');
+  btn.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

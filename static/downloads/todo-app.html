@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do App — Free JavaScript Source Code</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f2f5f3; color: #1d2b26; }
+  .app { max-width: 520px; margin: 3rem auto; background: #fff; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,.08); padding: 2rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+  h1 span { color: #0b6e4f; }
+  .add-row { display: flex; gap: .5rem; margin-bottom: 1.25rem; }
+  .add-row input { flex: 1; padding: .7rem .9rem; border: 2px solid #dfe7e2; border-radius: 8px; font-size: 1rem; }
+  .add-row input:focus { outline: none; border-color: #0b6e4f; }
+  .add-row button { padding: .7rem 1.2rem; background: #0b6e4f; color: #fff; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+  .add-row button:hover { background: #095c42; }
+  ul { list-style: none; }
+  li { display: flex; align-items: center; gap: .75rem; padding: .7rem .25rem; border-bottom: 1px solid #eef2ef; }
+  li.done .task-text { text-decoration: line-through; color: #9aa5a1; }
+  .task-text { flex: 1; cursor: pointer; }
+  .del { background: none; border: none; color: #c0392b; font-size: 1.1rem; cursor: pointer; }
+  .empty { text-align: center; color: #9aa5a1; padding: 1.5rem 0; }
+  .count { margin-top: 1rem; font-size: .85rem; color: #6b7672; }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>My <span>To-Do</span> List</h1>
+  <div class="add-row">
+    <input type="text" id="taskInput" placeholder="Add a new task…" maxlength="120">
+    <button id="addBtn">Add</button>
+  </div>
+  <ul id="taskList"></ul>
+  <p class="count" id="count"></p>
+</div>
+<script>
+  var input = document.getElementById('taskInput');
+  var list = document.getElementById('taskList');
+  var count = document.getElementById('count');
+  var tasks = JSON.parse(localStorage.getItem('todoTasks') || '[]');
+
+  function save() { localStorage.setItem('todoTasks', JSON.stringify(tasks)); }
+
+  function render() {
+    list.innerHTML = '';
+    if (!tasks.length) { list.innerHTML = '<p class="empty">No tasks yet — add your first one above.</p>'; }
+    tasks.forEach(function (t, i) {
+      var li = document.createElement('li');
+      if (t.done) li.className = 'done';
+      var span = document.createElement('span');
+      span.className = 'task-text';
+      span.textContent = t.text;
+      span.title = 'Click to mark done / undone';
+      span.onclick = function () { tasks[i].done = !tasks[i].done; save(); render(); };
+      var del = document.createElement('button');
+      del.className = 'del';
+      del.textContent = '✕';
+      del.setAttribute('aria-label', 'Delete task');
+      del.onclick = function () { tasks.splice(i, 1); save(); render(); };
+      li.appendChild(span); li.appendChild(del);
+      list.appendChild(li);
+    });
+    var open = tasks.filter(function (t) { return !t.done; }).length;
+    count.textContent = open + ' task' + (open === 1 ? '' : 's') + ' to do';
+  }
+
+  function addTask() {
+    var text = input.value.trim();
+    if (!text) return;
+    tasks.push({ text: text, done: false });
+    input.value = '';
+    save(); render();
+    input.focus();
+  }
+
+  document.getElementById('addBtn').onclick = addTask;
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') addTask(); });
+  render();
+</script>
+</body>
+</html>

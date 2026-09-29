@@ -1,6 +1,6 @@
 ---
 title: "Free Money Tools"
-description: "Free money tools: 16 calculators and planners for budgeting, debt payoff, saving, investing, and more. No sign-up, no fees."
+description: "Free tools: 21 calculators and utilities for money, passwords, QR codes, writing, and everyday conversions. No sign-up, no fees."
 date: 2026-09-29
 draft: false
 ---
@@ -34,3 +34,11 @@ Every tool here is **free to use, no sign-up required** — and everything you e
 
 - [Freelance Hourly Rate Calculator](/tools/freelance-hourly-rate-calculator/) — the rate that actually covers your costs and taxes.
 - [Salary to Hourly Converter](/tools/salary-to-hourly-converter/) — convert salary to hourly and hourly to salary instantly.
+
+## Everyday Tools
+
+- [Password Generator](/tools/password-generator/) — strong random passwords with the length and characters you choose.
+- [QR Code Generator](/tools/qr-code-generator/) — turn any link or text into a scannable QR code instantly.
+- [Word Counter](/tools/word-counter/) — words, characters, sentences, and reading time as you type.
+- [Percentage Calculator](/tools/percentage-calculator/) — discounts, tips, and percent change in one place.
+- [Unit Converter](/tools/unit-converter/) — miles/km, kg/lbs, °C/°F and more, instantly.

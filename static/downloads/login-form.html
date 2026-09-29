@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form — Free HTML & CSS Source Code</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #0b6e4f, #083f2e); padding: 1rem;
+  }
+  .card { background: #fff; border-radius: 14px; padding: 2.25rem; width: 100%; max-width: 400px; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+  .card h1 { font-size: 1.5rem; margin-bottom: .35rem; }
+  .card h1 span { color: #0b6e4f; }
+  .card p.sub { color: #6b7672; font-size: .95rem; margin-bottom: 1.5rem; }
+  label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .35rem; }
+  .field { margin-bottom: 1.1rem; }
+  input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%; padding: .75rem .9rem; border: 2px solid #dfe7e2; border-radius: 8px; font-size: 1rem;
+  }
+  input:focus { outline: none; border-color: #0b6e4f; }
+  .pw-wrap { position: relative; }
+  .pw-toggle {
+    position: absolute; right: .6rem; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: #0b6e4f; font-size: .85rem; font-weight: 600; cursor: pointer;
+  }
+  .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; font-size: .85rem; }
+  .row a { color: #0b6e4f; text-decoration: none; }
+  .submit {
+    width: 100%; padding: .85rem; background: #0b6e4f; color: #fff; border: none;
+    border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer;
+  }
+  .submit:hover { background: #095c42; }
+  .signup { text-align: center; margin-top: 1.25rem; font-size: .9rem; color: #6b7672; }
+  .signup a { color: #0b6e4f; font-weight: 600; text-decoration: none; }
+  .msg { display: none; margin-top: 1rem; padding: .7rem; border-radius: 8px; font-size: .9rem; background: #e7f6ef; color: #0b6e4f; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Welcome <span>back</span></h1>
+  <p class="sub">Log in to your account to continue.</p>
+  <form id="loginForm" novalidate>
+    <div class="field">
+      <label for="email">Email address</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <div class="pw-wrap">
+        <input type="password" id="password" placeholder="••••••••" required minlength="6">
+        <button type="button" class="pw-toggle" id="pwToggle">Show</button>
+      </div>
+    </div>
+    <div class="row">
+      <label style="display:flex;align-items:center;gap:.4rem;font-weight:400;">
+        <input type="checkbox" checked> Remember me
+      </label>
+      <a href="#">Forgot password?</a>
+    </div>
+    <button type="submit" class="submit">Log in</button>
+    <p class="msg" id="msg"></p>
+  </form>
+  <p class="signup">New here? <a href="#">Create an account</a></p>
+</div>
+<script>
+  var pw = document.getElementById('password');
+  var toggle = document.getElementById('pwToggle');
+  toggle.addEventListener('click', function () {
+    var show = pw.type === 'password';
+    pw.type = show ? 'text' : 'password';
+    toggle.textContent = show ? 'Hide' : 'Show';
+  });
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    var msg = document.getElementById('msg');
+    if (!email || pw.value.length < 6) {
+      msg.style.display = 'block';
+      msg.style.background = '#fdecea'; msg.style.color = '#c0392b';
+      msg.textContent = 'Please enter a valid email and a password of at least 6 characters.';
+      return;
+    }
+    msg.style.display = 'block';
+    msg.style.background = '#e7f6ef'; msg.style.color = '#0b6e4f';
+    msg.textContent = 'Demo only — connect this form to your backend to make it live.';
+  });
+</script>
+</body>
+</html>
