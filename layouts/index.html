@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="hero">
+  <div class="wrap">
+    <h1>Personal finance, explained simply.</h1>
+    <p>Practical budgeting, saving, and side-hustle guides for beginners in the US and UK. No jargon, no fluff — just steps that work.</p>
+    <a class="btn" href="{{ .Site.BaseURL }}posts/">Start reading</a>
+  </div>
+</div>
+<main>
+  <div class="wrap">
+    <h2>Latest posts</h2>
+    <ul class="post-list">
+      {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+      <li>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+        <p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
+      </li>
+      {{ end }}
+    </ul>
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}

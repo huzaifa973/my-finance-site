@@ -1,0 +1,26 @@
+baseURL = "https://my-finance-site.pages.dev/"
+title = "DollarWise — Personal Finance for Beginners"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+# Clean permalinks for posts
+[permalinks]
+  posts = "/posts/:slug/"
+
+# SEO: let Hugo generate sitemap.xml (on by default) and robots.txt
+enableRobotsTXT = true
+disableRobotsTXT = false
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+
+# Markdown rendering niceties
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Build
+[build]
+  writeStats = false

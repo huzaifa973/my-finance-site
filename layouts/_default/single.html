@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  <div class="wrap">
+    <article>
+      <h1>{{ .Title }}</h1>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+      {{ .Content }}
+      {{ with .Params.tags }}
+      <div class="tags">
+        {{ range . }}<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+  </div>
+</main>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main>
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="post-list">
+      {{ range .Pages }}
+      <li>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+        <p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}
