@@ -1,0 +1,4 @@
+{{/* Comparison table wrapper: {{< comparison-table >}} ...markdown table... {{< /comparison-table >}}.
+     Note: markdownify is used so the markdown table inside renders to HTML
+     even though this shortcode is invoked with {{< >}} delimiters. */}}
+<div class="table-wrap">{{ .Inner | markdownify }}</div>

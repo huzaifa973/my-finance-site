@@ -1,0 +1,6 @@
+{{/* CTA box: {{< cta-box title="..." text="..." button="..." link="#" >}} */}}
+<div class="cta-box">
+  <h3>{{ .Get "title" }}</h3>
+  <p>{{ .Get "text" }}</p>
+  <a class="btn" href="{{ .Get "link" | default "#" }}">{{ .Get "button" | default "Learn more" }}</a>
+</div>

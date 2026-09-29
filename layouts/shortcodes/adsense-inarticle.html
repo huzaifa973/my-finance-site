@@ -1,0 +1,16 @@
+{{/* In-article AdSense unit: {{< adsense-inarticle >}}.
+     Renders only when .Site.Params.adsense_publisher_id is set. */}}
+{{ with .Site.Params.adsense_publisher_id }}
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="{{ . }}"
+     data-ad-slot="0000000000"></ins>
+<!-- TODO: replace data-ad-slot with your AdSense in-article ad unit ID -->
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{{ else }}
+<!-- ADSENSE: in-article slot (set adsense_publisher_id to enable) -->
+{{ end }}
