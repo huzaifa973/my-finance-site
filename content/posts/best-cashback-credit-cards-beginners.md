@@ -4,7 +4,7 @@ description: "The best cashback credit cards for beginners in 2026: no-annual-fe
 date: 2026-09-29
 tags: ["credit cards", "cashback", "beginners"]
 draft: false
-image: /images/best-cashback-credit-cards-beginners.jpg
+image: /images/best-cashback-credit-cards-beginners.svg
 faq:
   - q: "What is the best cashback credit card for a beginner?"
     a: "A no-annual-fee flat-rate card earning 1.5–2% on everything is the best starter pick. It's simple (no categories to track), profitable from the first purchase, and pairs well with a category card later once your spending patterns are clear."

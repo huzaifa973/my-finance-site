@@ -4,7 +4,7 @@ description: "You can start investing with just $100 in 2026. This beginner's gu
 date: 2026-09-29
 tags: ["investing", "beginners", "retirement"]
 draft: false
-image: /images/how-to-start-investing-with-100-dollars.jpg
+image: /images/how-to-start-investing-with-100-dollars.svg
 faq:
   - q: "Can I really start investing with $100?"
     a: "Yes. Most brokerages have no minimum deposit, and fractional shares let you own pieces of expensive stocks and ETFs for as little as $1–$5. Your $100 buys real exposure to the stock market on day one."

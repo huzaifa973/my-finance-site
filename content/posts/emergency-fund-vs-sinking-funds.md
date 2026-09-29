@@ -4,7 +4,7 @@ description: "Emergency fund vs sinking funds explained: what each covers, how m
 date: 2026-09-29
 tags: ["emergency fund", "sinking funds", "saving money"]
 draft: false
-image: /images/emergency-fund-vs-sinking-funds.jpg
+image: /images/emergency-fund-vs-sinking-funds.svg
 faq:
   - q: "Can a sinking fund replace an emergency fund?"
     a: "No. Sinking funds cover predictable, plannable expenses (car insurance, holidays, annual subscriptions). An emergency fund covers true surprises (job loss, medical bills). You need both — a sinking fund can't handle a $4,000 surprise, and raiding the emergency fund for Christmas is how it never grows."

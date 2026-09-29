@@ -4,7 +4,7 @@ description: "The 12 best side hustles for college students in 2026 — flexible
 date: 2026-09-29
 tags: ["side hustles", "college", "make money"]
 draft: false
-image: /images/best-side-hustles-for-college-students.jpg
+image: /images/best-side-hustles-for-college-students.svg
 faq:
   - q: "What is the best side hustle for a college student with no experience?"
     a: "Freelance services you already know (tutoring, social media help, basic design) pay best per hour with zero startup cost. For instant cash with no skills needed, try user testing, pet sitting, or campus gig apps — you can start within days."

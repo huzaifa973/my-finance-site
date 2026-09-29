@@ -4,7 +4,7 @@ description: "Roth IRA vs Traditional IRA explained for beginners: tax differenc
 date: 2026-09-29
 tags: ["retirement", "ira", "investing"]
 draft: false
-image: /images/roth-ira-vs-traditional-ira.jpg
+image: /images/roth-ira-vs-traditional-ira.svg
 faq:
   - q: "Which is better for beginners, Roth or Traditional IRA?"
     a: "For most beginners, a Roth IRA wins. You're likely in a lower tax bracket now than you'll be in retirement, so paying taxes now and withdrawing tax-free later is usually the better deal — plus Roth IRAs offer more flexibility for early withdrawals."

@@ -4,7 +4,7 @@ description: "Meal prep on a budget with this 2026 guide: a $60/week grocery pla
 date: 2026-09-29
 tags: ["meal prep", "groceries", "saving money"]
 draft: false
-image: /images/meal-prep-on-a-budget.jpg
+image: /images/meal-prep-on-a-budget.svg
 faq:
   - q: "How much money does meal prepping actually save?"
     a: "Most households save $200–$400/month. A homemade meal costs $2–$4 per serving versus $12–$18 for takeout or fast-casual. Prepping just weekday lunches alone (20 meals) saves roughly $200/month over buying lunch out."

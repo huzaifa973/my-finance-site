@@ -4,7 +4,7 @@ description: "Learn how to negotiate a higher salary with word-for-word scripts 
 date: 2026-09-29
 tags: ["career", "salary", "negotiation"]
 draft: false
-image: /images/how-to-negotiate-salary.jpg
+image: /images/how-to-negotiate-salary.svg
 faq:
   - q: "Is it okay to negotiate salary for an entry-level job?"
     a: "Yes — politely and with research. Entry-level ranges are often flexible by 5–10%, and negotiating early compounds over your career since future raises build on your base. Keep the tone collaborative, not demanding."

@@ -4,7 +4,7 @@ description: "Find every subscription draining your money with this 2026 audit: 
 date: 2026-09-29
 tags: ["subscriptions", "budgeting", "saving money"]
 draft: false
-image: /images/find-and-cancel-subscriptions.jpg
+image: /images/find-and-cancel-subscriptions.svg
 faq:
   - q: "How do I find all my subscriptions?"
     a: "Search your email for 'receipt,' 'renewal,' and 'trial,' then scan 12 months of bank and credit card statements for recurring charges. Also check your phone's subscription settings (Apple ID and Google Play) and PayPal's automatic payments page — these catch the ones statements miss."
