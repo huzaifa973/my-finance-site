@@ -1,12 +1,45 @@
 <footer class="site">
-  <div class="wrap">
-    <div class="links">
-      <a href="{{ .Site.BaseURL }}about/">About</a>
-      <a href="{{ .Site.BaseURL }}affiliate-disclosure/">Affiliate Disclosure</a>
-      <a href="{{ .Site.BaseURL }}posts/">All Posts</a>
-      <a href="{{ .Site.BaseURL }}sitemap.xml">Sitemap</a>
+  <div class="wrap-wide">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a class="brand" href="{{ "/" | relURL }}">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#0b6e4f"/>
+            <polyline points="18,41 28,31 35,36 47,21" fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="38,21 47,21 47,30" fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Dollar<span>Wise</span>
+        </a>
+        <p>Plain-English personal finance guides for beginners. Budgeting, saving, and earning more — explained simply.</p>
+        <p>For education only — not financial advice.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="{{ "/" | relURL }}">Home</a></li>
+          <li><a href="{{ "posts/" | relURL }}">Posts</a></li>
+          <li><a href="{{ "about/" | relURL }}">About</a></li>
+          <li><a href="{{ "sitemap.xml" | relURL }}">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="{{ "tools/budget-calculator/" | relURL }}">Budget calculator</a></li>
+          <li><a href="{{ "recommended-tools/" | relURL }}">Recommended tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="{{ "affiliate-disclosure/" | relURL }}">Affiliate disclosure</a></li>
+          <!-- TODO: add a privacy policy page -->
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
     </div>
     <p class="disclosure"><strong>Affiliate disclosure:</strong> DollarWise is reader-supported. When you buy through links on this site, we may earn an affiliate commission at no extra cost to you. This helps us keep the content free.</p>
-    <p>&copy; {{ now.Year }} DollarWise. For education only — not financial advice.</p>
+    <p class="footer-note">As an affiliate partner, we may earn commissions from qualifying purchases — at no extra cost to you.</p>
+    <p class="copyright">&copy; {{ now.Format "2006" }} DollarWise. For education only — not financial advice.</p>
   </div>
 </footer>

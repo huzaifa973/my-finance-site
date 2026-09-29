@@ -1,16 +1,192 @@
 {{ define "main" }}
+<div class="progress" id="reading-progress" aria-hidden="true"></div>
+
 <main>
   <div class="wrap">
-    <article>
-      <h1>{{ .Title }}</h1>
-      <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
-      {{ .Content }}
-      {{ with .Params.tags }}
-      <div class="tags">
-        {{ range . }}<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>{{ end }}
-      </div>
+
+    {{/* Breadcrumbs */}}
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a> /
+      {{ if eq .Section "posts" }}<a href="{{ "posts/" | relURL }}">Posts</a> / {{ end }}
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+
+    <div class="post-layout">
+      <article class="post">
+        <h1>{{ .Title }}</h1>
+        <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read · By the DollarWise team</div>
+
+        {{/* Table of contents on posts */}}
+        {{ if and (eq .Section "posts") .TableOfContents }}
+        <div class="toc">
+          <strong>On this page</strong>
+          {{ .TableOfContents }}
+        </div>
+        {{ end }}
+
+        {{/* Article body: on posts, inject the conditional in-article ad slot at the content midpoint */}}
+        {{ if and (eq .Section "posts") (gt (len (split .Content "</p>")) 6) }}
+          {{ $paras := split .Content "</p>" }}
+          {{ $n := len $paras }}
+          {{ $mid := div $n 2 }}
+          {{ print (delimit (first $mid $paras) "</p>") "</p>" | safeHTML }}
+
+          <div class="ad-slot ad-inarticle">
+            <span class="ad-label">Advertisement</span>
+            {{ with .Site.Params.adsense_publisher_id }}
+            <!-- TODO: replace data-ad-slot with your AdSense in-article ad unit ID -->
+            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="{{ . }}" data-ad-slot="0000000000"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            {{ else }}
+            <!-- ADSENSE: in-article slot (set adsense_publisher_id to enable) -->
+            {{ end }}
+          </div>
+
+          {{ print (delimit (last (sub $n $mid) $paras) "</p>") "</p>" | safeHTML }}
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
+
+        {{ with .Params.tags }}
+        <div class="tags">
+          {{ range . }}<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>{{ end }}
+        </div>
+        {{ end }}
+
+        {{/* Below-content ad slot (before related posts) */}}
+        {{ if eq .Section "posts" }}
+        <div class="ad-slot ad-below-content">
+          <span class="ad-label">Advertisement</span>
+          {{ with .Site.Params.adsense_publisher_id }}
+          <!-- TODO: replace data-ad-slot with your AdSense display ad unit ID -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="{{ . }}" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          {{ else }}
+          <!-- PASTE ADSENSE CODE HERE: below-post ad slot -->
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{/* Author box */}}
+        {{ if eq .Section "posts" }}
+        <div class="author-box">
+          <div class="author-avatar" aria-hidden="true">DW</div>
+          <div>
+            <strong>Written by the DollarWise team</strong>
+            <p>We turn confusing money topics into plain-English guides for beginners. Every article is written to be actionable on day one — no jargon, no hype, no sales pitch.</p>
+          </div>
+        </div>
+
+        {{/* Share buttons */}}
+        <div class="share">
+          <strong>Share this guide:</strong>
+          <a class="btn btn-sm btn-outline" href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" target="_blank" rel="noopener">Share on X</a>
+          <a class="btn btn-sm btn-outline" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}" target="_blank" rel="noopener">Share on Facebook</a>
+          <button class="btn btn-sm btn-outline share-copy" type="button" data-url="{{ .Permalink }}">Copy link</button>
+        </div>
+
+        {{/* Prev / next post navigation */}}
+        <nav class="prev-next" aria-label="Post navigation">
+          {{ with .PrevInSection }}
+          <a href="{{ .RelPermalink }}"><small>← Older post</small>{{ .Title }}</a>
+          {{ else }}<span></span>{{ end }}
+          {{ with .NextInSection }}
+          <a href="{{ .RelPermalink }}"><small>Newer post →</small>{{ .Title }}</a>
+          {{ end }}
+        </nav>
+
+        {{/* Related posts: same tags first, then same section, max 3 */}}
+        {{ $tags := .Params.tags | default slice }}
+        {{ $rel := slice }}
+        {{ $seen := dict .Permalink true }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
+          {{ if and (lt (len $rel) 3) (not (index $seen .Permalink)) (gt (len (intersect $tags (.Params.tags | default slice))) 0) }}
+            {{ $rel = $rel | append . }}
+            {{ $seen = merge $seen (dict .Permalink true) }}
+          {{ end }}
+        {{ end }}
+        {{ $need := sub 3 (len $rel) }}
+        {{ if gt $need 0 }}
+          {{ range where .Site.RegularPages "Section" "posts" }}
+            {{ if and (not (index $seen .Permalink)) (gt $need 0) }}
+              {{ $rel = $rel | append . }}
+              {{ $seen = merge $seen (dict .Permalink true) }}
+              {{ $need = sub $need 1 }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ with $rel }}
+        <section class="related">
+          <h2>Keep reading</h2>
+          <div class="cards">
+            {{ range . }}{{ partial "post-card.html" . }}{{ end }}
+          </div>
+        </section>
+        {{ end }}
+        {{ end }}
+      </article>
+
+      {{/* Sticky sidebar ad slot on desktop post pages (hidden on mobile via CSS) */}}
+      {{ if eq .Section "posts" }}
+      <aside class="sidebar-ad" aria-label="Advertisement">
+        <div class="ad-slot">
+          <span class="ad-label">Advertisement</span>
+          {{ with .Site.Params.adsense_publisher_id }}
+          <!-- TODO: replace data-ad-slot with your AdSense sidebar ad unit ID -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="{{ . }}" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          {{ else }}
+          <!-- ADSENSE: sidebar slot (set adsense_publisher_id to enable) -->
+          {{ end }}
+        </div>
+      </aside>
       {{ end }}
-    </article>
+    </div>
   </div>
 </main>
+
+<script>
+/* Reading progress bar — tiny vanilla JS, no framework */
+(function(){
+  var bar = document.getElementById('reading-progress');
+  if(!bar) return;
+  function update(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+
+<script>
+/* Copy-link share button — tiny vanilla JS, no framework */
+(function(){
+  var btn = document.querySelector('.share-copy');
+  if(!btn) return;
+  btn.addEventListener('click', function(){
+    var url = btn.getAttribute('data-url');
+    function done(){
+      var label = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(function(){ btn.textContent = label; }, 2000);
+    }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); } catch(e) {}
+      document.body.removeChild(ta);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done).catch(fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>
 {{ end }}

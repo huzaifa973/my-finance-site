@@ -1,0 +1,10 @@
+{{/* Post card — used by the homepage grid, archive lists, and related posts. Context: a Page. */}}
+<article class="card">
+  <div class="card-body">
+    {{ range first 1 (.Params.tags | default slice) }}<span class="card-tag">#{{ . }}</span>{{ end }}
+    <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+    <p class="card-excerpt">{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
+    <a class="card-link" href="{{ .RelPermalink }}">Read more →</a>
+  </div>
+</article>

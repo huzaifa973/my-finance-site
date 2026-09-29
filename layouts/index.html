@@ -1,24 +1,99 @@
 {{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+
 <div class="hero">
-  <div class="wrap">
-    <h1>Personal finance, explained simply.</h1>
-    <p>Practical budgeting, saving, and side-hustle guides for beginners in the US and UK. No jargon, no fluff — just steps that work.</p>
-    <a class="btn" href="{{ .Site.BaseURL }}posts/">Start reading</a>
+  <div class="wrap-wide">
+    <h1>Money advice that <span class="hl">actually makes sense</span></h1>
+    <p>Plain-English budgeting, saving, and side-hustle guides for beginners in the US and UK. No jargon, no fluff — just steps you can follow today.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="{{ "posts/" | relURL }}">Start with the guides</a>
+      <a class="btn btn-outline" href="{{ "tools/budget-calculator/" | relURL }}">Try the budget calculator</a>
+    </div>
   </div>
 </div>
+
+{{/* Homepage leaderboard ad slot: only rendered when adsense_publisher_id is set */}}
+{{ with .Site.Params.adsense_publisher_id }}
+<div class="wrap-wide">
+  <div class="ad-slot ad-leaderboard">
+    <span class="ad-label">Advertisement</span>
+    <!-- TODO: replace data-ad-slot with your AdSense leaderboard ad unit ID -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="{{ . }}" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+{{ else }}
+<!-- PASTE ADSENSE CODE HERE: homepage leaderboard -->
+{{ end }}
+
 <main>
-  <div class="wrap">
-    <h2>Latest posts</h2>
-    <ul class="post-list">
-      {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
-      <li>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
-        <p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
-      </li>
-      {{ end }}
-    </ul>
-    {{ .Content }}
+  <div class="wrap-wide">
+
+    {{/* Featured: latest post as a large card */}}
+    {{ range first 1 $posts }}
+    <div class="featured">
+      <span class="badge">Featured</span>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+      <p>{{ .Description | default (.Summary | plainify | truncate 200) }}</p>
+      <a class="btn" href="{{ .RelPermalink }}">Read the guide</a>
+    </div>
+    {{ end }}
+
+    {{/* Grid of the remaining posts */}}
+    {{ $rest := after 1 $posts }}
+    {{ if $rest }}
+    <div class="section-head">
+      <h2><span class="bar-gold"></span>Latest guides</h2>
+      <a href="{{ "posts/" | relURL }}">View all posts →</a>
+    </div>
+    <div class="cards">
+      {{ range $rest }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+
+  {{/* Recommended tools strip */}}
+  <div class="wrap-wide">
+    <section class="tools-strip">
+      <div>
+        <h2>Recommended tools</h2>
+        <p>Budgeting apps, savings accounts, and templates we've vetted for beginners — with honest pros and cons.</p>
+      </div>
+      <a class="btn" href="{{ "recommended-tools/" | relURL }}">See recommended tools</a>
+    </section>
+  </div>
+
+  {{/* Homepage intro copy from content/_index.md */}}
+  {{ with .Content }}
+  <section class="about-blurb">
+    <div class="wrap">
+      {{ . }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Newsletter signup */}}
+  <div class="wrap-wide">
+    <section class="newsletter" id="newsletter">
+      <h2>Get the free Budget Starter Kit</h2>
+      <p>Join the DollarWise newsletter and get our free Budget Starter Kit: a simple 50/30/20 worksheet, a 30-day savings checklist, and one short, practical money email per week. No spam, ever.</p>
+      <!--
+        NEWSLETTER SIGNUP — wire this form to your email provider:
+        • Buttondown: set action="https://buttondown.email/api/emails/embed-subscribe/YOUR_USERNAME"
+          method="post" and keep the input name as "email".
+        • ConvertKit: replace this <form> with your ConvertKit inline form embed code,
+          or point action at your ConvertKit form endpoint.
+        Until then the form is a placeholder (action="#") and submits nowhere.
+        See hugo.toml [params] # newsletter_provider for the matching config note.
+      -->
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <button class="btn btn-gold" type="submit">Send me the starter kit</button>
+      </form>
+      <small>No spam. Unsubscribe anytime with one click.</small>
+    </section>
   </div>
 </main>
 {{ end }}

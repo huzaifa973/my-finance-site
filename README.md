@@ -93,3 +93,43 @@ Mark ad/affiliate slots in the body with:
 - [ ] Replace `ADSENSE` comment slots with real ad units
 - [ ] Replace `AFFILIATE` comment slots with affiliate links (see affiliate disclosure page)
 - [ ] Keep publishing 2–3 posts/week in one niche
+
+## Monetization setup
+
+### 1. Google AdSense
+
+Paste your publisher ID into `hugo.toml` under `[params]`:
+
+```toml
+[params]
+  adsense_publisher_id = "ca-pub-XXXXXXXXXXXXXXXX"
+```
+
+**Empty `adsense_publisher_id` = no ad code rendered.** Every ad slot checks this param first and renders only an HTML comment when it's empty, so the site stays clean until you're approved.
+
+Ad slot locations:
+
+| Slot | Location | Notes |
+|---|---|---|
+| Homepage leaderboard | `layouts/index.html` (below the header) | Placeholder comment `<!-- PASTE ADSENSE CODE HERE: homepage leaderboard -->` when disabled |
+| In-article (auto) | `layouts/_default/single.html` (content midpoint) | Injected at the midpoint of post content automatically |
+| In-article (manual) | `{{< adsense-inarticle >}}` shortcode | Place anywhere inside a post's markdown |
+| Below post content | `layouts/_default/single.html` (before related posts) | Placeholder comment when disabled |
+| Sidebar (desktop) | `layouts/_default/single.html` | Sticky 300px sidebar on post pages; hidden on mobile via CSS |
+
+For each slot, replace the `data-ad-slot="0000000000"` placeholder with your real AdSense ad unit ID (see the `TODO` comments in the templates).
+
+### 2. Affiliate links
+
+- Replace `link="#"` in `{{< cta-box >}}` shortcodes with your real affiliate URLs.
+- `content/recommended-tools.md` has `<!-- AFFILIATE: paste ... link here -->` comments above each CTA box marking every placeholder.
+- Keep the affiliate disclosure page (`content/affiliate-disclosure.md`) and the footer disclosure line up to date.
+
+### 3. Newsletter (Buttondown / ConvertKit)
+
+The signup form lives in `layouts/index.html` (newsletter section) and `content/newsletter.md`. It currently submits nowhere (`action="#"`).
+
+- **Buttondown:** set the form's `action` to `https://buttondown.email/api/emails/embed-subscribe/YOUR_USERNAME` with `method="post"` (keep the input `name="email"`).
+- **ConvertKit:** replace the `<form>` with your ConvertKit inline form embed code, or point `action` at your ConvertKit form endpoint.
+
+See the HTML comments above each form for the exact steps.

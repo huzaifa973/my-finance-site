@@ -1,17 +1,23 @@
 {{ define "main" }}
 <main>
-  <div class="wrap">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    <ul class="post-list">
+  <div class="wrap-wide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a> /
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <div class="section-head">
+      <h2><span class="bar-gold"></span>{{ .Title }}</h2>
+    </div>
+    {{ with .Content }}
+    <div class="archive-intro">
+      {{ . }}
+    </div>
+    {{ end }}
+    <div class="cards">
       {{ range .Pages }}
-      <li>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <div class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
-        <p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
-      </li>
+        {{ partial "post-card.html" . }}
       {{ end }}
-    </ul>
+    </div>
   </div>
 </main>
 {{ end }}

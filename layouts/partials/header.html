@@ -1,11 +1,18 @@
 <header class="site">
-  <div class="wrap">
-    <a class="logo" href="{{ .Site.BaseURL }}">Dollar<span>Wise</span></a>
-    <nav class="main">
-      <a href="{{ .Site.BaseURL }}">Home</a>
-      <a href="{{ .Site.BaseURL }}posts/">Posts</a>
-      <a href="{{ .Site.BaseURL }}tools/budget-calculator/">Calculator</a>
-      <a href="{{ .Site.BaseURL }}about/">About</a>
+  <div class="wrap-wide">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="DollarWise home">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#0b6e4f"/>
+        <polyline points="18,41 28,31 35,36 47,21" fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline points="38,21 47,21 47,30" fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Dollar<span>Wise</span>
+    </a>
+    <nav class="main" aria-label="Main navigation">
+      <a href="{{ "/" | relURL }}">Home</a>
+      <a href="{{ "posts/" | relURL }}">Posts</a>
+      <a href="{{ "tools/" | relURL }}">Tools</a>
+      <a href="{{ "about/" | relURL }}">About</a>
     </nav>
   </div>
 </header>
