@@ -4,7 +4,7 @@ description: "Savers aren't luckier — they just run different habits. Here are
 date: 2026-09-29
 tags: ["money habits", "saving money", "mindset"]
 draft: false
-image: /images/money-habits-savers-vs-spenders.jpg
+image: /images/money-habits-savers-vs-spenders.svg
 faq:
   - q: "Can a spender become a saver, or is it just personality?"
     a: "It's learnable. Saving is a set of systems and habits, not a personality trait. People who identify as 'bad with money' routinely become consistent savers by automating the decision."

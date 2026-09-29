@@ -4,7 +4,7 @@ description: "Skip the hype. These 11 best money books for beginners actually te
 date: 2026-09-29
 tags: ["books", "beginners", "investing"]
 draft: false
-image: /images/best-money-books-beginners.jpg
+image: /images/best-money-books-beginners.svg
 faq:
   - q: "Which money book should I read first as a complete beginner?"
     a: "Start with The Psychology of Money — it's short, engaging, and fixes your mindset before tactics. Then read I Will Teach You to Be Rich for the concrete systems."

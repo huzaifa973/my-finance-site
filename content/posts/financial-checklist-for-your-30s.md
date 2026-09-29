@@ -4,7 +4,7 @@ description: "Your 30s are the decade money habits pay off. The complete financi
 date: 2026-09-29
 tags: ["30s", "financial planning", "checklist"]
 draft: false
-image: /images/financial-checklist-for-your-30s.jpg
+image: /images/financial-checklist-for-your-30s.svg
 faq:
   - q: "I'm in my 30s with no savings. Is it too late?"
     a: "Not even close. Starting at 35 instead of 25 costs you some compounding, but three decades of investing still build serious wealth. The worst move is waiting until your 40s because your 30s felt 'too late.'"

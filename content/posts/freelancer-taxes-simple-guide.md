@@ -4,7 +4,7 @@ description: "Freelance taxes explained in plain English: what to track, which d
 date: 2026-09-29
 tags: ["freelance", "taxes", "deductions", "self-employment"]
 draft: false
-image: /images/freelancer-taxes-simple-guide.jpg
+image: /images/freelancer-taxes-simple-guide.svg
 faq:
   - q: "Do I have to pay taxes if a client didn't send me a 1099?"
     a: "Yes. You're taxed on all freelance income whether or not you received a form. The 1099 threshold only changes the client's reporting obligation, not yours."

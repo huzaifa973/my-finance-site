@@ -4,7 +4,7 @@ description: "Teaching kids about money gets easier when you match the lesson to
 date: 2026-09-29
 tags: ["kids", "parenting", "financial literacy"]
 draft: false
-image: /images/how-to-teach-kids-about-money.jpg
+image: /images/how-to-teach-kids-about-money.svg
 faq:
   - q: "Should allowance be tied to chores?"
     a: "Keep them separate. Basic household chores are a family contribution, not paid labor — tying them to pay teaches kids they can opt out of helping by skipping the money. Pay for extra, above-and-beyond jobs instead."

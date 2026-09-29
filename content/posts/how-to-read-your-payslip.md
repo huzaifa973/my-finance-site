@@ -4,7 +4,7 @@ description: "Your payslip is a story about where your money goes. Every line ex
 date: 2026-09-29
 tags: ["paycheck", "taxes", "basics"]
 draft: false
-image: /images/how-to-read-your-payslip.jpg
+image: /images/how-to-read-your-payslip.svg
 faq:
   - q: "Why is my bonus taxed at a higher rate than my salary?"
     a: "It often isn't — bonuses are usually withheld at a flat 22% federal rate, which can look higher than your normal withholding. At tax time it all reconciles to your actual tax bracket."

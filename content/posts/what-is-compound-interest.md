@@ -4,7 +4,7 @@ description: "Compound interest explained with examples that finally make sense.
 date: 2026-09-29
 tags: ["investing", "compound interest", "basics"]
 draft: false
-image: /images/what-is-compound-interest.jpg
+image: /images/what-is-compound-interest.svg
 faq:
   - q: "What rate of return should I assume for long-term investing?"
     a: "The US stock market has averaged roughly 10% nominal (about 7% after inflation) over long periods. Use 7% for conservative planning — if reality beats it, that's a bonus."
