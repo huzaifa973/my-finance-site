@@ -4,6 +4,7 @@ description: "Build an emergency fund from $0 with this step-by-step plan: start
 date: 2026-09-29
 tags: ["emergency fund", "saving money", "beginners"]
 draft: false
+image: /images/build-emergency-fund-from-zero.svg
 faq:
   - q: "How much should I have in an emergency fund?"
     a: "Start with a $500–$1,000 starter fund, then build to one month of essential expenses, and ultimately 3–6 months. Three months suits stable jobs with low fixed costs; six months suits freelancers, single-income households, or anyone with high fixed expenses."

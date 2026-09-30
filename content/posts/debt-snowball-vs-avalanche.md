@@ -4,6 +4,7 @@ description: "Debt snowball vs avalanche compared with real numbers. See which m
 date: 2026-09-29
 tags: ["debt", "debt snowball", "debt avalanche", "debt payoff"]
 draft: false
+image: /images/debt-snowball-vs-avalanche.svg
 faq:
   - q: "Which is better: debt snowball or avalanche?"
     a: "The avalanche is mathematically cheaper because it targets the highest interest rate first. The snowball is psychologically stronger because it delivers the fastest first win. For most people carrying high-interest debt, the best method is the one they'll actually stick with for the full payoff — which is usually the snowball."
