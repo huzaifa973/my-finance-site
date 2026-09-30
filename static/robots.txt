@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://my-finance-site.pages.dev/sitemap.xml
+Sitemap: https://my-finance-site-byy.pages.dev/sitemap.xml

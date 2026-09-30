@@ -3,8 +3,8 @@ title = "DollarWise — Money, Tech & Free Tools"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 
-# SEO: let Hugo generate sitemap.xml (on by default) and robots.txt
-enableRobotsTXT = true
+# SEO: sitemap.xml is auto-generated; robots.txt is served from static/robots.txt
+enableRobotsTXT = false
 
 # Clean permalinks for posts
 [permalinks]

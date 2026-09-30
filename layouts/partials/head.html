@@ -6,7 +6,7 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="robots" content="index, follow">
+{{ if eq .Kind "404" }}<meta name="robots" content="noindex, follow">{{ else }}<meta name="robots" content="index, follow">{{ end }}
 <meta name="author" content="DollarWise">
 
 <!-- Favicons -->
