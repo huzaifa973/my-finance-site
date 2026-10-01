@@ -4,6 +4,7 @@ description: "A realistic 30-day plan to save $1,000 fast: cut the right expense
 date: 2026-09-29
 tags: ["saving", "emergency fund", "money challenge", "beginners"]
 draft: false
+image: /images/how-to-save-1000-in-30-days.svg
 faq:
   - q: "Is it realistic to save $1,000 in one month?"
     a: "For many people, yes — but it depends on income and fixed costs. The plan combines three levers: cutting $300–$400 in flexible spending, selling $200–$300 of unused items, and earning $300–$400 from short gigs. If your math falls short, stretch the same plan to 60 days."
