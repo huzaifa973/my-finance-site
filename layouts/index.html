@@ -118,19 +118,17 @@
     <section class="newsletter" id="newsletter">
       <h2>Get the free Budget Starter Kit</h2>
       <p>Join the DollarWise newsletter and get our free Budget Starter Kit: a simple 50/30/20 worksheet, a 30-day savings checklist, and one short, practical money email per week. No spam, ever.</p>
-      <!--
-        NEWSLETTER SIGNUP — wire this form to your email provider:
-        • Buttondown: set action="https://buttondown.email/api/emails/embed-subscribe/YOUR_USERNAME"
-          method="post" and keep the input name as "email".
-        • ConvertKit: replace this <form> with your ConvertKit inline form embed code,
-          or point action at your ConvertKit form endpoint.
-        Until then the form is a placeholder (action="#") and submits nowhere.
-        See hugo.toml [params] # newsletter_provider for the matching config note.
-      -->
-      <form class="newsletter-form" action="#" method="post">
+      {{/* Newsletter signup — wired to FormSubmit, delivers to hicomapny@gmail.com.
+            First-ever submission triggers a one-time activation email to that inbox. */}}
+      <form class="newsletter-form js-formsubmit" data-success="You're in! The Budget Starter Kit is on its way to your inbox." method="post">
+        <input type="hidden" name="_subject" value="New Budget Starter Kit request — DollarWise">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="_autoresponse" value="Hi! Here is your free DollarWise Budget Starter Kit. YOUR 50/30/20 WORKSHEET: Take your monthly take-home pay and split it three ways — 50 percent for Needs (rent, food, bills, transport), 30 percent for Wants (eating out, hobbies, shopping), 20 percent for Future You (emergency fund, debt payoff, saving). Try it instantly with our free calculator: https://dollarwise.xyz/tools/budget-calculator/ YOUR 30-DAY SAVINGS CHECKLIST: Week 1 — track every expense, no judgment. Week 2 — cancel one subscription you barely use. Week 3 — cook five dinners at home. Week 4 — move what you saved into a separate account on payday. You will also get one short, practical money email per week. No spam, unsubscribe anytime. — DollarWise https://dollarwise.xyz">
         <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
         <button class="btn btn-gold" type="submit">Send me the starter kit</button>
       </form>
+      <p class="form-status" hidden></p>
       <small>No spam. Unsubscribe anytime with one click.</small>
     </section>
   </div>
