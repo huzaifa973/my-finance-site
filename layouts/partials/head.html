@@ -27,6 +27,22 @@
 <!-- Google AdSense: only rendered when an ID is configured in hugo.toml [params] -->
 {{ with .Site.Params.adsense_publisher_id }}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>{{ end }}
 
+<!-- Google Analytics 4: only rendered when google_analytics_id is set in hugo.toml [params] -->
+{{ with .Site.Params.google_analytics_id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{ . }}');
+</script>
+{{ end }}
+
+<!-- Cloudflare Web Analytics: only rendered when cloudflare_analytics_token is set in hugo.toml [params] -->
+{{ with .Site.Params.cloudflare_analytics_token }}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{ end }}
+
 <!-- Open Graph -->
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -341,10 +357,38 @@ footer.site{background:#0a3d2c; color:#cfe3d8; margin-top:3rem; padding:2.8rem 0
 .footer-note{font-size:.82rem; color:#9fc3b2; margin:.4rem 0}
 .copyright{font-size:.85rem; color:#9fc3b2; margin:.4rem 0}
 
+/* ---------- Homepage layout + category sidebar (desktop only) ---------- */
+.home-layout{display:flex; gap:2.5rem; align-items:flex-start}
+.home-layout .home-main{flex:1; min-width:0}
+.cat-sidebar{
+  width:280px; flex:0 0 280px; position:sticky; top:96px;
+  background:var(--card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:1.3rem 1.4rem;
+}
+.cat-sidebar h3{margin:0 0 .7rem; font-size:1.05rem; color:var(--accent-dark)}
+.cat-sidebar ul{list-style:none; margin:0; padding:0}
+.cat-sidebar li{margin:.1rem 0}
+.cat-sidebar li a{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:.5rem .6rem; border-radius:8px; color:var(--text);
+  font-weight:600; font-size:.92rem;
+}
+.cat-sidebar li a:hover{background:var(--accent-soft); color:var(--accent); text-decoration:none}
+.cat-sidebar .count{
+  font-size:.72rem; font-weight:800; background:var(--accent-soft);
+  color:var(--accent-dark); border-radius:12px; padding:.12rem .6rem;
+}
+.cat-sidebar .side-note{
+  margin:1rem 0 0; padding-top:1rem; border-top:1px solid var(--border);
+  font-size:.83rem; color:var(--muted);
+}
+
 /* ---------- Responsive ---------- */
 @media(max-width:1024px){
   .sidebar-ad{display:none}
+  .cat-sidebar{display:none}
   .post-layout{gap:0}
+  .home-layout{gap:0}
 }
 @media(max-width:760px){
   .hero{padding:2.8rem 0 2.4rem}
