@@ -383,6 +383,37 @@ footer.site{background:#0a3d2c; color:#cfe3d8; margin-top:3rem; padding:2.8rem 0
   font-size:.83rem; color:var(--muted);
 }
 
+/* ---------- Social links ---------- */
+.social-row{
+  display:flex; align-items:center; gap:1.1rem; flex-wrap:wrap;
+  padding:1.3rem 0; border-top:1px solid rgba(255,255,255,.12); margin-top:.6rem;
+}
+.social-row strong{color:#fff; font-size:.95rem}
+.social-icons{display:flex; gap:.7rem; align-items:center}
+.social-icons a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:42px; height:42px; border-radius:50%;
+  background:rgba(255,255,255,.12); color:#fff;
+  transition:transform .15s ease, background .15s ease;
+}
+.social-icons a:hover{transform:translateY(-2px); text-decoration:none; color:#fff}
+.social-icons a.fb:hover{background:#1877f2}
+.social-icons a.ig:hover{background:#e1306c}
+.social-icons a.tt:hover{background:#000}
+.social-icons a.yt:hover{background:#ff0000}
+.social-icons svg{width:20px; height:20px; fill:currentColor; display:block}
+
+/* ---------- Homepage follow band ---------- */
+.follow-band{
+  background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding:1.8rem 2rem; margin:2.5rem 0;
+  display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;
+}
+.follow-band h2{margin:0 0 .3rem; font-size:1.4rem}
+.follow-band p{margin:0; color:var(--muted); font-size:.95rem}
+.follow-band .social-icons a{background:var(--accent-soft); color:var(--accent-dark)}
+.follow-band .social-icons a:hover{color:#fff}
+
 /* ---------- Responsive ---------- */
 @media(max-width:1024px){
   .sidebar-ad{display:none}
