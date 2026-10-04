@@ -1,6 +1,6 @@
 ---
 title: "Free Money Tools"
-description: "Free tools: 29 calculators and utilities for money, health, passwords, QR codes, writing, design, and everyday conversions. No sign-up, no fees."
+description: "Free tools: 30 calculators and utilities for money, health, passwords, QR codes, writing, design, and everyday conversions. No sign-up, no fees."
 date: 2026-09-29
 draft: false
 ---
@@ -57,6 +57,7 @@ Every tool here is **free to use, no sign-up required** — and everything you e
 
 - [Color Converter (HEX/RGB/HSL)](/tools/color-converter/) — convert colors between formats with a live preview swatch.
 - [Case Converter](/tools/case-converter/) — UPPERCASE, lowercase, Title Case, camelCase, snake_case and 8 more styles, instantly.
+- [Character Counter](/tools/character-counter/) — characters, words, sentences, lines, and reading time as you type.
 - [Lorem Ipsum Generator](/tools/lorem-ipsum-generator/) — placeholder text in paragraphs, words, or sentences, one click to copy.
 
 ## Productivity
