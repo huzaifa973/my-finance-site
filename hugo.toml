@@ -26,7 +26,7 @@ enableRobotsTXT = false
 
 # Site params
 [params]
-  adsense_publisher_id = "" # paste your AdSense publisher ID (ca-pub-...) here to enable ad slots
+  adsense_publisher_id = "ca-pub-8574339224228858" # AdSense linked 2026-10-06; ad slots auto-render
   google_site_verification = "" # paste your Google Search Console verification code here
   google_analytics_id = "G-N8W2MP31D6" # GA4 measurement ID — analytics active
   cloudflare_analytics_token = "" # or paste your Cloudflare Web Analytics beacon token here (alternative to GA4)
