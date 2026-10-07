@@ -59,6 +59,8 @@ Every tool here is **free to use, no sign-up required** — and everything you e
 - [Case Converter](/tools/case-converter/) — UPPERCASE, lowercase, Title Case, camelCase, snake_case and 8 more styles, instantly.
 - [Character Counter](/tools/character-counter/) — characters, words, sentences, lines, and reading time as you type.
 - [Base64 Encoder & Decoder](/tools/base64-encoder-decoder/) — encode text and files to Base64, decode it back, instantly in your browser.
+- [Hash Generator (MD5 & SHA-256)](/tools/hash-generator/) — generate hashes from text or files, with checksum comparison to verify downloads.
+- [Text Diff Checker](/tools/text-diff-checker/) — compare two texts and see every word-level difference highlighted.
 - [Lorem Ipsum Generator](/tools/lorem-ipsum-generator/) — placeholder text in paragraphs, words, or sentences, one click to copy.
 
 ## Productivity
