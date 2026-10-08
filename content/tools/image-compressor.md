@@ -8,102 +8,93 @@ draft: false
 Shrink oversized images before you upload them — faster websites, smaller email attachments, and less storage used. Drop in one image or a whole batch, pick a preset or fine-tune the quality yourself, and compare results side by side. Everything runs in your browser; your files are never uploaded anywhere.
 
 <div class="tool-shell" id="cmpShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Image Compressor</h2>
-        <p>Reduce JPG, PNG &amp; WebP file sizes by up to 90% — right in your browser. Batch supported.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="cmpTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Add your images</p>
-      <div class="dropzone" id="cmpDrop">
-        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-        <strong>Drag &amp; drop images here</strong>
-        <span>or click to browse — JPG, PNG, WebP · batch supported</span>
-        <input type="file" id="cmpFile" accept="image/png,image/jpeg,image/webp">
-      </div>
-      <ul class="file-list" id="cmpList"></ul>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Compression settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="cmpPresets">
-          <button type="button" class="preset-chip active" data-q="80" data-f="webp">🌐 Web — small &amp; sharp</button>
-          <button type="button" class="preset-chip" data-q="65" data-f="jpeg">✉️ Email — tiny files</button>
-          <button type="button" class="preset-chip" data-q="92" data-f="jpeg">🖼️ Max quality</button>
-          <button type="button" class="preset-chip" data-q="100" data-f="png">💎 Lossless PNG</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="cmpQuality">Quality: <span class="val" id="cmpQVal">80%</span></label>
-            <input type="range" id="cmpQuality" min="10" max="100" value="80">
-            <div class="hint">80% is the sweet spot — visually identical, much smaller.</div>
-          </div>
-          <div class="setting">
-            <label for="cmpFormat">Output format</label>
-            <select id="cmpFormat">
-              <option value="webp" selected>WebP — smallest files</option>
-              <option value="jpeg">JPEG — best compatibility</option>
-              <option value="png">PNG — lossless</option>
-            </select>
-            <div class="hint">WebP gives the smallest files at equal quality.</div>
-          </div>
-          <div class="setting">
-            <label for="cmpMaxW">Max width <span class="val" id="cmpWVal">Original</span></label>
-            <input type="range" id="cmpMaxW" min="320" max="4000" step="10" value="4000">
-            <div class="hint">Downscale huge photos to shrink files further.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Compress &amp; download</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="cmpBtn" disabled>
-          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          Compress Images
-        </button>
-        <button type="button" class="btn-pro-outline" id="cmpClear" disabled>Clear all</button>
-      </div>
-      <div class="progress-wrap" id="cmpProgWrap">
-        <div class="progress-bar"><i id="cmpProgBar"></i></div>
-        <div class="progress-text" id="cmpProgText">Working…</div>
-      </div>
-      <div class="results" id="cmpResults">
-        <p class="result-head">✅ Done — your compressed images</p>
-        <div class="result-summary" id="cmpSummary"></div>
-        <div class="result-grid" id="cmpGrid"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — compress as many images as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Image Compressor</h2>
+<p>Reduce JPG, PNG &amp; WebP file sizes by up to 90% — right in your browser. Batch supported.</p>
+</div>
+<button type="button" class="theme-toggle" id="cmpTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Add your images</p>
+<div class="dropzone" id="cmpDrop">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop images here</strong>
+<span>or click to browse — JPG, PNG, WebP · batch supported</span>
+<input type="file" id="cmpFile" accept="image/png,image/jpeg,image/webp">
+</div>
+<ul class="file-list" id="cmpList"></ul>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Compression settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="cmpPresets">
+<button type="button" class="preset-chip active" data-q="80" data-f="webp">🌐 Web — small &amp; sharp</button>
+<button type="button" class="preset-chip" data-q="65" data-f="jpeg">✉️ Email — tiny files</button>
+<button type="button" class="preset-chip" data-q="92" data-f="jpeg">🖼️ Max quality</button>
+<button type="button" class="preset-chip" data-q="100" data-f="png">💎 Lossless PNG</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="cmpQuality">Quality: <span class="val" id="cmpQVal">80%</span></label>
+<input type="range" id="cmpQuality" min="10" max="100" value="80">
+<div class="hint">80% is the sweet spot — visually identical, much smaller.</div>
+</div>
+<div class="setting">
+<label for="cmpFormat">Output format</label>
+<select id="cmpFormat">
+<option value="webp" selected>WebP — smallest files</option>
+<option value="jpeg">JPEG — best compatibility</option>
+<option value="png">PNG — lossless</option>
+</select>
+<div class="hint">WebP gives the smallest files at equal quality.</div>
+</div>
+<div class="setting">
+<label for="cmpMaxW">Max width <span class="val" id="cmpWVal">Original</span></label>
+<input type="range" id="cmpMaxW" min="320" max="4000" step="10" value="4000">
+<div class="hint">Downscale huge photos to shrink files further.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Compress &amp; download</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="cmpBtn" disabled>
+<svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+Compress Images
+</button>
+<button type="button" class="btn-pro-outline" id="cmpClear" disabled>Clear all</button>
+</div>
+<div class="progress-wrap" id="cmpProgWrap">
+<div class="progress-bar"><i id="cmpProgBar"></i></div>
+<div class="progress-text" id="cmpProgText">Working…</div>
+</div>
+<div class="results" id="cmpResults">
+<p class="result-head">✅ Done — your compressed images</p>
+<div class="result-summary" id="cmpSummary"></div>
+<div class="result-grid" id="cmpGrid"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — compress as many images as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('cmpShell');

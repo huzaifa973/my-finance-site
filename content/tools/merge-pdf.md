@@ -10,83 +10,74 @@ Combine invoices, resumes, applications, or scanned documents into a single PDF 
 ## How it works
 
 <div class="tool-shell" id="mpShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Merge PDF</h2>
-        <p>Combine multiple PDFs into one file — reorder by dragging, all in your browser.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="mpTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Add your PDF files</p>
-      <div class="dropzone" id="mpDrop">
-        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-        <strong>Drag &amp; drop PDFs here</strong>
-        <span>or click to browse — PDFs only</span>
-        <input type="file" id="mpFile" accept="application/pdf" multiple>
-      </div>
-      <ul class="file-list" id="mpList"></ul>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Merge settings</p>
-      <div class="settings-panel">
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="mpName">Output filename</label>
-            <input type="text" id="mpName" class="tool-input" value="merged.pdf">
-            <div class="hint">Tip: drag the file rows up/down to change the merge order.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Merge &amp; download</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="mpBtn" disabled>
-          <svg viewBox="0 0 24 24"><path d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z"/></svg>
-          Merge PDFs
-        </button>
-        <button type="button" class="btn-pro-outline" id="mpClear" disabled>Clear all</button>
-      </div>
-      <div class="results" id="mpResults">
-        <p class="result-head">✅ Merged</p>
-        <div class="result-summary" id="mpStatus"></div>
-        <div class="tool-actions" style="margin-top:.8rem;">
-          <button type="button" class="btn-pro" id="mpDownload">
-            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            Download merged PDF
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — merge as many PDFs as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Merge PDF</h2>
+<p>Combine multiple PDFs into one file — reorder by dragging, all in your browser.</p>
+</div>
+<button type="button" class="theme-toggle" id="mpTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Add your PDF files</p>
+<div class="dropzone" id="mpDrop">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop PDFs here</strong>
+<span>or click to browse — PDFs only</span>
+<input type="file" id="mpFile" accept="application/pdf" multiple>
+</div>
+<ul class="file-list" id="mpList"></ul>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Merge settings</p>
+<div class="settings-panel">
+<div class="settings-grid">
+<div class="setting">
+<label for="mpName">Output filename</label>
+<input type="text" id="mpName" class="tool-input" value="merged.pdf">
+<div class="hint">Tip: drag the file rows up/down to change the merge order.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Merge &amp; download</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="mpBtn" disabled>
+<svg viewBox="0 0 24 24"><path d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z"/></svg>
+Merge PDFs
+</button>
+<button type="button" class="btn-pro-outline" id="mpClear" disabled>Clear all</button>
+</div>
+<div class="results" id="mpResults">
+<p class="result-head">✅ Merged</p>
+<div class="result-summary" id="mpStatus"></div>
+<div class="tool-actions" style="margin-top:.8rem;">
+<button type="button" class="btn-pro" id="mpDownload">
+<svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+Download merged PDF
+</button>
+</div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — merge as many PDFs as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
 <script>
 (function(){

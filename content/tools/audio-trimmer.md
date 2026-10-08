@@ -10,88 +10,79 @@ Cut the perfect clip out of any audio file — ringtones, podcast highlights, vo
 ## How it works
 
 <div class="tool-shell" id="atShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Audio Trimmer</h2>
-        <p>Cut MP3, WAV &amp; OGG on the waveform — preview and download your clip in seconds.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="atTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Add your audio file</p>
-      <div class="dropzone" id="atDrop">
-        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-        <strong>Drag &amp; drop your audio here</strong>
-        <span>or click to browse — MP3, WAV, OGG</span>
-        <input type="file" id="atFile" accept="audio/*">
-      </div>
-      <ul class="file-list" id="atList"></ul>
-    </div>
-
-    <div class="tool-step" id="atPanel" style="display:none;">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Set your trim points</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="atPresets">
-          <button type="button" class="preset-chip" data-p="first30">⏱ First 30 seconds</button>
-          <button type="button" class="preset-chip" data-p="last30">⏱ Last 30 seconds</button>
-          <button type="button" class="preset-chip" data-p="full">⏪ Whole file</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="atStart">Start (seconds)</label>
-            <input type="number" id="atStart" class="tool-input" min="0" step="0.1" value="0">
-          </div>
-          <div class="setting">
-            <label for="atEnd">End (seconds)</label>
-            <input type="number" id="atEnd" class="tool-input" min="0" step="0.1" value="0">
-          </div>
-        </div>
-        <div class="hint">Click on the waveform to jump: left-click sets the start point, right-click sets the end point. Blue = your selected clip.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Preview, trim &amp; download</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="atTrimBtn">
-          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          Trim &amp; download
-        </button>
-        <button type="button" class="btn-pro-outline" id="atPlayBtn">▶ Preview selection</button>
-        <button type="button" class="btn-pro-outline" id="atStopBtn">⏹ Stop</button>
-      </div>
-      <div class="results" id="atResults">
-        <p class="result-head">🎵 Waveform — click to set trim points</p>
-        <div class="result-summary" id="atInfo">Add an audio file above to see its waveform.</div>
-        <canvas id="atWave" style="width:100%;height:140px;border-radius:8px;background:#f8fafc;cursor:crosshair;display:none;"></canvas>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — trim as many audio files as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Audio Trimmer</h2>
+<p>Cut MP3, WAV &amp; OGG on the waveform — preview and download your clip in seconds.</p>
+</div>
+<button type="button" class="theme-toggle" id="atTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Add your audio file</p>
+<div class="dropzone" id="atDrop">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop your audio here</strong>
+<span>or click to browse — MP3, WAV, OGG</span>
+<input type="file" id="atFile" accept="audio/*">
+</div>
+<ul class="file-list" id="atList"></ul>
+</div>
+<div class="tool-step" id="atPanel" style="display:none;">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Set your trim points</p>
+<div class="settings-panel">
+<div class="preset-row" id="atPresets">
+<button type="button" class="preset-chip" data-p="first30">⏱ First 30 seconds</button>
+<button type="button" class="preset-chip" data-p="last30">⏱ Last 30 seconds</button>
+<button type="button" class="preset-chip" data-p="full">⏪ Whole file</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="atStart">Start (seconds)</label>
+<input type="number" id="atStart" class="tool-input" min="0" step="0.1" value="0">
+</div>
+<div class="setting">
+<label for="atEnd">End (seconds)</label>
+<input type="number" id="atEnd" class="tool-input" min="0" step="0.1" value="0">
+</div>
+</div>
+<div class="hint">Click on the waveform to jump: left-click sets the start point, right-click sets the end point. Blue = your selected clip.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Preview, trim &amp; download</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="atTrimBtn">
+<svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+Trim &amp; download
+</button>
+<button type="button" class="btn-pro-outline" id="atPlayBtn">▶ Preview selection</button>
+<button type="button" class="btn-pro-outline" id="atStopBtn">⏹ Stop</button>
+</div>
+<div class="results" id="atResults">
+<p class="result-head">🎵 Waveform — click to set trim points</p>
+<div class="result-summary" id="atInfo">Add an audio file above to see its waveform.</div>
+<canvas id="atWave" style="width:100%;height:140px;border-radius:8px;background:#f8fafc;cursor:crosshair;display:none;"></canvas>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — trim as many audio files as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('atShell');

@@ -10,105 +10,96 @@ draft: false
 Three common percentage calculations in one place — discounts, tips, price changes, grades, and more.
 
 <div class="tool-shell" id="pctShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M18.5 3h-13A2.5 2.5 0 0 0 3 5.5v13A2.5 2.5 0 0 0 5.5 21h13a2.5 2.5 0 0 0 2.5-2.5v-13A2.5 2.5 0 0 0 18.5 3zM7 8a2 2 0 1 1 2 2 2 2 0 0 1-2-2zm10 8L8.5 7.5l1-1L18 15l-1 1zm0-2a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Percentage Calculator</h2>
-        <p>Discounts, tips, price changes, grades — three calculators in one.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="pctTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> What is X% of Y?</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="p1x">X (%)</label>
-          <input type="number" id="p1x" class="tool-input" placeholder="20">
-        </div>
-        <div class="setting">
-          <label for="p1y">of Y</label>
-          <input type="number" id="p1y" class="tool-input" placeholder="150">
-        </div>
-        <div class="setting">
-          <label>&nbsp;</label>
-          <button type="button" class="btn-pro" id="p1Btn">Calculate</button>
-        </div>
-      </div>
-      <div class="results" id="pctR1Box"><div class="result-card" id="pctR1"></div></div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> X is what % of Y?</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="p2x">X</label>
-          <input type="number" id="p2x" class="tool-input" placeholder="45">
-        </div>
-        <div class="setting">
-          <label for="p2y">of Y</label>
-          <input type="number" id="p2y" class="tool-input" placeholder="200">
-        </div>
-        <div class="setting">
-          <label>&nbsp;</label>
-          <button type="button" class="btn-pro" id="p2Btn">Calculate</button>
-        </div>
-      </div>
-      <div class="results" id="pctR2Box"><div class="result-card" id="pctR2"></div></div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Percentage change (increase / decrease)</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="pctPresets">
-          <button type="button" class="preset-chip" data-calc="1" data-a="20" data-b="150">🏷️ 20% off $150</button>
-          <button type="button" class="preset-chip" data-calc="1" data-a="15" data-b="64">💵 15% tip on $64</button>
-          <button type="button" class="preset-chip" data-calc="3" data-a="80" data-b="100">📈 Change 80 → 100</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="p3from">From</label>
-            <input type="number" id="p3from" class="tool-input" placeholder="80">
-          </div>
-          <div class="setting">
-            <label for="p3to">To</label>
-            <input type="number" id="p3to" class="tool-input" placeholder="100">
-          </div>
-          <div class="setting">
-            <label>&nbsp;</label>
-            <button type="button" class="btn-pro" id="p3Btn">Calculate</button>
-          </div>
-        </div>
-      </div>
-      <div class="results" id="pctR3Box"><div class="result-card" id="pctR3"></div></div>
-      <div class="tool-actions" style="margin-top:1rem;">
-        <button type="button" class="btn-pro-outline" id="pctClear">Clear all</button>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — calculate as many percentages as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M18.5 3h-13A2.5 2.5 0 0 0 3 5.5v13A2.5 2.5 0 0 0 5.5 21h13a2.5 2.5 0 0 0 2.5-2.5v-13A2.5 2.5 0 0 0 18.5 3zM7 8a2 2 0 1 1 2 2 2 2 0 0 1-2-2zm10 8L8.5 7.5l1-1L18 15l-1 1zm0-2a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Percentage Calculator</h2>
+<p>Discounts, tips, price changes, grades — three calculators in one.</p>
+</div>
+<button type="button" class="theme-toggle" id="pctTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> What is X% of Y?</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="p1x">X (%)</label>
+<input type="number" id="p1x" class="tool-input" placeholder="20">
+</div>
+<div class="setting">
+<label for="p1y">of Y</label>
+<input type="number" id="p1y" class="tool-input" placeholder="150">
+</div>
+<div class="setting">
+<label>&nbsp;</label>
+<button type="button" class="btn-pro" id="p1Btn">Calculate</button>
+</div>
+</div>
+<div class="results" id="pctR1Box"><div class="result-card" id="pctR1"></div></div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> X is what % of Y?</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="p2x">X</label>
+<input type="number" id="p2x" class="tool-input" placeholder="45">
+</div>
+<div class="setting">
+<label for="p2y">of Y</label>
+<input type="number" id="p2y" class="tool-input" placeholder="200">
+</div>
+<div class="setting">
+<label>&nbsp;</label>
+<button type="button" class="btn-pro" id="p2Btn">Calculate</button>
+</div>
+</div>
+<div class="results" id="pctR2Box"><div class="result-card" id="pctR2"></div></div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Percentage change (increase / decrease)</p>
+<div class="settings-panel">
+<div class="preset-row" id="pctPresets">
+<button type="button" class="preset-chip" data-calc="1" data-a="20" data-b="150">🏷️ 20% off $150</button>
+<button type="button" class="preset-chip" data-calc="1" data-a="15" data-b="64">💵 15% tip on $64</button>
+<button type="button" class="preset-chip" data-calc="3" data-a="80" data-b="100">📈 Change 80 → 100</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="p3from">From</label>
+<input type="number" id="p3from" class="tool-input" placeholder="80">
+</div>
+<div class="setting">
+<label for="p3to">To</label>
+<input type="number" id="p3to" class="tool-input" placeholder="100">
+</div>
+<div class="setting">
+<label>&nbsp;</label>
+<button type="button" class="btn-pro" id="p3Btn">Calculate</button>
+</div>
+</div>
+</div>
+<div class="results" id="pctR3Box"><div class="result-card" id="pctR3"></div></div>
+<div class="tool-actions" style="margin-top:1rem;">
+<button type="button" class="btn-pro-outline" id="pctClear">Clear all</button>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — calculate as many percentages as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('pctShell');

@@ -10,86 +10,77 @@ draft: false
 Pick a category, enter a value, choose the units — the conversion happens instantly.
 
 <div class="tool-shell" id="ucShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Unit Converter</h2>
-        <p>Convert length, weight, and temperature instantly — miles to km, kg to lbs, °C to °F and more.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="ucTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter a value</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="ucVal">Value</label>
-          <input type="number" class="tool-input" id="ucVal" placeholder="1">
-        </div>
-        <div class="setting">
-          <label for="ucFrom">From</label>
-          <select id="ucFrom" class="tool-input"></select>
-        </div>
-        <div class="setting">
-          <label for="ucTo">To</label>
-          <select id="ucTo" class="tool-input"></select>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Conversion settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="ucCats">
-          <button type="button" class="preset-chip active" data-cat="length">📏 Length</button>
-          <button type="button" class="preset-chip" data-cat="weight">⚖️ Weight</button>
-          <button type="button" class="preset-chip" data-cat="temp">🌡️ Temperature</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="ucDec">Decimal places: <span class="val" id="ucDecVal">4</span></label>
-            <input type="range" id="ucDec" min="0" max="8" step="1" value="4">
-            <div class="hint">Fewer decimals for quick estimates, more for precise work.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Your conversion</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro-outline" id="ucCopy">📋 Copy result</button>
-        <button type="button" class="btn-pro-outline" id="ucClear">Clear</button>
-      </div>
-      <div class="results show">
-        <p class="result-head">🔄 Result</p>
-        <div class="result-summary" id="ucResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — convert as many values as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Unit Converter</h2>
+<p>Convert length, weight, and temperature instantly — miles to km, kg to lbs, °C to °F and more.</p>
+</div>
+<button type="button" class="theme-toggle" id="ucTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter a value</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="ucVal">Value</label>
+<input type="number" class="tool-input" id="ucVal" placeholder="1">
+</div>
+<div class="setting">
+<label for="ucFrom">From</label>
+<select id="ucFrom" class="tool-input"></select>
+</div>
+<div class="setting">
+<label for="ucTo">To</label>
+<select id="ucTo" class="tool-input"></select>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Conversion settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="ucCats">
+<button type="button" class="preset-chip active" data-cat="length">📏 Length</button>
+<button type="button" class="preset-chip" data-cat="weight">⚖️ Weight</button>
+<button type="button" class="preset-chip" data-cat="temp">🌡️ Temperature</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="ucDec">Decimal places: <span class="val" id="ucDecVal">4</span></label>
+<input type="range" id="ucDec" min="0" max="8" step="1" value="4">
+<div class="hint">Fewer decimals for quick estimates, more for precise work.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Your conversion</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro-outline" id="ucCopy">📋 Copy result</button>
+<button type="button" class="btn-pro-outline" id="ucClear">Clear</button>
+</div>
+<div class="results show">
+<p class="result-head">🔄 Result</p>
+<div class="result-summary" id="ucResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — convert as many values as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('ucShell');

@@ -8,81 +8,72 @@ draft: false
 The **debt snowball method** means attacking your smallest balance first while paying minimums on everything else. When one debt is gone, you roll its payment into the next. Those early wins keep you motivated — and the math still beats paying minimums forever.
 
 <div class="tool-shell" id="snowShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Debt Snowball Calculator</h2>
-        <p>List your debts and see your smallest-first payoff plan, months to debt-free, and interest saved.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="snowTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Add your debts</p>
-      <p style="margin:0 0 .8rem;font-size:.92rem;color:var(--tp-muted)">Add up to 10 debts — order doesn't matter, we sort smallest balance first.</p>
-      <div id="snowDebts"></div>
-      <button type="button" class="btn-pro-outline" id="snowAdd">＋ Add a debt</button>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Extra payment</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="snowPresets">
-          <button type="button" class="preset-chip active" data-x="0">$0 extra</button>
-          <button type="button" class="preset-chip" data-x="50">$50 extra</button>
-          <button type="button" class="preset-chip" data-x="100">$100 extra</button>
-          <button type="button" class="preset-chip" data-x="250">$250 extra</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="snowExtraRange">Extra you can pay each month: <span class="val" id="snowExtraVal">$0</span></label>
-            <input type="range" id="snowExtraRange" min="0" max="2000" step="10" value="0">
-            <input type="number" id="snowExtra" class="tool-input" placeholder="e.g. 100" min="0" value="0" style="margin-top:.4rem">
-            <div class="hint">Even $50/month on top of minimums dramatically shortens the plan.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Build your payoff plan</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="snowBtn">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-          Calculate payoff plan
-        </button>
-        <button type="button" class="btn-pro-outline" id="snowClear">Clear all</button>
-      </div>
-      <div class="results" id="snowResults">
-        <p class="result-head">❄️ Your snowball plan</p>
-        <div class="result-summary" id="snowSummary"></div>
-        <div id="snowDetail"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Model as many payoff scenarios as you like — everything stays in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Debt Snowball Calculator</h2>
+<p>List your debts and see your smallest-first payoff plan, months to debt-free, and interest saved.</p>
+</div>
+<button type="button" class="theme-toggle" id="snowTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Add your debts</p>
+<p style="margin:0 0 .8rem;font-size:.92rem;color:var(--tp-muted)">Add up to 10 debts — order doesn't matter, we sort smallest balance first.</p>
+<div id="snowDebts"></div>
+<button type="button" class="btn-pro-outline" id="snowAdd">＋ Add a debt</button>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Extra payment</p>
+<div class="settings-panel">
+<div class="preset-row" id="snowPresets">
+<button type="button" class="preset-chip active" data-x="0">$0 extra</button>
+<button type="button" class="preset-chip" data-x="50">$50 extra</button>
+<button type="button" class="preset-chip" data-x="100">$100 extra</button>
+<button type="button" class="preset-chip" data-x="250">$250 extra</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="snowExtraRange">Extra you can pay each month: <span class="val" id="snowExtraVal">$0</span></label>
+<input type="range" id="snowExtraRange" min="0" max="2000" step="10" value="0">
+<input type="number" id="snowExtra" class="tool-input" placeholder="e.g. 100" min="0" value="0" style="margin-top:.4rem">
+<div class="hint">Even $50/month on top of minimums dramatically shortens the plan.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Build your payoff plan</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="snowBtn">
+<svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+Calculate payoff plan
+</button>
+<button type="button" class="btn-pro-outline" id="snowClear">Clear all</button>
+</div>
+<div class="results" id="snowResults">
+<p class="result-head">❄️ Your snowball plan</p>
+<div class="result-summary" id="snowSummary"></div>
+<div id="snowDetail"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Model as many payoff scenarios as you like — everything stays in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('snowShell');

@@ -10,83 +10,74 @@ Paste or type your text below, then click any style to convert it instantly. Wor
 ## How it works
 
 <div class="tool-shell" id="csShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M2.5 4v3h5v12h3V7h5V4h-13zm19 5h-9v3h3v7h3v-7h3V9z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Case Converter</h2>
-        <p>13 text styles — UPPERCASE, Title Case, camelCase &amp; more — applied in one click.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="csTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter your text</p>
-      <div class="setting">
-        <label for="csInput">Your text</label>
-        <textarea id="csInput" class="tool-input" rows="6" placeholder="Type or paste your text here…" style="resize:vertical;"></textarea>
-        <div class="hint">Stats update live as you type.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Pick a conversion style</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="csModes">
-          <button type="button" class="preset-chip" data-m="upper">UPPERCASE</button>
-          <button type="button" class="preset-chip" data-m="lower">lowercase</button>
-          <button type="button" class="preset-chip" data-m="sentence">Sentence case</button>
-          <button type="button" class="preset-chip" data-m="title">Title Case</button>
-          <button type="button" class="preset-chip" data-m="capital">Capitalize Each Word</button>
-          <button type="button" class="preset-chip" data-m="toggle">aLtErNaTiNg</button>
-          <button type="button" class="preset-chip" data-m="inverse">InVeRsE cAsE</button>
-          <button type="button" class="preset-chip" data-m="camel">camelCase</button>
-          <button type="button" class="preset-chip" data-m="pascal">PascalCase</button>
-          <button type="button" class="preset-chip" data-m="snake">snake_case</button>
-          <button type="button" class="preset-chip" data-m="kebab">kebab-case</button>
-          <button type="button" class="preset-chip" data-m="constant">CONSTANT_CASE</button>
-          <button type="button" class="preset-chip" data-m="dot">dot.case</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Copy your converted text</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="csCopyBtn">Copy result</button>
-        <button type="button" class="btn-pro-outline" id="csClearBtn">Clear</button>
-      </div>
-      <div class="results show" id="csResults">
-        <p class="result-head">📝 Converted result</p>
-        <textarea id="csOutput" class="tool-output" rows="6" readonly placeholder="Your converted text will appear here…" style="resize:vertical;"></textarea>
-        <div class="result-summary" style="margin-top:.6rem;">
-          <span id="csStats" style="font-size:.9rem;">0 characters · 0 words · 0 lines</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — convert as much text as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M2.5 4v3h5v12h3V7h5V4h-13zm19 5h-9v3h3v7h3v-7h3V9z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Case Converter</h2>
+<p>13 text styles — UPPERCASE, Title Case, camelCase &amp; more — applied in one click.</p>
+</div>
+<button type="button" class="theme-toggle" id="csTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter your text</p>
+<div class="setting">
+<label for="csInput">Your text</label>
+<textarea id="csInput" class="tool-input" rows="6" placeholder="Type or paste your text here…" style="resize:vertical;"></textarea>
+<div class="hint">Stats update live as you type.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Pick a conversion style</p>
+<div class="settings-panel">
+<div class="preset-row" id="csModes">
+<button type="button" class="preset-chip" data-m="upper">UPPERCASE</button>
+<button type="button" class="preset-chip" data-m="lower">lowercase</button>
+<button type="button" class="preset-chip" data-m="sentence">Sentence case</button>
+<button type="button" class="preset-chip" data-m="title">Title Case</button>
+<button type="button" class="preset-chip" data-m="capital">Capitalize Each Word</button>
+<button type="button" class="preset-chip" data-m="toggle">aLtErNaTiNg</button>
+<button type="button" class="preset-chip" data-m="inverse">InVeRsE cAsE</button>
+<button type="button" class="preset-chip" data-m="camel">camelCase</button>
+<button type="button" class="preset-chip" data-m="pascal">PascalCase</button>
+<button type="button" class="preset-chip" data-m="snake">snake_case</button>
+<button type="button" class="preset-chip" data-m="kebab">kebab-case</button>
+<button type="button" class="preset-chip" data-m="constant">CONSTANT_CASE</button>
+<button type="button" class="preset-chip" data-m="dot">dot.case</button>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Copy your converted text</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="csCopyBtn">Copy result</button>
+<button type="button" class="btn-pro-outline" id="csClearBtn">Clear</button>
+</div>
+<div class="results show" id="csResults">
+<p class="result-head">📝 Converted result</p>
+<textarea id="csOutput" class="tool-output" rows="6" readonly placeholder="Your converted text will appear here…" style="resize:vertical;"></textarea>
+<div class="result-summary" style="margin-top:.6rem;">
+<span id="csStats" style="font-size:.9rem;">0 characters · 0 words · 0 lines</span>
+</div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — convert as much text as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('csShell');
