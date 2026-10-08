@@ -87,6 +87,7 @@ Calculate
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('tipShell');

@@ -92,6 +92,7 @@ How much car can I afford?
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('caShell');

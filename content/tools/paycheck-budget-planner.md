@@ -83,6 +83,7 @@ Plan my paycheck
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('pbShell');
