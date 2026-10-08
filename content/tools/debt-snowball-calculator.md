@@ -74,6 +74,7 @@ Calculate payoff plan
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('snowShell');

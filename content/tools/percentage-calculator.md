@@ -100,6 +100,7 @@ Three common percentage calculations in one place — discounts, tips, price cha
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('pctShell');

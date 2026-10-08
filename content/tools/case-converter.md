@@ -78,6 +78,7 @@ Paste or type your text below, then click any style to convert it instantly. Wor
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('csShell');

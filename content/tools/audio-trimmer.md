@@ -83,6 +83,7 @@ Trim &amp; download
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('atShell');

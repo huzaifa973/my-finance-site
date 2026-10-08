@@ -77,6 +77,7 @@ Is $75,000 a year actually good pay per hour? This free converter turns any annu
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('shShell');
