@@ -8,92 +8,83 @@ draft: false
 A mortgage is usually the biggest bill of your life, so knowing the real monthly payment before you fall in love with a house matters. This free calculator breaks your payment into principal and interest — and shows how much of the first payment actually builds your equity.
 
 <div class="tool-shell" id="mgShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Mortgage Payment Calculator</h2>
-        <p>See your real monthly payment — principal vs interest — before you buy.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="mgTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Your loan details</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="mgPrice">Home price</label>
-          <input type="number" id="mgPrice" class="tool-input" placeholder="e.g. 350000" min="1">
-        </div>
-        <div class="setting">
-          <label for="mgDown">Down payment</label>
-          <input type="number" id="mgDown" class="tool-input" placeholder="e.g. 70000" min="0">
-        </div>
-        <div class="setting">
-          <label for="mgRate">Annual interest rate (%)</label>
-          <input type="number" id="mgRate" class="tool-input" placeholder="e.g. 6.5" min="0" max="30" step="0.01">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Loan term</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="mgPresets">
-          <button type="button" class="preset-chip" data-term="15">📅 15 years</button>
-          <button type="button" class="preset-chip" data-term="20">📅 20 years</button>
-          <button type="button" class="preset-chip active" data-term="30">📅 30 years</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="mgTerm">Loan term</label>
-            <select id="mgTerm" class="tool-input">
-              <option value="15">15 years</option>
-              <option value="20">20 years</option>
-              <option value="30" selected>30 years</option>
-            </select>
-            <div class="hint">Shorter terms mean higher payments but far less total interest.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Calculate payment</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="mgBtn">
-          <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-          Calculate payment
-        </button>
-        <button type="button" class="btn-pro-outline" id="mgClear">Clear</button>
-      </div>
-      <div class="results" id="mgResults">
-        <div class="result-card" id="mgResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — run as many scenarios as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Mortgage Payment Calculator</h2>
+<p>See your real monthly payment — principal vs interest — before you buy.</p>
+</div>
+<button type="button" class="theme-toggle" id="mgTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Your loan details</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="mgPrice">Home price</label>
+<input type="number" id="mgPrice" class="tool-input" placeholder="e.g. 350000" min="1">
+</div>
+<div class="setting">
+<label for="mgDown">Down payment</label>
+<input type="number" id="mgDown" class="tool-input" placeholder="e.g. 70000" min="0">
+</div>
+<div class="setting">
+<label for="mgRate">Annual interest rate (%)</label>
+<input type="number" id="mgRate" class="tool-input" placeholder="e.g. 6.5" min="0" max="30" step="0.01">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Loan term</p>
+<div class="settings-panel">
+<div class="preset-row" id="mgPresets">
+<button type="button" class="preset-chip" data-term="15">📅 15 years</button>
+<button type="button" class="preset-chip" data-term="20">📅 20 years</button>
+<button type="button" class="preset-chip active" data-term="30">📅 30 years</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="mgTerm">Loan term</label>
+<select id="mgTerm" class="tool-input">
+<option value="15">15 years</option>
+<option value="20">20 years</option>
+<option value="30" selected>30 years</option>
+</select>
+<div class="hint">Shorter terms mean higher payments but far less total interest.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Calculate payment</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="mgBtn">
+<svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+Calculate payment
+</button>
+<button type="button" class="btn-pro-outline" id="mgClear">Clear</button>
+</div>
+<div class="results" id="mgResults">
+<div class="result-card" id="mgResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — run as many scenarios as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('mgShell');

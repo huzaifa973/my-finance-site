@@ -10,96 +10,87 @@ Convert any image between PNG, JPG, and WebP — for smaller files, better compa
 ## How it works
 
 <div class="tool-shell" id="fcShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Image Format Converter</h2>
-        <p>Convert PNG, JPG, GIF &amp; BMP to WebP, JPG, or PNG — in bulk, right in your browser.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="fcTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Add your images</p>
-      <div class="dropzone" id="fcDrop">
-        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-        <strong>Drag &amp; drop images here</strong>
-        <span>or click to browse — PNG, JPG, WebP, GIF, BMP · batch supported</span>
-        <input type="file" id="fcFile" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp" multiple>
-      </div>
-      <ul class="file-list" id="fcList"></ul>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Conversion settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="fcPresets">
-          <button type="button" class="preset-chip active" data-f="webp" data-q="85">🌐 Web — WebP 85%</button>
-          <button type="button" class="preset-chip" data-f="jpeg" data-q="70">✉️ Email — JPG 70%</button>
-          <button type="button" class="preset-chip" data-f="png" data-q="100">💎 Print — PNG lossless</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="fcFormat">Convert to</label>
-            <select id="fcFormat">
-              <option value="webp" selected>WebP (smallest, modern)</option>
-              <option value="jpeg">JPG / JPEG (universal)</option>
-              <option value="png">PNG (lossless)</option>
-            </select>
-            <div class="hint">WebP cuts file size by 25–35% with no visible quality loss.</div>
-          </div>
-          <div class="setting" id="fcQSetting">
-            <label for="fcQuality">Quality: <span class="val" id="fcQVal">85%</span></label>
-            <input type="range" id="fcQuality" min="10" max="100" value="85">
-            <div class="hint">85% is the sweet spot for photos.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Convert &amp; download</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="fcBtn" disabled>
-          <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-          Convert Images
-        </button>
-        <button type="button" class="btn-pro-outline" id="fcClear" disabled>Clear all</button>
-      </div>
-      <div class="progress-wrap" id="fcProgWrap">
-        <div class="progress-bar"><i id="fcProgBar"></i></div>
-        <div class="progress-text" id="fcProgText">Working…</div>
-      </div>
-      <div class="results" id="fcResults">
-        <p class="result-head">✅ Done — your converted images</p>
-        <div class="result-summary" id="fcSummary"></div>
-        <div class="result-grid" id="fcGrid"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Convert as many images as you like — everything runs in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Image Format Converter</h2>
+<p>Convert PNG, JPG, GIF &amp; BMP to WebP, JPG, or PNG — in bulk, right in your browser.</p>
+</div>
+<button type="button" class="theme-toggle" id="fcTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Add your images</p>
+<div class="dropzone" id="fcDrop">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop images here</strong>
+<span>or click to browse — PNG, JPG, WebP, GIF, BMP · batch supported</span>
+<input type="file" id="fcFile" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp" multiple>
+</div>
+<ul class="file-list" id="fcList"></ul>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Conversion settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="fcPresets">
+<button type="button" class="preset-chip active" data-f="webp" data-q="85">🌐 Web — WebP 85%</button>
+<button type="button" class="preset-chip" data-f="jpeg" data-q="70">✉️ Email — JPG 70%</button>
+<button type="button" class="preset-chip" data-f="png" data-q="100">💎 Print — PNG lossless</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="fcFormat">Convert to</label>
+<select id="fcFormat">
+<option value="webp" selected>WebP (smallest, modern)</option>
+<option value="jpeg">JPG / JPEG (universal)</option>
+<option value="png">PNG (lossless)</option>
+</select>
+<div class="hint">WebP cuts file size by 25–35% with no visible quality loss.</div>
+</div>
+<div class="setting" id="fcQSetting">
+<label for="fcQuality">Quality: <span class="val" id="fcQVal">85%</span></label>
+<input type="range" id="fcQuality" min="10" max="100" value="85">
+<div class="hint">85% is the sweet spot for photos.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Convert &amp; download</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="fcBtn" disabled>
+<svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+Convert Images
+</button>
+<button type="button" class="btn-pro-outline" id="fcClear" disabled>Clear all</button>
+</div>
+<div class="progress-wrap" id="fcProgWrap">
+<div class="progress-bar"><i id="fcProgBar"></i></div>
+<div class="progress-text" id="fcProgText">Working…</div>
+</div>
+<div class="results" id="fcResults">
+<p class="result-head">✅ Done — your converted images</p>
+<div class="result-summary" id="fcSummary"></div>
+<div class="result-grid" id="fcGrid"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Convert as many images as you like — everything runs in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('fcShell');

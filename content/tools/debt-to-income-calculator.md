@@ -8,86 +8,77 @@ draft: false
 Your **debt-to-income ratio (DTI)** is the number lenders check first — it's your monthly debt payments divided by your gross monthly income. A lower DTI means more borrowing power and less stress. This free calculator gives you your ratio and a plain-English rating.
 
 <div class="tool-shell" id="dtiShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Debt-to-Income Calculator</h2>
-        <p>Find the ratio lenders check first — and get a plain-English rating of where you stand.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="dtiTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Your numbers</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="dtiIncome">Gross monthly income (before taxes)</label>
-          <input type="number" id="dtiIncome" class="tool-input" placeholder="e.g. 6000" min="1">
-        </div>
-        <div class="setting">
-          <label for="dtiDebts">Total monthly debt payments (mortgage/rent, loans, credit cards, car…)</label>
-          <input type="number" id="dtiDebts" class="tool-input" placeholder="e.g. 1800" min="0">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Try a scenario</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="dtiPresets">
-          <button type="button" class="preset-chip" data-i="6000" data-d="1800">🏠 Renter couple — $6k / $1.8k</button>
-          <button type="button" class="preset-chip" data-i="4500" data-d="2000">🏡 Mortgaged — $4.5k / $2k</button>
-          <button type="button" class="preset-chip" data-i="8000" data-d="1500">💼 High earner — $8k / $1.5k</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="dtiDebtsRange">Debt payments slider: <span class="val" id="dtiDebtsVal">$0</span></label>
-            <input type="range" id="dtiDebtsRange" min="0" max="10000" step="50" value="0">
-            <div class="hint">Drag to see how paying down debt moves your ratio in real time.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Get your DTI rating</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="dtiBtn">
-          <svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/></svg>
-          Calculate my DTI
-        </button>
-        <button type="button" class="btn-pro-outline" id="dtiClear">Clear</button>
-      </div>
-      <div class="results" id="dtiResults">
-        <p class="result-head">⚖️ Your DTI result</p>
-        <div class="result-summary" id="dtiSummary"></div>
-        <div id="dtiDetail"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Recheck your ratio anytime — it all happens privately in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Debt-to-Income Calculator</h2>
+<p>Find the ratio lenders check first — and get a plain-English rating of where you stand.</p>
+</div>
+<button type="button" class="theme-toggle" id="dtiTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Your numbers</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="dtiIncome">Gross monthly income (before taxes)</label>
+<input type="number" id="dtiIncome" class="tool-input" placeholder="e.g. 6000" min="1">
+</div>
+<div class="setting">
+<label for="dtiDebts">Total monthly debt payments (mortgage/rent, loans, credit cards, car…)</label>
+<input type="number" id="dtiDebts" class="tool-input" placeholder="e.g. 1800" min="0">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Try a scenario</p>
+<div class="settings-panel">
+<div class="preset-row" id="dtiPresets">
+<button type="button" class="preset-chip" data-i="6000" data-d="1800">🏠 Renter couple — $6k / $1.8k</button>
+<button type="button" class="preset-chip" data-i="4500" data-d="2000">🏡 Mortgaged — $4.5k / $2k</button>
+<button type="button" class="preset-chip" data-i="8000" data-d="1500">💼 High earner — $8k / $1.5k</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="dtiDebtsRange">Debt payments slider: <span class="val" id="dtiDebtsVal">$0</span></label>
+<input type="range" id="dtiDebtsRange" min="0" max="10000" step="50" value="0">
+<div class="hint">Drag to see how paying down debt moves your ratio in real time.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Get your DTI rating</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="dtiBtn">
+<svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/></svg>
+Calculate my DTI
+</button>
+<button type="button" class="btn-pro-outline" id="dtiClear">Clear</button>
+</div>
+<div class="results" id="dtiResults">
+<p class="result-head">⚖️ Your DTI result</p>
+<div class="result-summary" id="dtiSummary"></div>
+<div id="dtiDetail"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Recheck your ratio anytime — it all happens privately in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('dtiShell');

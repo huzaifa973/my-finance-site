@@ -10,72 +10,63 @@ Type or paste your text below and every count updates live as you type — chara
 ## How it works
 
 <div class="tool-shell" id="chcShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M14 17H4v2h10v-2zm6 0H4v2h16v-2zM14 9H4v2h10V9zm6 0H4v2h16V9zM14 1H4v2h10V1zm6 0H4v2h16V1z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Character Counter</h2>
-        <p>Characters, words, sentences &amp; reading time — counted live as you type.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="chcTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter your text</p>
-      <div class="setting">
-        <label for="chcInput">Your text</label>
-        <textarea id="chcInput" class="tool-input" rows="7" placeholder="Type or paste your text here…" style="resize:vertical;"></textarea>
-        <div class="hint">All counts update live — nothing you type is sent anywhere.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Try a platform limit</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="chcPresets">
-          <button type="button" class="preset-chip" data-limit="280">𝕏 post — 280 chars</button>
-          <button type="button" class="preset-chip" data-limit="160">SMS — 160 chars</button>
-          <button type="button" class="preset-chip" data-limit="155">Meta description — 155</button>
-          <button type="button" class="preset-chip" data-limit="150">Instagram bio — 150</button>
-        </div>
-        <div class="hint">Fills in sample text at that exact length so you can see how the counts look at the limit.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Copy or clear</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="chcCopyBtn">Copy text</button>
-        <button type="button" class="btn-pro-outline" id="chcClearBtn">Clear</button>
-      </div>
-      <div class="results show" id="chcResults">
-        <p class="result-head">📊 Live counts</p>
-        <div class="result-grid" id="chcStats"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — count as much text as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M14 17H4v2h10v-2zm6 0H4v2h16v-2zM14 9H4v2h10V9zm6 0H4v2h16V9zM14 1H4v2h10V1zm6 0H4v2h16V1z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Character Counter</h2>
+<p>Characters, words, sentences &amp; reading time — counted live as you type.</p>
+</div>
+<button type="button" class="theme-toggle" id="chcTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter your text</p>
+<div class="setting">
+<label for="chcInput">Your text</label>
+<textarea id="chcInput" class="tool-input" rows="7" placeholder="Type or paste your text here…" style="resize:vertical;"></textarea>
+<div class="hint">All counts update live — nothing you type is sent anywhere.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Try a platform limit</p>
+<div class="settings-panel">
+<div class="preset-row" id="chcPresets">
+<button type="button" class="preset-chip" data-limit="280">𝕏 post — 280 chars</button>
+<button type="button" class="preset-chip" data-limit="160">SMS — 160 chars</button>
+<button type="button" class="preset-chip" data-limit="155">Meta description — 155</button>
+<button type="button" class="preset-chip" data-limit="150">Instagram bio — 150</button>
+</div>
+<div class="hint">Fills in sample text at that exact length so you can see how the counts look at the limit.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Copy or clear</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="chcCopyBtn">Copy text</button>
+<button type="button" class="btn-pro-outline" id="chcClearBtn">Clear</button>
+</div>
+<div class="results show" id="chcResults">
+<p class="result-head">📊 Live counts</p>
+<div class="result-grid" id="chcStats"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — count as much text as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('chcShell');
