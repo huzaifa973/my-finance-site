@@ -87,6 +87,7 @@ Track my goal
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('sgShell');

@@ -67,6 +67,7 @@ Type or paste your text below and every count updates live as you type — chara
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('chcShell');

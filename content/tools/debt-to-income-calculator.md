@@ -79,6 +79,7 @@ Calculate my DTI
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('dtiShell');

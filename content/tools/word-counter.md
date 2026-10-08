@@ -88,6 +88,7 @@ Paste or type your text below — counts update live as you type. Nothing is upl
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('wcShell');
