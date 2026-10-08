@@ -73,6 +73,7 @@ Calculate my budget
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('budShell');

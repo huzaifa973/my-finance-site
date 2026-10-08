@@ -88,6 +88,7 @@ Build my schedule
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('laShell');

@@ -117,6 +117,7 @@ Renting looks cheaper month-to-month — until you count equity, appreciation, a
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('rbShell');

@@ -90,6 +90,7 @@ Calculate my rate
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('frShell');
