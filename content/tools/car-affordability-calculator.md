@@ -8,99 +8,90 @@ draft: false
 Car dealers are happy to sell you a car you can't afford — this free calculator keeps them honest. Using the widely recommended **15% rule** (total car costs under 15% of take-home pay), it works backward from your income to a price range that won't wreck your budget.
 
 <div class="tool-shell" id="caShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Car Affordability Calculator</h2>
-        <p>Find your real affordable price range with the 15% rule — before the dealer talks you up.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="caTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter your finances</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="caIncome">Monthly take-home income</label>
-          <input type="number" id="caIncome" class="tool-input" placeholder="e.g. 4000" min="1">
-        </div>
-        <div class="setting">
-          <label for="caDebts">Monthly debt payments (excluding any car payment)</label>
-          <input type="number" id="caDebts" class="tool-input" placeholder="e.g. 350" min="0">
-        </div>
-        <div class="setting">
-          <label for="caDown">Down payment / trade-in value</label>
-          <input type="number" id="caDown" class="tool-input" placeholder="e.g. 5000" min="0">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Loan settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="caTerms">
-          <button type="button" class="preset-chip" data-term="36">3 years</button>
-          <button type="button" class="preset-chip" data-term="48">4 years</button>
-          <button type="button" class="preset-chip active" data-term="60">5 years</button>
-          <button type="button" class="preset-chip" data-term="72">6 years</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="caTerm">Loan term</label>
-            <select id="caTerm" class="tool-input">
-              <option value="36">3 years</option>
-              <option value="48">4 years</option>
-              <option value="60" selected>5 years</option>
-              <option value="72">6 years</option>
-            </select>
-          </div>
-          <div class="setting">
-            <label for="caRate">Expected APR <span class="val" id="caRateVal">7.0%</span></label>
-            <input type="range" id="caRate" min="0" max="30" step="0.5" value="7">
-            <div class="hint">Slide to match the rate your lender quoted you.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Calculate your price range</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="caBtn">
-          <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-          How much car can I afford?
-        </button>
-        <button type="button" class="btn-pro-outline" id="caClear">Clear</button>
-      </div>
-      <div class="results" id="caResults">
-        <p class="result-head">🚗 Your affordable price range</p>
-        <div class="result-summary" id="caResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — run as many car scenarios as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Car Affordability Calculator</h2>
+<p>Find your real affordable price range with the 15% rule — before the dealer talks you up.</p>
+</div>
+<button type="button" class="theme-toggle" id="caTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter your finances</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="caIncome">Monthly take-home income</label>
+<input type="number" id="caIncome" class="tool-input" placeholder="e.g. 4000" min="1">
+</div>
+<div class="setting">
+<label for="caDebts">Monthly debt payments (excluding any car payment)</label>
+<input type="number" id="caDebts" class="tool-input" placeholder="e.g. 350" min="0">
+</div>
+<div class="setting">
+<label for="caDown">Down payment / trade-in value</label>
+<input type="number" id="caDown" class="tool-input" placeholder="e.g. 5000" min="0">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Loan settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="caTerms">
+<button type="button" class="preset-chip" data-term="36">3 years</button>
+<button type="button" class="preset-chip" data-term="48">4 years</button>
+<button type="button" class="preset-chip active" data-term="60">5 years</button>
+<button type="button" class="preset-chip" data-term="72">6 years</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="caTerm">Loan term</label>
+<select id="caTerm" class="tool-input">
+<option value="36">3 years</option>
+<option value="48">4 years</option>
+<option value="60" selected>5 years</option>
+<option value="72">6 years</option>
+</select>
+</div>
+<div class="setting">
+<label for="caRate">Expected APR <span class="val" id="caRateVal">7.0%</span></label>
+<input type="range" id="caRate" min="0" max="30" step="0.5" value="7">
+<div class="hint">Slide to match the rate your lender quoted you.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Calculate your price range</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="caBtn">
+<svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+How much car can I afford?
+</button>
+<button type="button" class="btn-pro-outline" id="caClear">Clear</button>
+</div>
+<div class="results" id="caResults">
+<p class="result-head">🚗 Your affordable price range</p>
+<div class="result-summary" id="caResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — run as many car scenarios as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('caShell');

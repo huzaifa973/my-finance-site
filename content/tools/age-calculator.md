@@ -10,74 +10,65 @@ draft: false
 Enter a birthdate and get the exact age down to the day, along with total days lived and how long until the next birthday.
 
 <div class="tool-shell" id="ageShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Age Calculator</h2>
-        <p>Exact age in years, months &amp; days — plus days lived and your next birthday countdown.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="ageTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter the birthdate</p>
-      <div class="setting">
-        <label for="ageDob">Date of birth</label>
-        <input type="date" id="ageDob" class="tool-input" style="max-width:220px;">
-        <div class="hint">Pick any past date — the math is exact down to the day.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Quick-fill a milestone age</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="agePresets">
-          <button type="button" class="preset-chip" data-years="18">18 years ago</button>
-          <button type="button" class="preset-chip" data-years="21">21 years ago</button>
-          <button type="button" class="preset-chip" data-years="30">30 years ago</button>
-          <button type="button" class="preset-chip" data-years="50">50 years ago</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Calculate &amp; see the breakdown</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="ageBtn">
-          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
-          Calculate age
-        </button>
-        <button type="button" class="btn-pro-outline" id="ageClear">Clear</button>
-      </div>
-      <div class="results" id="ageResults">
-        <p class="result-head">🎂 Exact age</p>
-        <div class="result-summary" id="ageResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — calculate as many ages as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Age Calculator</h2>
+<p>Exact age in years, months &amp; days — plus days lived and your next birthday countdown.</p>
+</div>
+<button type="button" class="theme-toggle" id="ageTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter the birthdate</p>
+<div class="setting">
+<label for="ageDob">Date of birth</label>
+<input type="date" id="ageDob" class="tool-input" style="max-width:220px;">
+<div class="hint">Pick any past date — the math is exact down to the day.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Quick-fill a milestone age</p>
+<div class="settings-panel">
+<div class="preset-row" id="agePresets">
+<button type="button" class="preset-chip" data-years="18">18 years ago</button>
+<button type="button" class="preset-chip" data-years="21">21 years ago</button>
+<button type="button" class="preset-chip" data-years="30">30 years ago</button>
+<button type="button" class="preset-chip" data-years="50">50 years ago</button>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Calculate &amp; see the breakdown</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="ageBtn">
+<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+Calculate age
+</button>
+<button type="button" class="btn-pro-outline" id="ageClear">Clear</button>
+</div>
+<div class="results" id="ageResults">
+<p class="result-head">🎂 Exact age</p>
+<div class="result-summary" id="ageResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — calculate as many ages as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('ageShell');

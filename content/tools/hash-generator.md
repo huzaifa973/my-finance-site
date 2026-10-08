@@ -8,101 +8,92 @@ draft: false
 Generate MD5 and SHA-256 hashes from any text — or hash a file right on your device to verify its integrity. Everything runs locally in your browser: your files never leave your browser, nothing is uploaded, nothing is stored.
 
 <div class="tool-shell" id="hashShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Hash Generator</h2>
-        <p>Generate MD5 &amp; SHA-256 hashes from text or files — and verify checksums instantly.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="hashTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Text or file to hash</p>
-      <div class="setting">
-        <label for="hashText">Text to hash</label>
-        <textarea id="hashText" class="tool-output" rows="4" placeholder="Type or paste text here…" style="min-height:110px"></textarea>
-      </div>
-      <div class="setting" style="margin-top:.8rem">
-        <label>…or hash a file instead (stays on your device)</label>
-        <div class="dropzone" id="hashDrop" style="margin-top:.4rem">
-          <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-          <strong>Drag &amp; drop a file here</strong>
-          <span>or click to browse — any file type, hashed locally</span>
-          <input type="file" id="hashFile">
-        </div>
-        <ul class="file-list" id="hashList"></ul>
-        <div class="hint">If a file is chosen, the file is hashed (text is ignored).</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Options</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="hashPresets">
-          <button type="button" class="preset-chip" data-s="The quick brown fox jumps over the lazy dog">📝 Sample text</button>
-          <button type="button" class="preset-chip" data-s="hello world">👋 hello world</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="hashExpected"><strong>Verify integrity:</strong> paste the expected hash to compare</label>
-            <input type="text" id="hashExpected" class="tool-input" placeholder="Paste the checksum you were given…" style="font-family:ui-monospace,monospace">
-            <div class="hint">If it matches either the MD5 or SHA-256 output, your data is intact.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Generate</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="hashBtn">
-          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-          Generate hashes
-        </button>
-        <button type="button" class="btn-pro-outline" id="hashClearBtn">Clear</button>
-      </div>
-      <div class="results" id="hashResults">
-        <p class="result-head">🔐 Your hashes</p>
-        <div class="result-grid">
-          <div class="result-card">
-            <div class="r-name">MD5 (128-bit)</div>
-            <div class="r-stats"><code id="hashMd5" style="word-break:break-all;font-size:.8rem">—</code></div>
-            <button type="button" class="btn-pro-outline" id="hashCopyMd5" style="font-size:.85rem;padding:.4rem .9rem">Copy MD5</button>
-          </div>
-          <div class="result-card">
-            <div class="r-name">SHA-256 (256-bit)</div>
-            <div class="r-stats"><code id="hashSha" style="word-break:break-all;font-size:.8rem">—</code></div>
-            <button type="button" class="btn-pro-outline" id="hashCopySha" style="font-size:.85rem;padding:.4rem .9rem">Copy SHA-256</button>
-          </div>
-        </div>
-        <div class="result-summary" id="hashMatch" style="display:none;margin-top:1rem"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Hash as much text and as many files as you like — nothing ever leaves your device.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Hash Generator</h2>
+<p>Generate MD5 &amp; SHA-256 hashes from text or files — and verify checksums instantly.</p>
+</div>
+<button type="button" class="theme-toggle" id="hashTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Text or file to hash</p>
+<div class="setting">
+<label for="hashText">Text to hash</label>
+<textarea id="hashText" class="tool-output" rows="4" placeholder="Type or paste text here…" style="min-height:110px"></textarea>
+</div>
+<div class="setting" style="margin-top:.8rem">
+<label>…or hash a file instead (stays on your device)</label>
+<div class="dropzone" id="hashDrop" style="margin-top:.4rem">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop a file here</strong>
+<span>or click to browse — any file type, hashed locally</span>
+<input type="file" id="hashFile">
+</div>
+<ul class="file-list" id="hashList"></ul>
+<div class="hint">If a file is chosen, the file is hashed (text is ignored).</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Options</p>
+<div class="settings-panel">
+<div class="preset-row" id="hashPresets">
+<button type="button" class="preset-chip" data-s="The quick brown fox jumps over the lazy dog">📝 Sample text</button>
+<button type="button" class="preset-chip" data-s="hello world">👋 hello world</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="hashExpected"><strong>Verify integrity:</strong> paste the expected hash to compare</label>
+<input type="text" id="hashExpected" class="tool-input" placeholder="Paste the checksum you were given…" style="font-family:ui-monospace,monospace">
+<div class="hint">If it matches either the MD5 or SHA-256 output, your data is intact.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Generate</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="hashBtn">
+<svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+Generate hashes
+</button>
+<button type="button" class="btn-pro-outline" id="hashClearBtn">Clear</button>
+</div>
+<div class="results" id="hashResults">
+<p class="result-head">🔐 Your hashes</p>
+<div class="result-grid">
+<div class="result-card">
+<div class="r-name">MD5 (128-bit)</div>
+<div class="r-stats"><code id="hashMd5" style="word-break:break-all;font-size:.8rem">—</code></div>
+<button type="button" class="btn-pro-outline" id="hashCopyMd5" style="font-size:.85rem;padding:.4rem .9rem">Copy MD5</button>
+</div>
+<div class="result-card">
+<div class="r-name">SHA-256 (256-bit)</div>
+<div class="r-stats"><code id="hashSha" style="word-break:break-all;font-size:.8rem">—</code></div>
+<button type="button" class="btn-pro-outline" id="hashCopySha" style="font-size:.85rem;padding:.4rem .9rem">Copy SHA-256</button>
+</div>
+</div>
+<div class="result-summary" id="hashMatch" style="display:none;margin-top:1rem"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Hash as much text and as many files as you like — nothing ever leaves your device.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('hashShell');
