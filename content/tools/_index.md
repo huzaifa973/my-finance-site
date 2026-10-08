@@ -1,7 +1,7 @@
 ---
 title: "Free Money Tools"
-description: "Free tools: 32 calculators and utilities for money, health, passwords, QR codes, writing, design, and everyday conversions. No sign-up, no fees."
-date: 2026-09-29
+description: "Free tools: 37 calculators and utilities for money, health, passwords, QR codes, writing, design, images, audio, PDFs, and everyday conversions. No sign-up, no fees."
+date: 2026-10-08
 draft: false
 ---
 
@@ -62,6 +62,17 @@ Every tool here is **free to use, no sign-up required** — and everything you e
 - [Hash Generator (MD5 & SHA-256)](/tools/hash-generator/) — generate hashes from text or files, with checksum comparison to verify downloads.
 - [Text Diff Checker](/tools/text-diff-checker/) — compare two texts and see every word-level difference highlighted.
 - [Lorem Ipsum Generator](/tools/lorem-ipsum-generator/) — placeholder text in paragraphs, words, or sentences, one click to copy.
+
+## Image & Media Tools
+
+- [Image Compressor](/tools/image-compressor/) — shrink JPG, PNG, and WebP images with a before/after quality slider.
+- [Image Resizer](/tools/image-resizer/) — resize images to exact pixels, a percentage, or a target file size.
+- [Image Format Converter](/tools/image-format-converter/) — convert between PNG, JPG, and WebP in bulk, right in your browser.
+- [Audio Trimmer](/tools/audio-trimmer/) — cut clips from any audio file using a visual waveform editor.
+
+## PDF & File Tools
+
+- [Merge PDF](/tools/merge-pdf/) — combine multiple PDFs into one, reorder with drag and drop, all in your browser.
 
 ## Productivity
 
