@@ -84,6 +84,7 @@ Add subscription
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('subShell');

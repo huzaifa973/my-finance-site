@@ -74,6 +74,7 @@ Calculate net worth
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('nwShell');

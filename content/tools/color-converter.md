@@ -81,6 +81,7 @@ Pick a color or paste a HEX, RGB, or HSL value — every format updates live wit
 </div>
 </div>
 </div>
+
 <script>
 (function(){
   var shell = document.getElementById('clrShell');
