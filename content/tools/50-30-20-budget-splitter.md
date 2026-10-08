@@ -8,74 +8,65 @@ draft: false
 The 50/30/20 rule is the simplest budget in personal finance: half your take-home pay for needs, 30% for wants, 20% for savings. This free splitter does the math for you instantly — enter your pay and see your three buckets, with bars to compare them at a glance.
 
 <div class="tool-shell" id="sbsShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.76-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.98-8.99H13.03z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>50/30/20 Budget Splitter</h2>
-        <p>Split your take-home pay into needs, wants &amp; savings in one click — free, private, unlimited.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="sbsTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Enter your take-home pay</p>
-      <div class="setting">
-        <label for="sbsPay">Monthly take-home pay</label>
-        <input type="number" id="sbsPay" class="tool-input" placeholder="e.g. 3500" min="1">
-        <div class="hint">Your pay after taxes and deductions — the amount that actually hits your account.</div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Quick-fill a common income</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="sbsPresets">
-          <button type="button" class="preset-chip" data-pay="2500">$2,500 / month</button>
-          <button type="button" class="preset-chip" data-pay="3500">$3,500 / month</button>
-          <button type="button" class="preset-chip" data-pay="5000">$5,000 / month</button>
-          <button type="button" class="preset-chip" data-pay="7500">$7,500 / month</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Split &amp; see your buckets</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="sbsBtn">
-          <svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.76-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.98-8.99H13.03z"/></svg>
-          Split my budget
-        </button>
-        <button type="button" class="btn-pro-outline" id="sbsClear">Clear</button>
-      </div>
-      <div class="results" id="sbsResults">
-        <p class="result-head">💰 Your 50/30/20 split</p>
-        <div class="result-summary" id="sbsResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — split as many budgets as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.76-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.98-8.99H13.03z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>50/30/20 Budget Splitter</h2>
+<p>Split your take-home pay into needs, wants &amp; savings in one click — free, private, unlimited.</p>
+</div>
+<button type="button" class="theme-toggle" id="sbsTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Enter your take-home pay</p>
+<div class="setting">
+<label for="sbsPay">Monthly take-home pay</label>
+<input type="number" id="sbsPay" class="tool-input" placeholder="e.g. 3500" min="1">
+<div class="hint">Your pay after taxes and deductions — the amount that actually hits your account.</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Quick-fill a common income</p>
+<div class="settings-panel">
+<div class="preset-row" id="sbsPresets">
+<button type="button" class="preset-chip" data-pay="2500">$2,500 / month</button>
+<button type="button" class="preset-chip" data-pay="3500">$3,500 / month</button>
+<button type="button" class="preset-chip" data-pay="5000">$5,000 / month</button>
+<button type="button" class="preset-chip" data-pay="7500">$7,500 / month</button>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Split &amp; see your buckets</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="sbsBtn">
+<svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.76-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.98-8.99H13.03z"/></svg>
+Split my budget
+</button>
+<button type="button" class="btn-pro-outline" id="sbsClear">Clear</button>
+</div>
+<div class="results" id="sbsResults">
+<p class="result-head">💰 Your 50/30/20 split</p>
+<div class="result-summary" id="sbsResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — split as many budgets as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('sbsShell');

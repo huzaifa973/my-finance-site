@@ -10,91 +10,82 @@ Paste two versions of a text side by side and see exactly what changed — added
 ## How it works
 
 <div class="tool-shell" id="diffShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22v-2h-7.01V5L11 9l3.99 4z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Text Diff Checker</h2>
-        <p>Compare two texts side by side and see every change highlighted, line by line and word by word.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="diffTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Paste both versions</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="diffA">Original text</label>
-          <textarea id="diffA" class="tool-input" rows="8" placeholder="Paste the original version…"></textarea>
-        </div>
-        <div class="setting">
-          <label for="diffB">New text</label>
-          <textarea id="diffB" class="tool-input" rows="8" placeholder="Paste the revised version…"></textarea>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Compare options</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="diffOpts">
-          <button type="button" class="preset-chip" id="diffChipCase">🔠 Ignore case</button>
-          <button type="button" class="preset-chip" id="diffChipWs">␣ Ignore whitespace</button>
-          <button type="button" class="preset-chip active" id="diffChipLive">⚡ Live compare</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="diffFontRange">Output text size: <span class="val" id="diffFontVal">15px</span></label>
-            <input type="range" id="diffFontRange" min="12" max="20" step="1" value="15">
-            <div class="hint">Bump the size up when reviewing long documents.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Compare &amp; review changes</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="diffBtn">
-          <svg viewBox="0 0 24 24"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22v-2h-7.01V5L11 9l3.99 4z"/></svg>
-          Compare texts
-        </button>
-        <button type="button" class="btn-pro-outline" id="diffSwapBtn">Swap sides</button>
-        <button type="button" class="btn-pro-outline" id="diffClearBtn">Clear</button>
-      </div>
-      <p id="diffStats" style="font-size:.9rem;color:var(--muted);margin:.6rem 0 0;"></p>
-      <div class="results show">
-        <p class="result-head">🔍 Differences</p>
-        <div class="result-summary" id="diffOut" style="font-size:15px;line-height:1.7;min-height:3rem;"><span style="color:var(--muted)">Paste text on both sides, then compare.</span></div>
-      </div>
-      <div style="margin-top:.4rem;font-size:.85rem;color:var(--muted);">
-        <span style="background:#fee2e2;padding:.1rem .4rem;border-radius:4px;">removed</span>
-        <span style="background:#dcfce7;padding:.1rem .4rem;border-radius:4px;margin-left:.5rem;">added</span>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — compare as many texts as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22v-2h-7.01V5L11 9l3.99 4z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Text Diff Checker</h2>
+<p>Compare two texts side by side and see every change highlighted, line by line and word by word.</p>
+</div>
+<button type="button" class="theme-toggle" id="diffTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Paste both versions</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="diffA">Original text</label>
+<textarea id="diffA" class="tool-input" rows="8" placeholder="Paste the original version…"></textarea>
+</div>
+<div class="setting">
+<label for="diffB">New text</label>
+<textarea id="diffB" class="tool-input" rows="8" placeholder="Paste the revised version…"></textarea>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Compare options</p>
+<div class="settings-panel">
+<div class="preset-row" id="diffOpts">
+<button type="button" class="preset-chip" id="diffChipCase">🔠 Ignore case</button>
+<button type="button" class="preset-chip" id="diffChipWs">␣ Ignore whitespace</button>
+<button type="button" class="preset-chip active" id="diffChipLive">⚡ Live compare</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="diffFontRange">Output text size: <span class="val" id="diffFontVal">15px</span></label>
+<input type="range" id="diffFontRange" min="12" max="20" step="1" value="15">
+<div class="hint">Bump the size up when reviewing long documents.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Compare &amp; review changes</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="diffBtn">
+<svg viewBox="0 0 24 24"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22v-2h-7.01V5L11 9l3.99 4z"/></svg>
+Compare texts
+</button>
+<button type="button" class="btn-pro-outline" id="diffSwapBtn">Swap sides</button>
+<button type="button" class="btn-pro-outline" id="diffClearBtn">Clear</button>
+</div>
+<p id="diffStats" style="font-size:.9rem;color:var(--muted);margin:.6rem 0 0;"></p>
+<div class="results show">
+<p class="result-head">🔍 Differences</p>
+<div class="result-summary" id="diffOut" style="font-size:15px;line-height:1.7;min-height:3rem;"><span style="color:var(--muted)">Paste text on both sides, then compare.</span></div>
+</div>
+<div style="margin-top:.4rem;font-size:.85rem;color:var(--muted);">
+<span style="background:#fee2e2;padding:.1rem .4rem;border-radius:4px;">removed</span>
+<span style="background:#dcfce7;padding:.1rem .4rem;border-radius:4px;margin-left:.5rem;">added</span>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — compare as many texts as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('diffShell');

@@ -15,88 +15,79 @@ Ever wonder why your loan balance barely moves in the first year? That's amortiz
 </style>
 
 <div class="tool-shell" id="laShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h20v-3H2v3zm14-12v7h3v-7h-3zm-4-9L2 6v2h20V6l-10-5z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Loan Amortization Calculator</h2>
-        <p>See your monthly payment and exactly where every dollar goes — principal vs. interest.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="laTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Loan amount</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="laAmount">Loan amount</label>
-          <input type="number" id="laAmount" class="tool-input" placeholder="e.g. 20000" min="1">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Rate &amp; term</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="laPresets">
-          <button type="button" class="preset-chip" data-r="6" data-y="5">🚗 5-year auto — 6%</button>
-          <button type="button" class="preset-chip" data-r="6" data-y="15">🏠 15-year home — 6%</button>
-          <button type="button" class="preset-chip" data-r="7" data-y="30">🏡 30-year home — 7%</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="laRateRange">Annual interest rate: <span class="val" id="laRateVal">6.5%</span></label>
-            <input type="range" id="laRateRange" min="0" max="40" step="0.01" value="6.5">
-            <input type="number" id="laRate" class="tool-input" placeholder="e.g. 6.5" min="0" max="40" step="0.01" value="6.5" style="margin-top:.4rem">
-          </div>
-          <div class="setting">
-            <label for="laTermRange">Term: <span class="val" id="laTermVal">5 years</span></label>
-            <input type="range" id="laTermRange" min="1" max="40" step="1" value="5">
-            <input type="number" id="laTerm" class="tool-input" placeholder="e.g. 5" min="1" max="40" value="5" style="margin-top:.4rem">
-            <div class="hint">Shorter terms = higher payment, much less total interest.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Build your schedule</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="laBtn">
-          <svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h20v-3H2v3zm14-12v7h3v-7h-3zm-4-9L2 6v2h20V6l-10-5z"/></svg>
-          Build my schedule
-        </button>
-        <button type="button" class="btn-pro-outline" id="laClear">Clear</button>
-      </div>
-      <div class="results" id="laResults">
-        <p class="result-head">📊 Your amortization schedule</p>
-        <div class="result-summary" id="laSummary"></div>
-        <div id="laTableWrap"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Model any loan scenario — every calculation stays private in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h20v-3H2v3zm14-12v7h3v-7h-3zm-4-9L2 6v2h20V6l-10-5z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Loan Amortization Calculator</h2>
+<p>See your monthly payment and exactly where every dollar goes — principal vs. interest.</p>
+</div>
+<button type="button" class="theme-toggle" id="laTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Loan amount</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="laAmount">Loan amount</label>
+<input type="number" id="laAmount" class="tool-input" placeholder="e.g. 20000" min="1">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Rate &amp; term</p>
+<div class="settings-panel">
+<div class="preset-row" id="laPresets">
+<button type="button" class="preset-chip" data-r="6" data-y="5">🚗 5-year auto — 6%</button>
+<button type="button" class="preset-chip" data-r="6" data-y="15">🏠 15-year home — 6%</button>
+<button type="button" class="preset-chip" data-r="7" data-y="30">🏡 30-year home — 7%</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="laRateRange">Annual interest rate: <span class="val" id="laRateVal">6.5%</span></label>
+<input type="range" id="laRateRange" min="0" max="40" step="0.01" value="6.5">
+<input type="number" id="laRate" class="tool-input" placeholder="e.g. 6.5" min="0" max="40" step="0.01" value="6.5" style="margin-top:.4rem">
+</div>
+<div class="setting">
+<label for="laTermRange">Term: <span class="val" id="laTermVal">5 years</span></label>
+<input type="range" id="laTermRange" min="1" max="40" step="1" value="5">
+<input type="number" id="laTerm" class="tool-input" placeholder="e.g. 5" min="1" max="40" value="5" style="margin-top:.4rem">
+<div class="hint">Shorter terms = higher payment, much less total interest.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Build your schedule</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="laBtn">
+<svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h20v-3H2v3zm14-12v7h3v-7h-3zm-4-9L2 6v2h20V6l-10-5z"/></svg>
+Build my schedule
+</button>
+<button type="button" class="btn-pro-outline" id="laClear">Clear</button>
+</div>
+<div class="results" id="laResults">
+<p class="result-head">📊 Your amortization schedule</p>
+<div class="result-summary" id="laSummary"></div>
+<div id="laTableWrap"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Model any loan scenario — every calculation stays private in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('laShell');

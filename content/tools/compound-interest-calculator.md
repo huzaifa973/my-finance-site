@@ -16,93 +16,84 @@ Compound interest is the engine behind almost every long-term savings plan — i
 </style>
 
 <div class="tool-shell" id="ciShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Compound Interest Calculator</h2>
-        <p>Watch your savings snowball — year-by-year growth from the eighth wonder of the world.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="ciTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Your contributions</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="ciPrincipal">Starting amount</label>
-          <input type="number" id="ciPrincipal" class="tool-input" placeholder="e.g. 1000" min="0">
-        </div>
-        <div class="setting">
-          <label for="ciMonthly">Monthly contribution</label>
-          <input type="number" id="ciMonthly" class="tool-input" placeholder="e.g. 200" min="0">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Growth settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="ciPresets">
-          <button type="button" class="preset-chip" data-rate="4">🐢 Conservative — 4%</button>
-          <button type="button" class="preset-chip active" data-rate="7">⚖️ Balanced — 7%</button>
-          <button type="button" class="preset-chip" data-rate="10">🚀 Aggressive — 10%</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="ciRateRange">Annual interest rate: <span class="val" id="ciRateVal">7.0%</span></label>
-            <input type="range" id="ciRateRange" min="0" max="50" step="0.1" value="7">
-            <input type="number" id="ciRate" class="tool-input" placeholder="e.g. 7" min="0" max="50" step="0.1" value="7" style="margin-top:.4rem">
-            <div class="hint">Long-run stock market returns average ~7% after inflation.</div>
-          </div>
-          <div class="setting">
-            <label for="ciYearsRange">Number of years: <span class="val" id="ciYearsVal">20</span></label>
-            <input type="range" id="ciYearsRange" min="1" max="80" step="1" value="20">
-            <input type="number" id="ciYears" class="tool-input" placeholder="e.g. 20" min="1" max="80" value="20" style="margin-top:.4rem">
-            <div class="hint">Time matters more than timing — start early.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> See your growth</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="ciBtn">
-          <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
-          Calculate growth
-        </button>
-        <button type="button" class="btn-pro-outline" id="ciClear">Clear</button>
-      </div>
-      <div class="results" id="ciResults">
-        <p class="result-head">📈 Your growth projection</p>
-        <div class="result-summary" id="ciSummary"></div>
-        <div id="ciTableWrap"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Run as many scenarios as you like — every calculation happens in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Compound Interest Calculator</h2>
+<p>Watch your savings snowball — year-by-year growth from the eighth wonder of the world.</p>
+</div>
+<button type="button" class="theme-toggle" id="ciTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Your contributions</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="ciPrincipal">Starting amount</label>
+<input type="number" id="ciPrincipal" class="tool-input" placeholder="e.g. 1000" min="0">
+</div>
+<div class="setting">
+<label for="ciMonthly">Monthly contribution</label>
+<input type="number" id="ciMonthly" class="tool-input" placeholder="e.g. 200" min="0">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Growth settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="ciPresets">
+<button type="button" class="preset-chip" data-rate="4">🐢 Conservative — 4%</button>
+<button type="button" class="preset-chip active" data-rate="7">⚖️ Balanced — 7%</button>
+<button type="button" class="preset-chip" data-rate="10">🚀 Aggressive — 10%</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="ciRateRange">Annual interest rate: <span class="val" id="ciRateVal">7.0%</span></label>
+<input type="range" id="ciRateRange" min="0" max="50" step="0.1" value="7">
+<input type="number" id="ciRate" class="tool-input" placeholder="e.g. 7" min="0" max="50" step="0.1" value="7" style="margin-top:.4rem">
+<div class="hint">Long-run stock market returns average ~7% after inflation.</div>
+</div>
+<div class="setting">
+<label for="ciYearsRange">Number of years: <span class="val" id="ciYearsVal">20</span></label>
+<input type="range" id="ciYearsRange" min="1" max="80" step="1" value="20">
+<input type="number" id="ciYears" class="tool-input" placeholder="e.g. 20" min="1" max="80" value="20" style="margin-top:.4rem">
+<div class="hint">Time matters more than timing — start early.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> See your growth</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="ciBtn">
+<svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+Calculate growth
+</button>
+<button type="button" class="btn-pro-outline" id="ciClear">Clear</button>
+</div>
+<div class="results" id="ciResults">
+<p class="result-head">📈 Your growth projection</p>
+<div class="result-summary" id="ciSummary"></div>
+<div id="ciTableWrap"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Run as many scenarios as you like — every calculation happens in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('ciShell');
