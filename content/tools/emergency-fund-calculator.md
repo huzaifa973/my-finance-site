@@ -8,92 +8,83 @@ draft: false
 An emergency fund is what keeps a broken car or a medical bill from becoming credit card debt. Experts usually recommend 3–6 months of essential expenses. This free calculator finds your personal target and tells you how long it'll take to build it at your current savings rate.
 
 <div class="tool-shell" id="efShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Emergency Fund Calculator</h2>
-        <p>Find your safety-net target and the exact date you'll be fully funded at your savings rate.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="efTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Your expenses &amp; savings</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="efExpenses">Total monthly essential expenses (housing, bills, food, transport)</label>
-          <input type="number" id="efExpenses" class="tool-input" placeholder="e.g. 2500" min="1">
-        </div>
-        <div class="setting">
-          <label for="efSaved">Already saved in your emergency fund</label>
-          <input type="number" id="efSaved" class="tool-input" placeholder="e.g. 1000" min="0">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Coverage goal</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="efPresets">
-          <button type="button" class="preset-chip" data-m="3">🛟 3 months — starter safety net</button>
-          <button type="button" class="preset-chip active" data-m="6">🛡️ 6 months — recommended</button>
-          <button type="button" class="preset-chip" data-m="12">🏰 12 months — maximum cushion</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="efMonthsRange">Months of coverage you want: <span class="val" id="efMonthsVal">6</span></label>
-            <input type="range" id="efMonthsRange" min="1" max="24" step="1" value="6">
-            <input type="number" id="efMonths" class="tool-input" placeholder="e.g. 6" min="1" max="24" value="6" style="margin-top:.4rem">
-          </div>
-          <div class="setting">
-            <label for="efRateRange">Monthly amount you can save toward it: <span class="val" id="efRateVal">$0</span></label>
-            <input type="range" id="efRateRange" min="0" max="5000" step="50" value="0">
-            <input type="number" id="efRate" class="tool-input" placeholder="e.g. 300" min="0" value="0" style="margin-top:.4rem">
-            <div class="hint">Set to 0 to skip the timeline and just see your target.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Get your target</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="efBtn">
-          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-          Calculate my target
-        </button>
-        <button type="button" class="btn-pro-outline" id="efClear">Clear</button>
-      </div>
-      <div class="results" id="efResults">
-        <p class="result-head">🛡️ Your emergency fund plan</p>
-        <div class="result-summary" id="efSummary"></div>
-        <div id="efDetail"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Adjust your numbers anytime — every calculation stays private in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Emergency Fund Calculator</h2>
+<p>Find your safety-net target and the exact date you'll be fully funded at your savings rate.</p>
+</div>
+<button type="button" class="theme-toggle" id="efTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Your expenses &amp; savings</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="efExpenses">Total monthly essential expenses (housing, bills, food, transport)</label>
+<input type="number" id="efExpenses" class="tool-input" placeholder="e.g. 2500" min="1">
+</div>
+<div class="setting">
+<label for="efSaved">Already saved in your emergency fund</label>
+<input type="number" id="efSaved" class="tool-input" placeholder="e.g. 1000" min="0">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Coverage goal</p>
+<div class="settings-panel">
+<div class="preset-row" id="efPresets">
+<button type="button" class="preset-chip" data-m="3">🛟 3 months — starter safety net</button>
+<button type="button" class="preset-chip active" data-m="6">🛡️ 6 months — recommended</button>
+<button type="button" class="preset-chip" data-m="12">🏰 12 months — maximum cushion</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="efMonthsRange">Months of coverage you want: <span class="val" id="efMonthsVal">6</span></label>
+<input type="range" id="efMonthsRange" min="1" max="24" step="1" value="6">
+<input type="number" id="efMonths" class="tool-input" placeholder="e.g. 6" min="1" max="24" value="6" style="margin-top:.4rem">
+</div>
+<div class="setting">
+<label for="efRateRange">Monthly amount you can save toward it: <span class="val" id="efRateVal">$0</span></label>
+<input type="range" id="efRateRange" min="0" max="5000" step="50" value="0">
+<input type="number" id="efRate" class="tool-input" placeholder="e.g. 300" min="0" value="0" style="margin-top:.4rem">
+<div class="hint">Set to 0 to skip the timeline and just see your target.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Get your target</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="efBtn">
+<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+Calculate my target
+</button>
+<button type="button" class="btn-pro-outline" id="efClear">Clear</button>
+</div>
+<div class="results" id="efResults">
+<p class="result-head">🛡️ Your emergency fund plan</p>
+<div class="result-summary" id="efSummary"></div>
+<div id="efDetail"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Adjust your numbers anytime — every calculation stays private in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('efShell');

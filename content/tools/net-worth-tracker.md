@@ -8,81 +8,72 @@ draft: false
 Your net worth — everything you own minus everything you owe — is the single best number for tracking your financial progress over time. This free tracker calculates it in seconds. (Everything you enter stays in your browser; nothing is sent anywhere.)
 
 <div class="tool-shell" id="nwShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Net Worth Tracker</h2>
-        <p>Assets minus liabilities — your one number for financial progress.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="nwTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> List your assets &amp; liabilities</p>
-      <p style="margin-top:0"><strong>Assets</strong> — cash, savings, investments, property, car value…</p>
-      <div id="nwAssets"></div>
-      <div class="tool-actions" style="margin-bottom:1.2rem;">
-        <button type="button" class="btn-pro-outline" id="nwAddAsset">+ Add asset</button>
-      </div>
-      <p><strong>Liabilities</strong> — credit cards, loans, mortgage balance…</p>
-      <div id="nwDebts"></div>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro-outline" id="nwAddDebt">+ Add liability</button>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Quick start</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="nwPresets">
-          <button type="button" class="preset-chip" data-preset="starter">✨ Starter example</button>
-          <button type="button" class="preset-chip" data-preset="clear">🧹 Clear all rows</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label>Privacy</label>
-            <div class="hint">Everything you type stays in your browser — nothing is sent anywhere. Estimates are fine; rough numbers beat no numbers.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Calculate net worth</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="nwBtn">
-          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-          Calculate net worth
-        </button>
-      </div>
-      <div class="results" id="nwResults">
-        <div class="result-card" id="nwResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — recalculate monthly and watch the trend.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Net Worth Tracker</h2>
+<p>Assets minus liabilities — your one number for financial progress.</p>
+</div>
+<button type="button" class="theme-toggle" id="nwTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> List your assets &amp; liabilities</p>
+<p style="margin-top:0"><strong>Assets</strong> — cash, savings, investments, property, car value…</p>
+<div id="nwAssets"></div>
+<div class="tool-actions" style="margin-bottom:1.2rem;">
+<button type="button" class="btn-pro-outline" id="nwAddAsset">+ Add asset</button>
+</div>
+<p><strong>Liabilities</strong> — credit cards, loans, mortgage balance…</p>
+<div id="nwDebts"></div>
+<div class="tool-actions">
+<button type="button" class="btn-pro-outline" id="nwAddDebt">+ Add liability</button>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Quick start</p>
+<div class="settings-panel">
+<div class="preset-row" id="nwPresets">
+<button type="button" class="preset-chip" data-preset="starter">✨ Starter example</button>
+<button type="button" class="preset-chip" data-preset="clear">🧹 Clear all rows</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label>Privacy</label>
+<div class="hint">Everything you type stays in your browser — nothing is sent anywhere. Estimates are fine; rough numbers beat no numbers.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Calculate net worth</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="nwBtn">
+<svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+Calculate net worth
+</button>
+</div>
+<div class="results" id="nwResults">
+<div class="result-card" id="nwResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — recalculate monthly and watch the trend.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('nwShell');

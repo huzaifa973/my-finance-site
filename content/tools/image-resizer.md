@@ -10,123 +10,114 @@ Resize images for profile pictures, blog thumbnails, or social media — without
 ## How it works
 
 <div class="tool-shell" id="rsShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm11-6H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H6V7h12v12z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Image Resizer</h2>
-        <p>Resize to exact pixels, a percentage, or a target file size — proportions locked, no distortion.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="rsTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Upload an image</p>
-      <div class="dropzone" id="rsDrop">
-        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-        <strong>Drag &amp; drop an image here</strong>
-        <span>or click to browse — JPG, PNG, WebP</span>
-        <input type="file" id="rsFile" accept="image/png,image/jpeg,image/webp">
-      </div>
-      <ul class="file-list" id="rsList"></ul>
-      <p id="rsOrigInfo" style="font-size:.9rem;color:var(--tp-muted);margin:.6rem 0 0"></p>
-    </div>
-
-    <div class="tool-step" id="rsStep2" style="display:none">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Resize settings</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="rsPresets">
-          <button type="button" class="preset-chip" data-w="1280" data-h="">🖥️ HD — 1280px wide</button>
-          <button type="button" class="preset-chip" data-w="400" data-h="400">👤 Profile — 400×400</button>
-          <button type="button" class="preset-chip" data-pct="50">📉 Half size — 50%</button>
-          <button type="button" class="preset-chip" data-kb="200">📧 Email — 200KB target</button>
-        </div>
-        <div class="settings-grid">
-          <div class="setting">
-            <label for="rsMode">Resize by</label>
-            <select id="rsMode">
-              <option value="px">Exact pixels</option>
-              <option value="pct">Percentage</option>
-              <option value="kbsize">Target file size (KB)</option>
-            </select>
-          </div>
-          <div class="setting" id="rsPx">
-            <label>Dimensions</label>
-            <div style="display:flex;gap:.5rem;align-items:center">
-              <input type="number" id="rsW" class="tool-input" min="1" placeholder="width" style="width:110px">
-              <span>×</span>
-              <input type="number" id="rsH" class="tool-input" min="1" placeholder="height" style="width:110px">
-              <span style="font-size:.85rem;color:var(--tp-muted)">px</span>
-            </div>
-          </div>
-          <div class="setting" id="rsPct" style="display:none">
-            <label for="rsP">Percentage: <span class="val" id="rsPVal">50%</span></label>
-            <input type="range" id="rsPRange" min="1" max="400" value="50">
-            <input type="number" id="rsP" class="tool-input" min="1" max="400" value="50" style="margin-top:.4rem">
-            <div class="hint">Upscaling beyond 100% can't add real detail — downscaling preserves quality.</div>
-          </div>
-          <div class="setting" id="rsKb" style="display:none">
-            <label for="rsK">Target file size: <span class="val" id="rsKVal">200 KB</span></label>
-            <input type="range" id="rsKRange" min="5" max="5000" step="5" value="200">
-            <input type="number" id="rsK" class="tool-input" min="5" value="200" style="margin-top:.4rem">
-            <div class="hint">Perfect for portals that demand "photo under 200KB".</div>
-          </div>
-          <div class="toggle-row">
-            <span class="t-label">🔒 Keep original proportions (no distortion)</span>
-            <label class="toggle"><input type="checkbox" id="rsLock" checked><span class="track"></span></label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Resize &amp; download</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="rsBtn" disabled>
-          <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm11-6H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H6V7h12v12z"/></svg>
-          Resize image
-        </button>
-        <button type="button" class="btn-pro-outline" id="rsClear" disabled>Clear</button>
-      </div>
-      <div class="progress-wrap" id="rsProgWrap">
-        <div class="progress-bar"><i id="rsProgBar"></i></div>
-        <div class="progress-text" id="rsProgText">Working…</div>
-      </div>
-      <div class="results" id="rsResults">
-        <p class="result-head">✅ Done — your resized image</p>
-        <div class="result-summary" id="rsStats"></div>
-        <div class="result-grid">
-          <div class="result-card">
-            <img class="r-preview" id="rsPreview" alt="Resized preview">
-            <div class="r-name" id="rsDlName">resized-image.jpg</div>
-            <button type="button" class="btn-pro" id="rsDownload">⬇ Download resized image</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>Resize as many images as you like — everything happens in your browser.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm11-6H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H6V7h12v12z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Image Resizer</h2>
+<p>Resize to exact pixels, a percentage, or a target file size — proportions locked, no distortion.</p>
+</div>
+<button type="button" class="theme-toggle" id="rsTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Upload an image</p>
+<div class="dropzone" id="rsDrop">
+<svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+<strong>Drag &amp; drop an image here</strong>
+<span>or click to browse — JPG, PNG, WebP</span>
+<input type="file" id="rsFile" accept="image/png,image/jpeg,image/webp">
+</div>
+<ul class="file-list" id="rsList"></ul>
+<p id="rsOrigInfo" style="font-size:.9rem;color:var(--tp-muted);margin:.6rem 0 0"></p>
+</div>
+<div class="tool-step" id="rsStep2" style="display:none">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Resize settings</p>
+<div class="settings-panel">
+<div class="preset-row" id="rsPresets">
+<button type="button" class="preset-chip" data-w="1280" data-h="">🖥️ HD — 1280px wide</button>
+<button type="button" class="preset-chip" data-w="400" data-h="400">👤 Profile — 400×400</button>
+<button type="button" class="preset-chip" data-pct="50">📉 Half size — 50%</button>
+<button type="button" class="preset-chip" data-kb="200">📧 Email — 200KB target</button>
+</div>
+<div class="settings-grid">
+<div class="setting">
+<label for="rsMode">Resize by</label>
+<select id="rsMode">
+<option value="px">Exact pixels</option>
+<option value="pct">Percentage</option>
+<option value="kbsize">Target file size (KB)</option>
+</select>
+</div>
+<div class="setting" id="rsPx">
+<label>Dimensions</label>
+<div style="display:flex;gap:.5rem;align-items:center">
+<input type="number" id="rsW" class="tool-input" min="1" placeholder="width" style="width:110px">
+<span>×</span>
+<input type="number" id="rsH" class="tool-input" min="1" placeholder="height" style="width:110px">
+<span style="font-size:.85rem;color:var(--tp-muted)">px</span>
+</div>
+</div>
+<div class="setting" id="rsPct" style="display:none">
+<label for="rsP">Percentage: <span class="val" id="rsPVal">50%</span></label>
+<input type="range" id="rsPRange" min="1" max="400" value="50">
+<input type="number" id="rsP" class="tool-input" min="1" max="400" value="50" style="margin-top:.4rem">
+<div class="hint">Upscaling beyond 100% can't add real detail — downscaling preserves quality.</div>
+</div>
+<div class="setting" id="rsKb" style="display:none">
+<label for="rsK">Target file size: <span class="val" id="rsKVal">200 KB</span></label>
+<input type="range" id="rsKRange" min="5" max="5000" step="5" value="200">
+<input type="number" id="rsK" class="tool-input" min="5" value="200" style="margin-top:.4rem">
+<div class="hint">Perfect for portals that demand "photo under 200KB".</div>
+</div>
+<div class="toggle-row">
+<span class="t-label">🔒 Keep original proportions (no distortion)</span>
+<label class="toggle"><input type="checkbox" id="rsLock" checked><span class="track"></span></label>
+</div>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Resize &amp; download</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="rsBtn" disabled>
+<svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm11-6H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H6V7h12v12z"/></svg>
+Resize image
+</button>
+<button type="button" class="btn-pro-outline" id="rsClear" disabled>Clear</button>
+</div>
+<div class="progress-wrap" id="rsProgWrap">
+<div class="progress-bar"><i id="rsProgBar"></i></div>
+<div class="progress-text" id="rsProgText">Working…</div>
+</div>
+<div class="results" id="rsResults">
+<p class="result-head">✅ Done — your resized image</p>
+<div class="result-summary" id="rsStats"></div>
+<div class="result-grid">
+<div class="result-card">
+<img class="r-preview" id="rsPreview" alt="Resized preview">
+<div class="r-name" id="rsDlName">resized-image.jpg</div>
+<button type="button" class="btn-pro" id="rsDownload">⬇ Download resized image</button>
+</div>
+</div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>Resize as many images as you like — everything happens in your browser.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('rsShell');

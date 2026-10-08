@@ -10,86 +10,77 @@ draft: false
 Pick a color or paste a HEX, RGB, or HSL value — every format updates live with a preview swatch.
 
 <div class="tool-shell" id="clrShell" data-theme="light">
-
-  <div class="tool-hero">
-    <div class="tool-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-    </div>
-    <div class="tool-hero-top">
-      <div>
-        <h2>Color Converter</h2>
-        <p>HEX ⇄ RGB ⇄ HSL with a live picker and swatch preview — paste any format.</p>
-      </div>
-      <button type="button" class="theme-toggle" id="clrTheme">🌙 Dark</button>
-    </div>
-  </div>
-
-  <div class="tool-badges">
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
-    <span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
-  </div>
-
-  <div class="tool-body">
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">1</span> Pick or paste a color</p>
-      <div class="settings-grid">
-        <div class="setting">
-          <label for="clrPicker">Color picker</label>
-          <div style="display:flex;gap:.75rem;align-items:center;">
-            <input type="color" id="clrPicker" value="#22d3ee" style="width:70px;height:44px;padding:2px;cursor:pointer;border:1px solid var(--tp-border,#d1d5db);border-radius:8px;">
-            <div id="clrSwatch" style="width:70px;height:44px;border-radius:8px;border:1px solid #d1d5db;background:#22d3ee;"></div>
-          </div>
-        </div>
-        <div class="setting">
-          <label for="clrHex">HEX</label>
-          <input type="text" id="clrHex" class="tool-input" placeholder="#22d3ee">
-        </div>
-        <div class="setting">
-          <label for="clrRgb">RGB</label>
-          <input type="text" id="clrRgb" class="tool-input" placeholder="34, 211, 238">
-        </div>
-        <div class="setting">
-          <label for="clrHsl">HSL</label>
-          <input type="text" id="clrHsl" class="tool-input" placeholder="187, 92%, 54%">
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">2</span> Try a popular color</p>
-      <div class="settings-panel">
-        <div class="preset-row" id="clrPresets">
-          <button type="button" class="preset-chip" data-hex="#ef4444">🔴 Red</button>
-          <button type="button" class="preset-chip" data-hex="#f59e0b">🟠 Amber</button>
-          <button type="button" class="preset-chip" data-hex="#22c55e">🟢 Green</button>
-          <button type="button" class="preset-chip" data-hex="#22d3ee">🔵 Cyan</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="tool-step">
-      <p class="tool-step-title"><span class="tool-step-num">3</span> Copy your CSS values</p>
-      <div class="tool-actions">
-        <button type="button" class="btn-pro" id="clrCopyBtn">Copy CSS</button>
-      </div>
-      <div class="results show" id="clrResults">
-        <p class="result-head">🎨 Every format</p>
-        <div class="result-summary" id="clrResult"></div>
-      </div>
-    </div>
-
-    <div class="free-banner">
-      <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
-      <p>This tool runs entirely in your browser — convert as many colors as you like, as often as you like.</p>
-    </div>
-
-  </div>
+<div class="tool-hero">
+<div class="tool-icon">
+<svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
 </div>
-
+<div class="tool-hero-top">
+<div>
+<h2>Color Converter</h2>
+<p>HEX ⇄ RGB ⇄ HSL with a live picker and swatch preview — paste any format.</p>
+</div>
+<button type="button" class="theme-toggle" id="clrTheme">🌙 Dark</button>
+</div>
+</div>
+<div class="tool-badges">
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>100% Free Forever</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Sign-up</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>No Credit Card</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Private — files never leave your browser</span>
+<span class="tool-badge"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Unlimited Use</span>
+</div>
+<div class="tool-body">
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">1</span> Pick or paste a color</p>
+<div class="settings-grid">
+<div class="setting">
+<label for="clrPicker">Color picker</label>
+<div style="display:flex;gap:.75rem;align-items:center;">
+<input type="color" id="clrPicker" value="#22d3ee" style="width:70px;height:44px;padding:2px;cursor:pointer;border:1px solid var(--tp-border,#d1d5db);border-radius:8px;">
+<div id="clrSwatch" style="width:70px;height:44px;border-radius:8px;border:1px solid #d1d5db;background:#22d3ee;"></div>
+</div>
+</div>
+<div class="setting">
+<label for="clrHex">HEX</label>
+<input type="text" id="clrHex" class="tool-input" placeholder="#22d3ee">
+</div>
+<div class="setting">
+<label for="clrRgb">RGB</label>
+<input type="text" id="clrRgb" class="tool-input" placeholder="34, 211, 238">
+</div>
+<div class="setting">
+<label for="clrHsl">HSL</label>
+<input type="text" id="clrHsl" class="tool-input" placeholder="187, 92%, 54%">
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">2</span> Try a popular color</p>
+<div class="settings-panel">
+<div class="preset-row" id="clrPresets">
+<button type="button" class="preset-chip" data-hex="#ef4444">🔴 Red</button>
+<button type="button" class="preset-chip" data-hex="#f59e0b">🟠 Amber</button>
+<button type="button" class="preset-chip" data-hex="#22c55e">🟢 Green</button>
+<button type="button" class="preset-chip" data-hex="#22d3ee">🔵 Cyan</button>
+</div>
+</div>
+</div>
+<div class="tool-step">
+<p class="tool-step-title"><span class="tool-step-num">3</span> Copy your CSS values</p>
+<div class="tool-actions">
+<button type="button" class="btn-pro" id="clrCopyBtn">Copy CSS</button>
+</div>
+<div class="results show" id="clrResults">
+<p class="result-head">🎨 Every format</p>
+<div class="result-summary" id="clrResult"></div>
+</div>
+</div>
+<div class="free-banner">
+<strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+<p>This tool runs entirely in your browser — convert as many colors as you like, as often as you like.</p>
+</div>
+</div>
+</div>
 <script>
 (function(){
   var shell = document.getElementById('clrShell');
