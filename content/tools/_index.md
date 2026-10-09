@@ -1,6 +1,6 @@
 ---
 title: "Free Money Tools"
-description: "Free tools: 37 calculators and utilities for money, health, passwords, QR codes, writing, design, images, audio, PDFs, and everyday conversions. No sign-up, no fees."
+description: "Free tools: 44 calculators and utilities for money, health, passwords, QR codes, writing, design, images, audio, PDFs, and everyday conversions. No sign-up, no fees."
 date: 2026-10-08
 draft: false
 ---
@@ -69,10 +69,15 @@ Every tool here is **free to use, no sign-up required** — and everything you e
 - [Image Resizer](/tools/image-resizer/) — resize images to exact pixels, a percentage, or a target file size.
 - [Image Format Converter](/tools/image-format-converter/) — convert between PNG, JPG, and WebP in bulk, right in your browser.
 - [Audio Trimmer](/tools/audio-trimmer/) — cut clips from any audio file using a visual waveform editor.
+- [Text to Speech](/tools/text-to-speech/) — turn any text into natural-sounding speech with voice, speed, and pitch controls.
+- [Meme Generator](/tools/meme-generator/) — make memes with 6 original backgrounds, classic Impact-style text, no watermark.
+- [HEIC to JPG Converter](/tools/heic-to-jpg-converter/) — convert iPhone HEIC photos to JPG or PNG, batch supported.
 
 ## PDF & File Tools
 
 - [Merge PDF](/tools/merge-pdf/) — combine multiple PDFs into one, reorder with drag and drop, all in your browser.
+- [Split PDF](/tools/split-pdf/) — extract page ranges or split every page into its own PDF, in your browser.
+- [JPG to PDF Converter](/tools/jpg-to-pdf-converter/) — turn JPG, PNG, and WebP images into a single PDF, reorder pages, set page size.
 
 ## Productivity
 
