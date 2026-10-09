@@ -1,6 +1,7 @@
 ---
 title: "Free Color Converter (HEX, RGB, HSL)"
 description: "Convert colors between HEX, RGB, and HSL instantly with a live picker and swatch preview. Paste any format — get every format back."
+category: everyday
 date: 2026-10-01
 draft: false
 ---

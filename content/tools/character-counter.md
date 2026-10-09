@@ -1,6 +1,7 @@
 ---
 title: "Free Character Counter — Count Characters, Words & More"
 description: "Count characters with and without spaces, words, sentences, lines, and reading time instantly as you type. Free, no sign-up — all in your browser."
+category: text
 date: 2026-10-04
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Free Freelance Hourly Rate Calculator"
 description: "Free freelance rate calculator: enter your target income, billable hours, and expenses to find the hourly rate you should charge."
+category: finance
 date: 2026-09-29
 draft: false
 ---

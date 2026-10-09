@@ -1,6 +1,7 @@
 ---
 title: "Free Debt-to-Income (DTI) Calculator"
 description: "Free DTI calculator: enter your gross monthly income and debt payments to get your debt-to-income ratio and what it means."
+category: finance
 date: 2026-09-29
 draft: false
 ---

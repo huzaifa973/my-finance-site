@@ -1,6 +1,7 @@
 ---
 title: "Free Compound Interest Calculator"
 description: "Free compound interest calculator: enter your principal, monthly contribution, rate, and years to see your money grow, year by year."
+category: finance
 date: 2026-09-29
 draft: false
 ---

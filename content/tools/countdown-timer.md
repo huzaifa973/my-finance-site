@@ -1,6 +1,7 @@
 ---
 title: "Free Countdown Timer — Count Down to Any Date & Time"
 description: "A free online countdown timer — name your event, pick a date and time, and watch the days, hours, minutes, and seconds tick down. No app, no sign-up."
+category: everyday
 date: 2026-10-06
 draft: false
 ---

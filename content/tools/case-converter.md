@@ -1,6 +1,7 @@
 ---
 title: "Free Case Converter — UPPERCASE, lowercase, Title Case & More"
 description: "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case and 8 more styles instantly. Free, no sign-up — everything stays in your browser."
+category: text
 date: 2026-10-02
 draft: false
 ---

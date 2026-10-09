@@ -1,6 +1,7 @@
 ---
 title: "Free Debt Snowball Payoff Calculator"
 description: "Free debt snowball calculator: list your debts to see your payoff order, months to debt-free, and how much interest you'll save."
+category: finance
 date: 2026-09-29
 draft: false
 ---

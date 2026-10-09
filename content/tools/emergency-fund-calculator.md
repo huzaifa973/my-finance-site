@@ -1,6 +1,7 @@
 ---
 title: "Free Emergency Fund Calculator"
 description: "Free emergency fund calculator: enter monthly expenses to find your target fund size and how long it will take to build."
+category: finance
 date: 2026-09-29
 draft: false
 ---
