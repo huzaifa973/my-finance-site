@@ -1,6 +1,7 @@
 ---
 title: "Free Meme Generator — Make Memes Online, No Watermark"
 description: "Make memes online with 6 original canvas-drawn backgrounds, classic Impact-style text and no watermark. Free forever, no sign-up — everything runs in your browser."
+category: everyday
 date: 2026-10-09
 draft: false
 ---

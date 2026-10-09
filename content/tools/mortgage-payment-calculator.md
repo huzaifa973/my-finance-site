@@ -1,6 +1,7 @@
 ---
 title: "Free Mortgage Payment Calculator"
 description: "Free mortgage calculator: enter home price, down payment, rate, and term to see your monthly payment with a principal vs interest split."
+category: finance
 date: 2026-09-29
 draft: false
 ---

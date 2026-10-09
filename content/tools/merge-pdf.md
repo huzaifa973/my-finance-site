@@ -1,6 +1,7 @@
 ---
 title: "Free Merge PDF — Combine PDFs Online Without Uploading"
 description: "Merge multiple PDF files into one, right in your browser. Reorder pages with drag and drop. Free, private — your files never leave your device."
+category: pdf
 date: 2026-10-08
 draft: false
 ---

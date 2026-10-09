@@ -1,6 +1,7 @@
 ---
 title: "Free Net Worth Tracker"
 description: "Free net worth tracker: list your assets and liabilities to calculate your net worth instantly and see the breakdown."
+category: finance
 date: 2026-09-29
 draft: false
 ---

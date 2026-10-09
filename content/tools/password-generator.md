@@ -1,6 +1,7 @@
 ---
 title: "Free Password Generator"
 description: "Generate strong, random passwords instantly. Choose the length and character types — free, no sign-up, everything stays in your browser."
+category: everyday
 date: 2026-09-29
 draft: false
 ---

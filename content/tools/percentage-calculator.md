@@ -1,6 +1,7 @@
 ---
 title: "Free Percentage Calculator"
 description: "Calculate X% of Y, what percentage one number is of another, and percentage increase/decrease. Free, instant, no sign-up."
+category: everyday
 date: 2026-09-29
 draft: false
 ---

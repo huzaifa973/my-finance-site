@@ -1,6 +1,7 @@
 ---
 title: "Free Pomodoro Focus Timer"
 description: "A free Pomodoro timer with 25-min focus, 5-min short break, and 15-min long break modes — plus a session counter and gentle beep alarm."
+category: everyday
 date: 2026-10-01
 draft: false
 ---

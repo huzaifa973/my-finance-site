@@ -1,6 +1,7 @@
 ---
 title: "Free Paycheck Budget Planner"
 description: "Free paycheck budget planner: enter your pay and expenses to allocate every dollar before payday and see what's left over."
+category: finance
 date: 2026-09-29
 draft: false
 ---

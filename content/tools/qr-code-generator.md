@@ -1,6 +1,7 @@
 ---
 title: "Free QR Code Generator"
 description: "Create a QR code instantly from any link or text. Free QR generator — no sign-up, no watermark, download not needed."
+category: everyday
 date: 2026-09-29
 draft: false
 ---
