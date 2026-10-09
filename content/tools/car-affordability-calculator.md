@@ -1,6 +1,7 @@
 ---
 title: "How Much Car Can I Afford? Free Calculator"
 description: "Free car affordability calculator: enter your income and debts to find your affordable car price range using the 15% rule."
+category: finance
 date: 2026-09-29
 draft: false
 ---

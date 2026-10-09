@@ -1,85 +1,89 @@
 ---
-title: "Free Money Tools"
-description: "Free tools: 44 calculators and utilities for money, health, passwords, QR codes, writing, design, images, audio, PDFs, and everyday conversions. No sign-up, no fees."
-date: 2026-10-08
+title: "Free Online Tools — Images, Audio, Video, PDF & More"
+description: "44+ free online tools: image compressor, audio trimmer, PDF merger, finance calculators and more. No sign-up, no fees, files never leave your browser."
+date: 2026-10-09
 draft: false
 ---
 
-Every tool here is **free to use, no sign-up required** — and everything you enter stays in your browser. Pick a tool and start planning.
+Every tool below is **100% free forever — no sign-up, no credit card, unlimited use**. Pick a category and get going. Your files never leave your browser.
 
-## Budgeting & Planning
+<div class="cards">
 
-- [Free Monthly Budget Calculator](/tools/budget-calculator/) — split your take-home pay with the 50/30/20 rule in seconds.
-- [50/30/20 Budget Splitter](/tools/50-30-20-budget-splitter/) — visual needs/wants/savings buckets from one pay figure.
-- [Paycheck Budget Planner](/tools/paycheck-budget-planner/) — give every dollar of each paycheck a job before payday.
-- [Subscription Cost Tracker](/tools/subscription-cost-tracker/) — total your monthly subscriptions and spot the easy cuts.
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">4 tools</span>
+    <h3 class="card-title"><a href="/tools/image/">🖼️ Image Tools</a></h3>
+    <p class="card-excerpt">Compress, resize, and convert JPG, PNG, WebP &amp; HEIC — before/after quality comparison included.</p>
+    <a class="card-link" href="/tools/image/">Browse image tools →</a>
+  </div>
+</article>
 
-## Debt & Borrowing
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">2 tools</span>
+    <h3 class="card-title"><a href="/tools/audio/">🎵 Audio Tools</a></h3>
+    <p class="card-excerpt">Trim audio, convert formats, and turn text into speech — right in your browser.</p>
+    <a class="card-link" href="/tools/audio/">Browse audio tools →</a>
+  </div>
+</article>
 
-- [Debt Snowball Payoff Calculator](/tools/debt-snowball-calculator/) — your payoff order, timeline, and interest saved.
-- [Debt-to-Income (DTI) Calculator](/tools/debt-to-income-calculator/) — your DTI ratio plus what lenders think of it.
-- [Mortgage Payment Calculator](/tools/mortgage-payment-calculator/) — monthly payment with a principal-vs-interest split.
-- [Loan Amortization Calculator](/tools/loan-amortization-calculator/) — monthly payment and a full amortization schedule.
-- [How Much Car Can I Afford? Calculator](/tools/car-affordability-calculator/) — a safe car price range using the 15% rule.
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">New</span>
+    <h3 class="card-title"><a href="/tools/video/">🎬 Video Tools</a></h3>
+    <p class="card-excerpt">Trim clips, compress videos, and make GIFs — free, no watermarks, no uploads.</p>
+    <a class="card-link" href="/tools/video/">Browse video tools →</a>
+  </div>
+</article>
 
-## Saving & Investing
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">3 tools</span>
+    <h3 class="card-title"><a href="/tools/pdf/">📄 PDF Tools</a></h3>
+    <p class="card-excerpt">Merge, split, and convert PDF files — your documents never leave your device.</p>
+    <a class="card-link" href="/tools/pdf/">Browse PDF tools →</a>
+  </div>
+</article>
 
-- [Compound Interest Calculator](/tools/compound-interest-calculator/) — watch your money grow year by year.
-- [Savings Goal Tracker](/tools/savings-goal-tracker/) — progress bar and finish date for any goal.
-- [Emergency Fund Calculator](/tools/emergency-fund-calculator/) — your target fund size and how long to build it.
-- [Retirement Savings Projector](/tools/retirement-savings-projector/) — projected retirement balance from your current path.
-- [Net Worth Tracker](/tools/net-worth-tracker/) — assets minus liabilities, with a clear breakdown.
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">7 tools</span>
+    <h3 class="card-title"><a href="/tools/text/">✍️ Text &amp; Writing Tools</a></h3>
+    <p class="card-excerpt">Word counters, case converters, text diff, Base64, hashes and more for writers &amp; developers.</p>
+    <a class="card-link" href="/tools/text/">Browse text tools →</a>
+  </div>
+</article>
 
-## Earning
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">New</span>
+    <h3 class="card-title"><a href="/tools/seo/">📈 SEO Tools</a></h3>
+    <p class="card-excerpt">Meta tag generators, keyword checks, and page analyzers to lift your rankings.</p>
+    <a class="card-link" href="/tools/seo/">Browse SEO tools →</a>
+  </div>
+</article>
 
-- [Freelance Hourly Rate Calculator](/tools/freelance-hourly-rate-calculator/) — the rate that actually covers your costs and taxes.
-- [Salary to Hourly Converter](/tools/salary-to-hourly-converter/) — convert salary to hourly and hourly to salary instantly.
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">18 tools</span>
+    <h3 class="card-title"><a href="/tools/finance/">💰 Finance Calculators</a></h3>
+    <p class="card-excerpt">Budgets, loans, investing, salary, retirement — every money question answered.</p>
+    <a class="card-link" href="/tools/finance/">Browse finance tools →</a>
+  </div>
+</article>
 
-## Housing
+<article class="card">
+  <div class="card-body">
+    <span class="card-tag">10 tools</span>
+    <h3 class="card-title"><a href="/tools/everyday/">🛠️ Everyday Utilities</a></h3>
+    <p class="card-excerpt">QR codes, passwords, timers, unit converters and the other daily helpers.</p>
+    <a class="card-link" href="/tools/everyday/">Browse everyday tools →</a>
+  </div>
+</article>
 
-- [Rent vs Buy Calculator](/tools/rent-vs-buy-calculator/) — the true 5-year cost of renting vs buying, hidden costs included.
+</div>
 
-## Everyday Tools
-
-- [Tip & Bill Split Calculator](/tools/tip-calculator/) — the perfect tip and fair per-person totals in seconds.
-- [Password Generator](/tools/password-generator/) — strong random passwords with the length and characters you choose.
-- [QR Code Generator](/tools/qr-code-generator/) — turn any link or text into a scannable QR code instantly.
-- [Word Counter](/tools/word-counter/) — words, characters, sentences, and reading time as you type.
-- [Percentage Calculator](/tools/percentage-calculator/) — discounts, tips, and percent change in one place.
-- [Unit Converter](/tools/unit-converter/) — miles/km, kg/lbs, °C/°F and more, instantly.
-- [Age Calculator](/tools/age-calculator/) — your exact age in years, months, and days, plus days lived.
-
-## Health & Fitness
-
-- [BMI Calculator](/tools/bmi-calculator/) — your body mass index with a color-coded healthy-range guide.
-
-## Design & Writing
-
-- [Color Converter (HEX/RGB/HSL)](/tools/color-converter/) — convert colors between formats with a live preview swatch.
-- [Case Converter](/tools/case-converter/) — UPPERCASE, lowercase, Title Case, camelCase, snake_case and 8 more styles, instantly.
-- [Character Counter](/tools/character-counter/) — characters, words, sentences, lines, and reading time as you type.
-- [Base64 Encoder & Decoder](/tools/base64-encoder-decoder/) — encode text and files to Base64, decode it back, instantly in your browser.
-- [Hash Generator (MD5 & SHA-256)](/tools/hash-generator/) — generate hashes from text or files, with checksum comparison to verify downloads.
-- [Text Diff Checker](/tools/text-diff-checker/) — compare two texts and see every word-level difference highlighted.
-- [Lorem Ipsum Generator](/tools/lorem-ipsum-generator/) — placeholder text in paragraphs, words, or sentences, one click to copy.
-
-## Image & Media Tools
-
-- [Image Compressor](/tools/image-compressor/) — shrink JPG, PNG, and WebP images with a before/after quality slider.
-- [Image Resizer](/tools/image-resizer/) — resize images to exact pixels, a percentage, or a target file size.
-- [Image Format Converter](/tools/image-format-converter/) — convert between PNG, JPG, and WebP in bulk, right in your browser.
-- [Audio Trimmer](/tools/audio-trimmer/) — cut clips from any audio file using a visual waveform editor.
-- [Text to Speech](/tools/text-to-speech/) — turn any text into natural-sounding speech with voice, speed, and pitch controls.
-- [Meme Generator](/tools/meme-generator/) — make memes with 6 original backgrounds, classic Impact-style text, no watermark.
-- [HEIC to JPG Converter](/tools/heic-to-jpg-converter/) — convert iPhone HEIC photos to JPG or PNG, batch supported.
-
-## PDF & File Tools
-
-- [Merge PDF](/tools/merge-pdf/) — combine multiple PDFs into one, reorder with drag and drop, all in your browser.
-- [Split PDF](/tools/split-pdf/) — extract page ranges or split every page into its own PDF, in your browser.
-- [JPG to PDF Converter](/tools/jpg-to-pdf-converter/) — turn JPG, PNG, and WebP images into a single PDF, reorder pages, set page size.
-
-## Productivity
-
-- [Pomodoro Focus Timer](/tools/pomodoro-focus-timer/) — 25-minute focus sessions with breaks and a session counter.
-- [Countdown Timer](/tools/countdown-timer/) — count down to any date and time: exams, events, launches, and holidays.
+<div class="free-banner" style="max-width:760px;margin:1rem auto 2rem;">
+  <strong>🎉 Free forever. No sign-up. No credit card. No limits.</strong>
+  <p>New tools added every day — 20 fresh tools daily, each in its category above.</p>
+</div>

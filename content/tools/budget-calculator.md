@@ -1,6 +1,7 @@
 ---
 title: "Free Monthly Budget Calculator (50/30/20 Rule)"
 description: "Free budget calculator: enter your monthly income and see your 50/30/20 budget split for needs, wants, and savings instantly."
+category: finance
 date: 2026-09-29
 draft: false
 ---

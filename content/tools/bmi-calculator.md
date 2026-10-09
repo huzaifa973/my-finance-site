@@ -1,6 +1,7 @@
 ---
 title: "Free BMI Calculator"
 description: "Calculate your Body Mass Index instantly — metric and imperial units, plus the official BMI category table. Free, private, no sign-up."
+category: everyday
 date: 2026-10-01
 draft: false
 ---

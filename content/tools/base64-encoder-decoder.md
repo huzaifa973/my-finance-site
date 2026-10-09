@@ -1,6 +1,7 @@
 ---
 title: "Free Base64 Encoder & Decoder — Encode Text and Files Online"
 description: "Encode text and files to Base64 or decode Base64 back to text and files — instantly, in your browser. Free, no sign-up, Unicode-safe."
+category: text
 date: 2026-10-06
 draft: false
 ---

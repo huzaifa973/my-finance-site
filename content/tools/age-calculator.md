@@ -1,6 +1,7 @@
 ---
 title: "Free Age Calculator"
 description: "Calculate your exact age in years, months, and days from any birthdate — plus total days lived and a countdown to your next birthday."
+category: everyday
 date: 2026-10-01
 draft: false
 ---

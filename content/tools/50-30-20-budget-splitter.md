@@ -1,6 +1,7 @@
 ---
 title: "Free 50/30/20 Budget Splitter"
 description: "Free 50/30/20 budget splitter: enter your take-home pay to instantly split it into needs, wants, and savings with visual bars."
+category: finance
 date: 2026-09-29
 draft: false
 ---

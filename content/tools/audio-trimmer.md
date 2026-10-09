@@ -1,6 +1,7 @@
 ---
 title: "Free Audio Trimmer — Cut MP3 & WAV Online"
 description: "Trim any audio file in your browser: pick start/end points on the waveform and download the clip. Free, no sign-up, files stay on your device."
+category: audio
 date: 2026-10-08
 draft: false
 ---
