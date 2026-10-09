@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main>
+  <div class="wrap-wide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a> /
+      <a href="{{ "/tools/" | relURL }}">Free Tools</a> /
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <div class="section-head">
+      <h2><span class="bar-gold"></span>{{ .Title }}</h2>
+    </div>
+    {{ with .Content }}
+    <div class="archive-intro">
+      {{ . }}
+    </div>
+    {{ end }}
+    {{ $tools := where .Site.RegularPages "Params.category" .Params.category_key }}
+    <p class="meta" style="margin:.4rem 0 0">{{ len $tools }} free {{ .Title | lower }} — no sign-up, no fees.</p>
+    <div class="cards">
+      {{ range $tools }}{{ partial "tool-card.html" . }}{{ end }}
+    </div>
+    <div class="free-banner" style="max-width:760px;margin:2rem auto;">
+      <strong>🎉 Every tool here is 100% free forever — no sign-up, no credit card, unlimited use.</strong>
+      <p>Everything runs in your browser. Your files never leave your device.</p>
+    </div>
+  </div>
+</main>
+{{ end }}
