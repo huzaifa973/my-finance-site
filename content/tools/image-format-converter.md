@@ -1,6 +1,7 @@
 ---
 title: "Free Image Format Converter — PNG, JPG & WebP"
 description: "Convert images between PNG, JPG, and WebP in seconds, right in your browser. Free, no sign-up, your files never leave your device."
+category: image
 date: 2026-10-08
 draft: false
 ---

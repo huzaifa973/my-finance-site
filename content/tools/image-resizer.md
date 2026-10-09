@@ -1,6 +1,7 @@
 ---
 title: "Free Image Resizer — Resize Images to Any Size Online"
 description: "Resize any image to exact pixels, a percentage, or a max file size — without losing quality. Free, no sign-up, runs 100% in your browser."
+category: image
 date: 2026-10-08
 draft: false
 ---

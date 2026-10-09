@@ -1,6 +1,7 @@
 ---
 title: "Free MD5 & SHA-256 Hash Generator — Hash Text and Files Online"
 description: "Generate MD5 and SHA-256 hashes from text or files instantly in your browser. Free, no sign-up — verify file integrity with checksum comparison."
+category: text
 date: 2026-10-07
 draft: false
 ---

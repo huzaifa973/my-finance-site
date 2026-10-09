@@ -1,6 +1,7 @@
 ---
 title: "Free Image Compressor — Reduce Image File Size Online"
 description: "Compress JPG, PNG, and WebP images in your browser with batch processing, quality presets and before/after comparison. Free forever, no sign-up, files never leave your device."
+category: image
 date: 2026-10-08
 draft: false
 ---

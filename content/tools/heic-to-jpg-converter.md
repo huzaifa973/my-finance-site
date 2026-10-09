@@ -1,6 +1,7 @@
 ---
 title: "Free HEIC to JPG Converter — Convert iPhone Photos Online"
 description: "Convert iPhone HEIC photos to JPG or PNG right in your browser — batch conversion, quality presets, no sign-up. Free forever; files never leave your device."
+category: image
 date: 2026-10-09
 draft: false
 ---

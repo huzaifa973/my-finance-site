@@ -1,6 +1,7 @@
 ---
 title: "Free Loan Amortization Calculator"
 description: "Free loan amortization calculator: enter any loan amount, rate, and term to see your monthly payment and a full schedule."
+category: finance
 date: 2026-09-29
 draft: false
 ---

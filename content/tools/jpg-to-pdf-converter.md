@@ -1,6 +1,7 @@
 ---
 title: "Free JPG to PDF Converter — Images to PDF Online"
 description: "Turn JPG, PNG and WebP images into a single PDF online. Reorder pages, set page size and margins — free forever, no sign-up, files never leave your browser."
+category: pdf
 date: 2026-10-09
 draft: false
 ---

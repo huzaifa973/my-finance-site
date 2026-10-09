@@ -1,6 +1,7 @@
 ---
 title: "Free Lorem Ipsum Generator"
 description: "Generate lorem ipsum placeholder text instantly — paragraphs, words, or sentences — and copy it with one click. Free, no sign-up."
+category: text
 date: 2026-10-01
 draft: false
 ---
