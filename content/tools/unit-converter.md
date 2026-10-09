@@ -1,6 +1,7 @@
 ---
 title: "Free Unit Converter (Length, Weight, Temperature)"
 description: "Convert length, weight, and temperature instantly: miles to km, kg to lbs, °C to °F and more. Free, no sign-up."
+category: everyday
 date: 2026-09-29
 draft: false
 ---

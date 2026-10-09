@@ -1,6 +1,7 @@
 ---
 title: "Free Word Counter"
 description: "Count words, characters, sentences, and reading time instantly. Free online word counter — no sign-up, text never leaves your browser."
+category: text
 date: 2026-09-29
 draft: false
 ---
