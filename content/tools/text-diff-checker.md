@@ -1,6 +1,7 @@
 ---
 title: "Free Text Diff Checker — Compare Two Texts Online"
 description: "Compare two texts and see every difference highlighted, line by line and word by word. Free, no sign-up — runs entirely in your browser."
+category: text
 date: 2026-10-07
 draft: false
 ---

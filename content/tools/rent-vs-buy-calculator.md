@@ -1,6 +1,7 @@
 ---
 title: "Free Rent vs Buy Calculator"
 description: "Should you rent or buy? Compare the true 5-year cost of renting vs buying a home, including the hidden costs most calculators ignore. Free, no sign-up."
+category: finance
 date: 2026-09-30
 draft: false
 ---

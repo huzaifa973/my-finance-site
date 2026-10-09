@@ -1,6 +1,7 @@
 ---
 title: "Free Retirement Savings Projector"
 description: "Free retirement projector: enter your age, savings, and monthly contributions to see your projected retirement balance."
+category: finance
 date: 2026-09-29
 draft: false
 ---

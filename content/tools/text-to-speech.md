@@ -1,6 +1,7 @@
 ---
 title: "Free Text to Speech — Read Text Aloud Online"
 description: "Turn any text into natural speech with free online text to speech. Pick a voice, speed and pitch — no sign-up, unlimited, everything stays in your browser."
+category: audio
 date: 2026-10-09
 draft: false
 ---

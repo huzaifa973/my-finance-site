@@ -1,6 +1,7 @@
 ---
 title: "Free Subscription Cost Tracker"
 description: "Free subscription tracker: add your monthly subscriptions to see the true yearly cost and find easy cuts that save hundreds."
+category: finance
 date: 2026-09-29
 draft: false
 ---

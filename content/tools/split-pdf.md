@@ -1,6 +1,7 @@
 ---
 title: "Free PDF Splitter — Split PDF Files Online"
 description: "Split PDF files in your browser — extract page ranges or save every page as its own file. Free forever, no sign-up, files never leave your device."
+category: pdf
 date: 2026-10-09
 draft: false
 ---

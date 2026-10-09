@@ -1,6 +1,7 @@
 ---
 title: "Free Tip & Bill Split Calculator"
 description: "Calculate the perfect tip and split any restaurant bill fairly — per-person totals with tip included. Free, instant, no sign-up."
+category: finance
 date: 2026-09-30
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Free Savings Goal Tracker"
 description: "Free savings goal tracker: set a target, enter what you've saved, and see your progress bar plus how many months are left."
+category: finance
 date: 2026-09-29
 draft: false
 ---

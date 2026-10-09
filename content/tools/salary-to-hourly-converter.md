@@ -1,6 +1,7 @@
 ---
 title: "Free Salary to Hourly Converter"
 description: "Free salary to hourly converter: turn an annual salary into an hourly rate — and convert hourly pay back to a salary."
+category: finance
 date: 2026-09-29
 draft: false
 ---
