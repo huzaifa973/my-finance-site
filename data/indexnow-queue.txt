@@ -1,0 +1,37 @@
+# IndexNow URL queue -- one absolute page URL per line.
+# Lines starting with # and blank lines are ignored.
+#
+# DAILY FLOW (order matters):
+#   1. scripts/submit-indexnow.py runs FIRST: it submits the URLs queued by
+#      the PREVIOUS publishing run (live since the last deploy) and clears
+#      this file on success. On failure the file is left intact for retry.
+#   2. The publishing run then appends today's 25 new page URLs below and
+#      pushes; Cloudflare Pages deploys.
+#
+# The key file static/4a9bf262d7be7ca73c1187827aed46cd.txt must be deployed
+# live BEFORE the first submission, or IndexNow cannot validate ownership.
+https://dollarwise.xyz/tools/video-to-gif-converter/
+https://dollarwise.xyz/tools/video-trimmer/
+https://dollarwise.xyz/tools/video-compressor/
+https://dollarwise.xyz/tools/extract-audio-from-video/
+https://dollarwise.xyz/tools/video-frame-extractor/
+https://dollarwise.xyz/tools/meta-tag-generator/
+https://dollarwise.xyz/tools/serp-preview-tool/
+https://dollarwise.xyz/tools/keyword-density-checker/
+https://dollarwise.xyz/tools/robots-txt-generator/
+https://dollarwise.xyz/tools/xml-sitemap-generator/
+https://dollarwise.xyz/tools/vocal-remover/
+https://dollarwise.xyz/tools/slowed-reverb-maker/
+https://dollarwise.xyz/tools/audio-joiner/
+https://dollarwise.xyz/tools/audio-format-converter/
+https://dollarwise.xyz/tools/voice-recorder/
+https://dollarwise.xyz/tools/pdf-to-jpg-converter/
+https://dollarwise.xyz/tools/pdf-page-rotator/
+https://dollarwise.xyz/tools/json-formatter-validator/
+https://dollarwise.xyz/tools/duplicate-lines-remover/
+https://dollarwise.xyz/tools/gpa-calculator/
+https://dollarwise.xyz/posts/how-to-convert-video-to-gif-free/
+https://dollarwise.xyz/posts/how-to-trim-a-video-online-free/
+https://dollarwise.xyz/posts/meta-tags-explained-free-generator/
+https://dollarwise.xyz/posts/keyword-density-what-it-is-how-to-check/
+https://dollarwise.xyz/posts/how-to-calculate-your-gpa-us-students-guide/
