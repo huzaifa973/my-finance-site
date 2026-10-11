@@ -1,37 +1,25 @@
-# IndexNow URL queue -- one absolute page URL per line.
-# Lines starting with # and blank lines are ignored.
-#
-# DAILY FLOW (order matters):
-#   1. scripts/submit-indexnow.py runs FIRST: it submits the URLs queued by
-#      the PREVIOUS publishing run (live since the last deploy) and clears
-#      this file on success. On failure the file is left intact for retry.
-#   2. The publishing run then appends today's 25 new page URLs below and
-#      pushes; Cloudflare Pages deploys.
-#
-# The key file static/4a9bf262d7be7ca73c1187827aed46cd.txt must be deployed
-# live BEFORE the first submission, or IndexNow cannot validate ownership.
-https://dollarwise.xyz/tools/video-to-gif-converter/
-https://dollarwise.xyz/tools/video-trimmer/
-https://dollarwise.xyz/tools/video-compressor/
-https://dollarwise.xyz/tools/extract-audio-from-video/
-https://dollarwise.xyz/tools/video-frame-extractor/
-https://dollarwise.xyz/tools/meta-tag-generator/
-https://dollarwise.xyz/tools/serp-preview-tool/
-https://dollarwise.xyz/tools/keyword-density-checker/
-https://dollarwise.xyz/tools/robots-txt-generator/
-https://dollarwise.xyz/tools/xml-sitemap-generator/
-https://dollarwise.xyz/tools/vocal-remover/
-https://dollarwise.xyz/tools/slowed-reverb-maker/
-https://dollarwise.xyz/tools/audio-joiner/
-https://dollarwise.xyz/tools/audio-format-converter/
-https://dollarwise.xyz/tools/voice-recorder/
-https://dollarwise.xyz/tools/pdf-to-jpg-converter/
-https://dollarwise.xyz/tools/pdf-page-rotator/
-https://dollarwise.xyz/tools/json-formatter-validator/
-https://dollarwise.xyz/tools/duplicate-lines-remover/
-https://dollarwise.xyz/tools/gpa-calculator/
-https://dollarwise.xyz/posts/how-to-convert-video-to-gif-free/
-https://dollarwise.xyz/posts/how-to-trim-a-video-online-free/
-https://dollarwise.xyz/posts/meta-tags-explained-free-generator/
-https://dollarwise.xyz/posts/keyword-density-what-it-is-how-to-check/
-https://dollarwise.xyz/posts/how-to-calculate-your-gpa-us-students-guide/
+https://dollarwise.xyz/tools/background-remover/
+https://dollarwise.xyz/tools/image-to-text-ocr/
+https://dollarwise.xyz/tools/image-cropper/
+https://dollarwise.xyz/tools/photo-filter-editor/
+https://dollarwise.xyz/tools/audio-speed-changer/
+https://dollarwise.xyz/tools/silence-trimmer/
+https://dollarwise.xyz/tools/audio-reverser/
+https://dollarwise.xyz/tools/screen-recorder/
+https://dollarwise.xyz/tools/video-metadata-viewer/
+https://dollarwise.xyz/tools/pdf-size-reducer/
+https://dollarwise.xyz/tools/pdf-text-extractor/
+https://dollarwise.xyz/tools/pdf-delete-pages/
+https://dollarwise.xyz/tools/markdown-editor/
+https://dollarwise.xyz/tools/html-markdown-converter/
+https://dollarwise.xyz/tools/fancy-text-generator/
+https://dollarwise.xyz/tools/faq-schema-generator/
+https://dollarwise.xyz/tools/headline-analyzer/
+https://dollarwise.xyz/tools/online-stopwatch/
+https://dollarwise.xyz/tools/invoice-generator/
+https://dollarwise.xyz/tools/color-picker-from-image/
+https://dollarwise.xyz/posts/how-to-remove-image-backgrounds-free/
+https://dollarwise.xyz/posts/how-to-extract-text-from-images-and-scanned-pdfs-free/
+https://dollarwise.xyz/posts/markdown-basics-beginners-guide/
+https://dollarwise.xyz/posts/how-to-create-an-invoice-online-free/
+https://dollarwise.xyz/posts/how-to-screen-record-on-windows-mac-chromebook-free/

@@ -116,6 +116,10 @@ print("This is a code block")
 
 That is 95% of daily Markdown. Everything else — footnotes, task lists (`- [ ]`), definition lists — you can learn as you need it.
 
+### Where you'll meet Markdown in the wild
+
+Once you know the syntax, you will start spotting it everywhere. GitHub README files, project documentation, and developer wikis are almost always written in Markdown. Reddit comments, Discord messages, and Slack posts support Markdown-style formatting for bold, italics, and code — the same `**bold**` and `` `code` `` you use in the cheat sheet above. Note-taking apps like Obsidian, Notion (in its Markdown import mode), and Joplin store your notes as plain .md files, which means your notes stay portable: switch apps and your formatting survives. Blog platforms from Ghost to static site generators like Hugo render Markdown directly, so a single source file can become a blog post, a PDF handout, and a web page without reformatting.
+
 ## The export workflow: from Markdown to a published page
 
 Writing in Markdown is only half the story. The real power is how easily it converts to other formats.
