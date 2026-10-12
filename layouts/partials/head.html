@@ -67,15 +67,22 @@ gtag('config', '{{ . }}');
 
 <!-- Google Search Console site verification: only rendered when set in hugo.toml [params] -->
 {{ with .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+
+<!-- Bing Webmaster Tools verification (USER STEP, ~2 minutes):
+     1. Go to https://www.bing.com/webmasters and add https://dollarwise.xyz/
+     2. Choose the "HTML meta tag" verification option and copy the content value
+     3. Paste it below in place of PASTE_BING_CODE_HERE, uncomment the line, push.
+     This unlocks the Bing dashboard AND makes IndexNow submissions fully trusted. -->
+<!-- <meta name="msvalidate.01" content="PASTE_BING_CODE_HERE"> -->
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 
-<!-- JSON-LD Article schema on posts -->
+<!-- JSON-LD BlogPosting schema on posts -->
 {{ if and .IsPage (eq .Section "posts") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": {{ .Title | jsonify }},
   "description": {{ $desc | jsonify }},
   "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
@@ -83,6 +90,47 @@ gtag('config', '{{ . }}');
   "author": { "@type": "Organization", "name": "DollarWise" },
   "publisher": { "@type": "Organization", "name": "DollarWise" },
   "mainEntityOfPage": { "@type": "WebPage", "@id": {{ .Permalink | jsonify }} }
+}
+</script>
+{{ end }}
+
+<!-- JSON-LD SoftwareApplication schema on tool pages (rich results eligible) -->
+{{ if and .IsPage (eq .Section "tools") }}
+{{ $appCatMap := dict "image" "MultimediaApplication" "audio" "MultimediaApplication" "video" "MultimediaApplication" "finance" "BusinessApplication" "seo" "BusinessApplication" "pdf" "UtilitiesApplication" "text" "UtilitiesApplication" "everyday" "UtilitiesApplication" }}
+{{ $appCat := index $appCatMap (.Params.category | default "everyday") | default "UtilitiesApplication" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ .Title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "applicationCategory": {{ $appCat | jsonify }},
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "DollarWise" }
+}
+</script>
+{{ end }}
+
+<!-- JSON-LD BreadcrumbList on all content pages (matches the visible breadcrumbs) -->
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ .Site.BaseURL | jsonify }} },
+    {{ if eq .Section "posts" }}
+    { "@type": "ListItem", "position": 2, "name": "Posts", "item": {{ ("posts/" | absURL) | jsonify }} },
+    { "@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": {{ .Permalink | jsonify }} }
+    {{ else if eq .Section "tools" }}
+    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": {{ ("tools/" | absURL) | jsonify }} },
+    { "@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": {{ .Permalink | jsonify }} }
+    {{ else }}
+    { "@type": "ListItem", "position": 2, "name": {{ .Title | jsonify }}, "item": {{ .Permalink | jsonify }} }
+    {{ end }}
+  ]
 }
 </script>
 {{ end }}
@@ -191,6 +239,12 @@ nav.main a:hover{color:var(--accent); background:var(--accent-soft); text-decora
   text-transform:uppercase; color:var(--accent-dark);
   background:var(--accent-soft); border-radius:20px; padding:.2rem .75rem;
 }
+.tool-card-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:46px; height:46px; border-radius:12px;
+  background:var(--accent-soft); color:var(--accent-dark);
+}
+.tool-card-icon svg{width:24px; height:24px}
 .card-title{font-size:1.2rem; line-height:1.4; margin:0}
 .card-title a{color:var(--text)}
 .card-title a:hover{color:var(--accent)}
