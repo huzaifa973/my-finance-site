@@ -15,5 +15,9 @@
       <a href="{{ "ai-prompts/" | relURL }}">AI Prompts</a>
       <a href="{{ "store/" | relURL }}">Store</a>
     </nav>
+    <form class="site-search" action="{{ "search/" | relURL }}" method="get" role="search">
+      <input type="search" name="q" placeholder="Search tools &amp; guides…" aria-label="Search DollarWise">
+      <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
+    </form>
   </div>
 </header>

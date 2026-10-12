@@ -198,6 +198,28 @@ header.site .wrap-wide{
 nav.main{display:flex; align-items:center; flex-wrap:wrap; gap:.2rem}
 nav.main a{color:var(--text); font-size:.95rem; font-weight:600; padding:.45rem .75rem; border-radius:8px}
 nav.main a:hover{color:var(--accent); background:var(--accent-soft); text-decoration:none}
+.site-search{display:flex; align-items:center; gap:.35rem}
+.site-search input{
+  font:inherit; font-size:.92rem; padding:.45rem .8rem; width:190px;
+  border:1px solid var(--border); border-radius:20px; background:#fff; color:var(--text);
+}
+.site-search input:focus{outline:2px solid var(--accent); outline-offset:1px}
+.site-search button{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:34px; height:34px; border-radius:50%; border:1px solid var(--border);
+  background:var(--accent-soft); color:var(--accent-dark); cursor:pointer;
+}
+.search-box input{
+  font:inherit; font-size:1.15rem; width:100%; padding:.9rem 1.2rem;
+  border:2px solid var(--accent); border-radius:14px; background:#fff; color:var(--text);
+}
+.search-box input:focus{outline:3px solid var(--accent-soft); outline-offset:1px}
+.search-chips{display:flex; flex-wrap:wrap; gap:.45rem; align-items:center; margin:.9rem 0 .4rem; font-size:.9rem; color:var(--muted)}
+.search-chips a{
+  background:var(--accent-soft); color:var(--accent-dark); font-weight:600;
+  padding:.25rem .7rem; border-radius:20px; font-size:.85rem;
+}
+.search-chips a:hover{text-decoration:none; background:var(--accent); color:#fff}
 
 /* ---------- Hero ---------- */
 .hero{
