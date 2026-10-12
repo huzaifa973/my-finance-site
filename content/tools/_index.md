@@ -1,6 +1,6 @@
 ---
 title: "Free Online Tools — Images, Audio, Video, PDF & More"
-description: "350+ free online tools: format converters, video & audio tools, PDF utilities, SEO tools, finance calculators and more. No sign-up, no fees, files never leave your browser."
+description: "385+ free online tools: format converters, video & audio tools, PDF utilities, SEO tools, finance calculators and more. No sign-up, no fees, files never leave your browser."
 date: 2026-10-12
 draft: false
 ---
@@ -20,7 +20,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">83 tools</span>
+    <span class="card-tag">101 tools</span>
     <h3 class="card-title"><a href="/tools/audio/">🎵 Audio Tools</a></h3>
     <p class="card-excerpt">Trim audio, convert formats, and turn text into speech — right in your browser.</p>
     <a class="card-link" href="/tools/audio/">Browse audio tools →</a>
@@ -29,7 +29,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">17 tools</span>
+    <span class="card-tag">29 tools</span>
     <h3 class="card-title"><a href="/tools/video/">🎬 Video Tools</a></h3>
     <p class="card-excerpt">Trim clips, compress videos, and make GIFs — free, no watermarks, no uploads.</p>
     <a class="card-link" href="/tools/video/">Browse video tools →</a>
