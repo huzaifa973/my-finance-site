@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="bar-gold"></span>Search DollarWise</h2>
+      <p class="meta">Every tool, calculator, converter and guide — one search. Try “pdf to webp”, “inches to cm” or “mortgage”.</p>
+    </div>
+    <div class="search-box">
+      <input type="search" id="dwSearchQ" placeholder="What are you looking for?" aria-label="Search DollarWise" autocomplete="off">
+    </div>
+    <div class="search-chips">
+      <span>Popular:</span>
+      <a href="/search/?q=pdf+converter">PDF converter</a>
+      <a href="/search/?q=image+compressor">Image compressor</a>
+      <a href="/search/?q=mortgage+calculator">Mortgage calculator</a>
+      <a href="/search/?q=mp3+to+wav">MP3 to WAV</a>
+      <a href="/search/?q=inches+to+cm">Inches to cm</a>
+      <a href="/search/?q=budget">Budget</a>
+    </div>
+    <p class="meta" id="dwSearchStatus">Loading the index…</p>
+    <div class="cards" id="dwSearchResults"></div>
+  </div>
+</main>
+<script src="/js/search.js"></script>
+{{ end }}

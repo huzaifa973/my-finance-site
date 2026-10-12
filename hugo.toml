@@ -6,6 +6,23 @@ defaultContentLanguage = "en"
 # SEO: sitemap.xml is auto-generated; robots.txt is served from static/robots.txt
 enableRobotsTXT = false
 
+# Sitemap hints: Bing honors changefreq/priority; Google primarily uses lastmod.
+# (Hugo's built-in sitemap template renders all three when set.)
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# Full-site search index, generated at build time (used by /search/)
+[outputFormats.search]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "search"]
+
 # Clean permalinks for posts
 [permalinks]
   posts = "/posts/:slug/"
