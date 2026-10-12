@@ -6,26 +6,37 @@
    cfg.onDuration(sec) called when the input file's duration is known.
    Shell ids follow the pro tool pattern with cfg.prefix. */
 (function () {
-  var FF_URL = 'https://unpkg.com/@ffmpeg/ffmpeg@0.11.0/dist/ffmpeg.min.js';
-  var CORE_URL = 'https://unpkg.com/@ffmpeg/core@0.11.0/dist/ffmpeg-core.js';
-  var ffmpeg = null, loading = null;
+  var CDN_BASES = ['https://cdn.jsdelivr.net/npm/@ffmpeg', 'https://unpkg.com/@ffmpeg'];
+  var ffmpeg = null, loading = null, progressCb = null;
 
-  function loadFFmpeg(onProgress) {
-    if (ffmpeg) return Promise.resolve(ffmpeg);
-    if (loading) return loading;
-    loading = new Promise(function (resolve, reject) {
+  function loadScript(url) {
+    return new Promise(function (resolve, reject) {
       var s = document.createElement('script');
-      s.src = FF_URL;
-      s.onload = function () {
-        try {
-          var f = FFmpeg.createFFmpeg({ log: false, corePath: CORE_URL });
-          f.setProgress(function (p) { if (onProgress && p.ratio) onProgress(p.ratio); });
-          f.load().then(function () { ffmpeg = f; resolve(f); }, function (e) { reject(e); });
-        } catch (e) { reject(e); }
-      };
-      s.onerror = function () { reject(new Error('engine load failed')); };
+      s.src = url;
+      s.onload = function () { resolve(); };
+      s.onerror = function () { reject(new Error('script load failed')); };
       document.head.appendChild(s);
     });
+  }
+
+  function tryLoad(base) {
+    return loadScript(base + '/ffmpeg@0.11.0/dist/ffmpeg.min.js').then(function () {
+      var f = FFmpeg.createFFmpeg({ log: false, corePath: base + '/core@0.11.0/dist/ffmpeg-core.js' });
+      f.setProgress(function (p) { if (progressCb && p.ratio) progressCb(p.ratio); });
+      var timeout = new Promise(function (resolve, reject) {
+        setTimeout(function () { reject(new Error('engine load timed out')); }, 120000);
+      });
+      return Promise.race([f.load(), timeout]).then(function () { return f; });
+    });
+  }
+
+  function loadFFmpeg(onProgress) {
+    if (onProgress) progressCb = onProgress;
+    if (ffmpeg) return Promise.resolve(ffmpeg);
+    if (loading) return loading;
+    loading = tryLoad(CDN_BASES[0]).catch(function () { return tryLoad(CDN_BASES[1]); })
+      .then(function (f) { ffmpeg = f; return f; })
+      .catch(function (e) { loading = null; throw e; });
     return loading;
   }
 
@@ -147,6 +158,26 @@
       }
       busy = false; btn.disabled = false;
     });
+
+    // Warm-up: start downloading the engine the moment the page opens, so
+    // pressing the button never waits on the ~25 MB first-time download.
+    var engineStatus = document.createElement('p');
+    engineStatus.className = 'hint';
+    var stepEl = btn.closest('.tool-step');
+    if (stepEl) stepEl.appendChild(engineStatus);
+    function warmUp() {
+      engineStatus.style.display = '';
+      engineStatus.textContent = '⏳ Preparing the audio engine in the background — one-time ~25 MB download, then it stays cached and processing starts instantly.';
+      loadFFmpeg().then(function () {
+        engineStatus.textContent = '✅ Engine ready — processing starts instantly.';
+        setTimeout(function () { engineStatus.style.display = 'none'; }, 6000);
+      }).catch(function () {
+        engineStatus.innerHTML = '⚠️ The audio engine could not be downloaded. <a href="#" id="' + P + 'EngineRetry">Tap to retry</a>';
+        var retry = document.getElementById(P + 'EngineRetry');
+        if (retry) retry.addEventListener('click', function (e) { e.preventDefault(); warmUp(); });
+      });
+    }
+    warmUp();
   }
 
   window.AudioFX = { init: init };
