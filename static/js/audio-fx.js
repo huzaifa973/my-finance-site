@@ -21,7 +21,7 @@
 
   function tryLoad(base) {
     return loadScript(base + '/ffmpeg@0.11.0/dist/ffmpeg.min.js').then(function () {
-      var f = FFmpeg.createFFmpeg({ log: false, corePath: base + '/core@0.11.0/dist/ffmpeg-core.js' });
+      var f = FFmpeg.createFFmpeg({ log: false, corePath: base + '/core-st@0.11.1/dist/ffmpeg-core.js' });
       f.setProgress(function (p) { if (progressCb && p.ratio) progressCb(p.ratio); });
       var timeout = new Promise(function (resolve, reject) {
         setTimeout(function () { reject(new Error('engine load timed out')); }, 120000);
