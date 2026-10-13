@@ -69,11 +69,23 @@
 
   function loadFFmpeg(onProgress){
     if(onProgress) progressCb = onProgress;
-    if(ffmpeg) return Promise.resolve(ffmpeg);
+    if(ffmpeg){
+      if(ffmpeg.isLoaded()) return Promise.resolve(ffmpeg);
+      // Instance exists but its runtime was exited after a previous run —
+      // drop any stale promise so we rebuild below.
+      loading = null;
+    }
     if(loading) return loading;
-    loading = tryLoad(CDN_BASES[0]).catch(function () { return tryLoad(CDN_BASES[1]); })
-      .then(function (f) { ffmpeg = f; return f; })
-      .catch(function (e) { loading = null; throw e; });
+    var start;
+    if(ffmpeg){
+      // Rebuild the engine instance. Fast: core files are cached,
+      // no re-download, just a fresh runtime.
+      start = stallGuard(ffmpeg.load()).then(function () { return ffmpeg; });
+    } else {
+      start = tryLoad(CDN_BASES[0]).catch(function () { return tryLoad(CDN_BASES[1]); })
+        .then(function (f) { ffmpeg = f; return f; });
+    }
+    loading = start.catch(function (e) { loading = null; throw e; });
     return loading;
   }
 
@@ -193,6 +205,9 @@
         progText.textContent = 'Something went wrong processing that file. Try a shorter or smaller file.';
         ToolPro.toast('Processing failed', 'err');
       }
+      // The single-thread engine cannot run twice in one instance — tear it
+      // down so the next press rebuilds it fresh from the cached core files.
+      try { if (typeof ff !== 'undefined' && ff) ff.exit(); } catch (e2) {}
       busy = false; btn.disabled = false;
     });
 

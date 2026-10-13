@@ -77,11 +77,23 @@
 
   function loadFFmpeg(onProgress){
     if(onProgress) progressCb = onProgress;
-    if(ffmpeg) return Promise.resolve(ffmpeg);
+    if(ffmpeg){
+      if(ffmpeg.isLoaded()) return Promise.resolve(ffmpeg);
+      // Instance exists but its runtime was exited after a previous run —
+      // drop any stale promise so we rebuild below.
+      loading = null;
+    }
     if(loading) return loading;
-    loading = tryLoad(CDN_BASES[0]).catch(function(){ return tryLoad(CDN_BASES[1]); })
-      .then(function(f){ ffmpeg = f; return f; })
-      .catch(function(e){ loading = null; throw e; });
+    var start;
+    if(ffmpeg){
+      // Rebuild the engine instance. Fast: core files are cached,
+      // no re-download, just a fresh runtime.
+      start = stallGuard(ffmpeg.load()).then(function(){ return ffmpeg; });
+    } else {
+      start = tryLoad(CDN_BASES[0]).catch(function(){ return tryLoad(CDN_BASES[1]); })
+        .then(function(f){ ffmpeg = f; return f; });
+    }
+    loading = start.catch(function(e){ loading = null; throw e; });
     return loading;
   }
 
@@ -179,14 +191,19 @@
           var base = entry.file.name.replace(/\.[^.]+$/, '');
           var card = document.createElement('div');
           card.className = 'result-card';
+          // Chrome/Edge/Firefox <audio> cannot play AIFF (only Safari can), so
+          // for AIFF show a download note instead of a broken player.
+          var canPreview = cfg.to !== 'aiff';
           card.innerHTML = '<div class="r-name"></div><div class="r-stats"></div>' +
-            '<audio controls style="width:100%"></audio>' +
+            (canPreview
+              ? '<audio controls style="width:100%"></audio>'
+              : '<div class="r-note">🔊 Browser preview isn\'t available for AIFF — your file is fine, download it to play.</div>') +
             '<button type="button" class="btn-pro">⬇ Download</button>';
           card.querySelector('.r-name').textContent = base + '.' + cfg.to;
           card.querySelector('.r-name').title = base + '.' + cfg.to;
           card.querySelector('.r-stats').innerHTML =
             ToolPro.fmtBytes(entry.file.size) + ' → <b>' + ToolPro.fmtBytes(blob.size) + '</b>';
-          card.querySelector('audio').src = url;
+          if(canPreview) card.querySelector('audio').src = url;
           (function(u, name){
             card.querySelector('button').addEventListener('click', function(){ ToolPro.download(u, name); });
           })(url, base + '.' + cfg.to);
@@ -205,6 +222,9 @@
       progWrap.classList.remove('show');
       resBox.classList.add('show');
       resBox.scrollIntoView({ behavior:'smooth', block:'nearest' });
+      // The single-thread engine cannot convert twice in one instance, so tear
+      // it down — the next press rebuilds it fresh from the cached core files.
+      try{ ff.exit(); }catch(e){}
       btn.disabled = false;
       ToolPro.toast('Conversion complete', 'ok');
     });
