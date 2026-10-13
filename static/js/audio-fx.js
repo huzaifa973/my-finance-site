@@ -19,26 +19,49 @@
     });
   }
 
-  function tryLoad(base) {
+  var statusCb = null;
+  function reportStatus(t){ if(statusCb){ try{ statusCb(t); }catch(e){} } }
+
+  // Download the engine's big wasm file into the browser cache at page open.
+  // The CDN serves it brotli-compressed (~8.4 MB on the wire) with immutable
+  // cache headers, so the engine's own fetch right after completes instantly.
+  // Real progress in MB is reported while it downloads; no tight timeout —
+  // slow connections get the time they need (10-minute stall guard only).
+  function prefetch(url){
+    return fetch(url).then(function (res) {
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      if(!res.body || !res.body.getReader) return res.arrayBuffer();
+      var total = parseInt(res.headers.get('content-length') || '0', 10);
+      var reader = res.body.getReader();
+      var received = 0;
+      function pump(){
+        return reader.read().then(function (r) {
+          if(r.done) return null;
+          received += r.value.length;
+          if(total > 0) reportStatus('\u2b07\ufe0f Downloading the engine\u2026 ' + (received/1048576).toFixed(1) + ' / ' + (total/1048576).toFixed(1) + ' MB');
+          else reportStatus('\u2b07\ufe0f Downloading the engine\u2026 ' + (received/1048576).toFixed(1) + ' MB so far');
+          return pump();
+        });
+      }
+      return pump();
+    });
+  }
+  function stallGuard(promise){
+    return Promise.race([promise, new Promise(function (resolve, reject) {
+      setTimeout(function () { reject(new Error('engine download stalled')); }, 600000);
+    })]);
+  }
+
+  function tryLoad(base){
     return loadScript(base + '/ffmpeg@0.11.0/dist/ffmpeg.min.js').then(function () {
-      var f = FFmpeg.createFFmpeg({ log: false, corePath: base + '/core-st@0.11.1/dist/ffmpeg-core.js' });
-      f.setProgress(function (p) { if (progressCb && p.ratio) progressCb(p.ratio); });
-      var timeout = new Promise(function (resolve, reject) {
-        setTimeout(function () { reject(new Error('engine load timed out')); }, 120000);
-      });
-      return Promise.race([f.load(), timeout]).then(function () { return f; });
+      return stallGuard(prefetch(base + '/core-st@0.11.1/dist/ffmpeg-core.wasm')).catch(function () { return null; });
+    }).then(function () {
+      var f = FFmpeg.createFFmpeg({ log:false, corePath: base + '/core-st@0.11.1/dist/ffmpeg-core.js' });
+      f.setProgress(function(p){ if(progressCb && p.ratio) progressCb(p.ratio); });
+      return stallGuard(f.load()).then(function () { return f; });
     });
   }
 
-  function loadFFmpeg(onProgress) {
-    if (onProgress) progressCb = onProgress;
-    if (ffmpeg) return Promise.resolve(ffmpeg);
-    if (loading) return loading;
-    loading = tryLoad(CDN_BASES[0]).catch(function () { return tryLoad(CDN_BASES[1]); })
-      .then(function (f) { ffmpeg = f; return f; })
-      .catch(function (e) { loading = null; throw e; });
-    return loading;
-  }
 
   function fmtSize(b) {
     if (b < 1024) return b + ' B';
@@ -163,16 +186,17 @@
     // pressing the button never waits on the ~25 MB first-time download.
     var engineStatus = document.createElement('p');
     engineStatus.className = 'hint';
+    statusCb = function (t) { engineStatus.textContent = t; };
     var stepEl = btn.closest('.tool-step');
     if (stepEl) stepEl.appendChild(engineStatus);
     function warmUp() {
       engineStatus.style.display = '';
-      engineStatus.textContent = '⏳ Preparing the audio engine in the background — one-time ~25 MB download, then it stays cached and processing starts instantly.';
+      engineStatus.textContent = '⏳ Preparing the audio engine in the background — one-time ~9 MB download, then it stays cached and processing starts instantly.';
       loadFFmpeg().then(function () {
         engineStatus.textContent = '✅ Engine ready — processing starts instantly.';
         setTimeout(function () { engineStatus.style.display = 'none'; }, 6000);
-      }).catch(function () {
-        engineStatus.innerHTML = '⚠️ The audio engine could not be downloaded. <a href="#" id="' + P + 'EngineRetry">Tap to retry</a>';
+      }).catch(function (err) {
+        engineStatus.innerHTML = '⚠️ The audio engine could not be downloaded. (' + (err && err.message ? err.message : 'load error') + '). <a href="#" id="' + P + 'EngineRetry">Tap to retry</a>';
         var retry = document.getElementById(P + 'EngineRetry');
         if (retry) retry.addEventListener('click', function (e) { e.preventDefault(); warmUp(); });
       });
