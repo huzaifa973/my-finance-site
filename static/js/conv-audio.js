@@ -71,6 +71,16 @@
   }
 
 
+  function loadFFmpeg(onProgress){
+    if(onProgress) progressCb = onProgress;
+    if(ffmpeg) return Promise.resolve(ffmpeg);
+    if(loading) return loading;
+    loading = tryLoad(CDN_BASES[0]).catch(function(){ return tryLoad(CDN_BASES[1]); })
+      .then(function(f){ ffmpeg = f; return f; })
+      .catch(function(e){ loading = null; throw e; });
+    return loading;
+  }
+
   function init(cfg){
     var P = cfg.prefix;
     var shell = document.getElementById(P + 'Shell');

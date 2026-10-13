@@ -63,6 +63,16 @@
   }
 
 
+  function loadFFmpeg(onProgress){
+    if(onProgress) progressCb = onProgress;
+    if(ffmpeg) return Promise.resolve(ffmpeg);
+    if(loading) return loading;
+    loading = tryLoad(CDN_BASES[0]).catch(function () { return tryLoad(CDN_BASES[1]); })
+      .then(function (f) { ffmpeg = f; return f; })
+      .catch(function (e) { loading = null; throw e; });
+    return loading;
+  }
+
   function fmtSize(b) {
     if (b < 1024) return b + ' B';
     if (b < 1048576) return (b / 1024).toFixed(1) + ' KB';
