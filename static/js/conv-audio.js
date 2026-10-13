@@ -162,20 +162,22 @@
       progWrap.classList.add('show'); resBox.classList.remove('show'); grid.innerHTML = '';
       progText.textContent = 'Loading the conversion engine (first use downloads ~25 MB, then it is cached)…';
       progBar.style.width = '5%';
-      var ff;
-      try {
-        ff = await loadFFmpeg(function(r){ progBar.style.width = Math.round(10 + r * 80) + '%'; });
-      } catch(e){
-        progWrap.classList.remove('show'); btn.disabled = false;
-        ToolPro.toast('Could not load the conversion engine — check your connection and try again.', 'err');
-        return;
-      }
       var br = brSel ? parseInt(brSel.value, 10) : 192;
       var done = 0, okCount = 0;
       for(var i = 0; i < files.length; i++){
         var entry = files[i];
         entry.row.setStatus('Converting…', 'working');
         progText.textContent = 'Converting ' + (i + 1) + ' of ' + files.length + ': ' + entry.file.name;
+        // Fresh engine per file — the single-thread core cannot run twice in
+        // one instance. loadFFmpeg rebuilds it fast from cached core files.
+        var ff = null;
+        try {
+          ff = await loadFFmpeg(function(r){ progBar.style.width = Math.round(10 + r * 80) + '%'; });
+        } catch(e){
+          entry.row.setStatus('Failed', '');
+          done++;
+          continue;
+        }
         try {
           var inName = 'in_' + i + '.' + cfg.from;
           var outName = 'out_' + i + '.' + cfg.to;
@@ -186,7 +188,7 @@
           args.push(outName);
           await ff.run.apply(null, args);
           var data = ff.FS('readFile', outName);
-          var blob = new Blob([data.buffer], { type: MIME[cfg.to] || 'application/octet-stream' });
+          var blob = new Blob([data], { type: MIME[cfg.to] || 'application/octet-stream' });
           var url = URL.createObjectURL(blob);
           var base = entry.file.name.replace(/\.[^.]+$/, '');
           var card = document.createElement('div');
@@ -214,6 +216,9 @@
         } catch(e){
           entry.row.setStatus('Failed', '');
         }
+        // Tear down the engine after EACH file — the single-thread core
+        // cannot run twice in one instance.
+        try{ if(ff) ff.exit(); }catch(e2){}
         done++;
         progBar.style.width = Math.round(done / files.length * 100) + '%';
       }
@@ -222,9 +227,6 @@
       progWrap.classList.remove('show');
       resBox.classList.add('show');
       resBox.scrollIntoView({ behavior:'smooth', block:'nearest' });
-      // The single-thread engine cannot convert twice in one instance, so tear
-      // it down — the next press rebuilds it fresh from the cached core files.
-      try{ ff.exit(); }catch(e){}
       btn.disabled = false;
       ToolPro.toast('Conversion complete', 'ok');
     });

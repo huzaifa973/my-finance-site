@@ -162,9 +162,8 @@
       results.classList.remove('show'); grid.innerHTML = '';
       try {
         showProgress(5, 'Loading the audio engine (first run only)…');
-        var ff = await loadFFmpeg(function (r) { showProgress(10 + Math.round(r * 80), 'Processing… ' + Math.round(10 + r * 80) + '%'); });
         var inName = 'in.' + ext(file.name);
-        ff.FS('writeFile', inName, await FFmpeg.fetchFile(file));
+        var inData = await FFmpeg.fetchFile(file);
         var ctx = { duration: duration, ext: ext(file.name), fileName: file.name, input: inName };
         var jobs;
         if (cfg.split) {
@@ -175,17 +174,23 @@
         var outs = [];
         for (var i = 0; i < jobs.length; i++) {
           showProgress(10 + Math.round((i / jobs.length) * 85), jobs.length > 1 ? 'Processing part ' + (i + 1) + ' of ' + jobs.length + '…' : 'Processing…');
-          var args = jobs[i].args.slice();
-          var outName = args[args.length - 1];
-          await ff.run.apply(ff, args);
-          var data = ff.FS('readFile', outName);
-          var base = file.name.replace(/\.[^.]+$/, '');
-          var dlName = base + '-' + cfg.fxName + (jobs[i].label ? '-' + jobs[i].label : '') + '.' + outName.split('.').pop();
-          var MIMES = { mp3: 'audio/mpeg', wav: 'audio/wav', ogg: 'audio/ogg', m4a: 'audio/mp4', m4r: 'audio/mp4', flac: 'audio/flac', aac: 'audio/aac' };
-          outs.push({ name: dlName, blob: new Blob([data.buffer], { type: MIMES[outName.split('.').pop().toLowerCase()] || 'audio/mpeg' }) });
-          try { ff.FS('unlink', outName); } catch (e) {}
+          // Fresh engine per job — the single-thread core cannot run twice in
+          // one instance. loadFFmpeg rebuilds it fast from cached core files.
+          var ff = await loadFFmpeg(function (r) { showProgress(10 + Math.round(r * 80), 'Processing… ' + Math.round(10 + r * 80) + '%'); });
+          try {
+            ff.FS('writeFile', inName, inData);
+            var args = jobs[i].args.slice();
+            var outName = args[args.length - 1];
+            await ff.run.apply(ff, args);
+            var data = ff.FS('readFile', outName);
+            var base = file.name.replace(/\.[^.]+$/, '');
+            var dlName = base + '-' + cfg.fxName + (jobs[i].label ? '-' + jobs[i].label : '') + '.' + outName.split('.').pop();
+            var MIMES = { mp3: 'audio/mpeg', wav: 'audio/wav', ogg: 'audio/ogg', m4a: 'audio/mp4', m4r: 'audio/mp4', flac: 'audio/flac', aac: 'audio/aac' };
+            outs.push({ name: dlName, blob: new Blob([data], { type: MIMES[outName.split('.').pop().toLowerCase()] || 'audio/mpeg' }) });
+          } finally {
+            try { ff.exit(); } catch (e2) {}
+          }
         }
-        try { ff.FS('unlink', inName); } catch (e) {}
         showProgress(100, 'Done');
         summary.textContent = outs.length + ' file' + (outs.length > 1 ? 's' : '') + ' ready — ' + outs.reduce(function (a, o) { return a + o.blob.size; }, 0).toLocaleString() + ' bytes total.';
         outs.forEach(function (o) {
@@ -205,9 +210,6 @@
         progText.textContent = 'Something went wrong processing that file. Try a shorter or smaller file.';
         ToolPro.toast('Processing failed', 'err');
       }
-      // The single-thread engine cannot run twice in one instance — tear it
-      // down so the next press rebuilds it fresh from the cached core files.
-      try { if (typeof ff !== 'undefined' && ff) ff.exit(); } catch (e2) {}
       busy = false; btn.disabled = false;
     });
 
