@@ -32,13 +32,17 @@
       if(!res.ok) throw new Error('HTTP ' + res.status);
       if(!res.body || !res.body.getReader) return res.arrayBuffer();
       var total = parseInt(res.headers.get('content-length') || '0', 10);
+      // When the CDN compresses the file (br/gzip), the stream yields DECOMPRESSED
+      // bytes while content-length is the COMPRESSED size — so only show X/Y when
+      // there is no content-encoding; otherwise show plain MB downloaded.
+      var showTotal = total > 0 && !res.headers.get('content-encoding');
       var reader = res.body.getReader();
       var received = 0;
       function pump(){
         return reader.read().then(function (r) {
           if(r.done) return null;
           received += r.value.length;
-          if(total > 0) reportStatus('\u2b07\ufe0f Downloading the engine\u2026 ' + (received/1048576).toFixed(1) + ' / ' + (total/1048576).toFixed(1) + ' MB');
+          if(showTotal) reportStatus('\u2b07\ufe0f Downloading the engine\u2026 ' + (received/1048576).toFixed(1) + ' / ' + (total/1048576).toFixed(1) + ' MB');
           else reportStatus('\u2b07\ufe0f Downloading the engine\u2026 ' + (received/1048576).toFixed(1) + ' MB so far');
           return pump();
         });
@@ -56,7 +60,7 @@
     return loadScript(base + '/ffmpeg@0.11.0/dist/ffmpeg.min.js').then(function () {
       return stallGuard(prefetch(base + '/core-st@0.11.1/dist/ffmpeg-core.wasm')).catch(function () { return null; });
     }).then(function () {
-      var f = FFmpeg.createFFmpeg({ log:false, corePath: base + '/core-st@0.11.1/dist/ffmpeg-core.js' });
+      var f = FFmpeg.createFFmpeg({ log:false, corePath: base + '/core-st@0.11.1/dist/ffmpeg-core.js', mainName: 'main' });
       f.setProgress(function(p){ if(progressCb && p.ratio) progressCb(p.ratio); });
       return stallGuard(f.load()).then(function () { return f; });
     });
