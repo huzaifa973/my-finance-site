@@ -19,6 +19,11 @@
   </div>
 </div>
 
+{{/* RunPod cloud-GPU promo banner (sponsored, affiliate) */}}
+<div class="wrap-wide">
+{{ partial "runpod-banner.html" . }}
+</div>
+
 {{/* Homepage leaderboard ad slot: only rendered when adsense_publisher_id is set */}}
 {{ with .Site.Params.adsense_publisher_id }}
 <div class="wrap-wide">
