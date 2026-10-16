@@ -1,5 +1,5 @@
 ---
-title: "Free Unicode Converter — Text to \u Escapes, HTML Entities & URL Encoding"
+title: "Free Unicode Converter — Text to \\u Escapes, HTML Entities & URL Encoding"
 description: "Convert text to unicode escapes, HTML entities, URL encoding and code-point lists — and back. Free forever, no sign-up, runs in your browser."
 category: text
 date: 2026-10-16
