@@ -3,6 +3,7 @@ title: "How to Get Out of Payday Loan Debt (5 Realistic Steps)"
 description: "Trapped in payday loan debt? Five realistic steps to break the cycle: extended payment plans, negotiation scripts, nonprofit counseling, and legal protections."
 date: 2026-09-29
 tags: ["payday loans", "debt", "debt payoff"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "Can payday loan debt be negotiated or settled?"

@@ -3,6 +3,7 @@ title: "How to Compress a Video for Discord Under the 25MB Limit"
 description: "Compress a video for Discord's 25MB limit free — the best resolution, bitrate, and format settings, plus what to do when a video still won't fit."
 date: 2026-10-15
 tags: ["video", "compression", "discord"]
+categories: ["video"]
 draft: false
 image: /images/how-to-compress-a-video-for-discord-under-the-25mb-limit.svg
 slug: how-to-compress-a-video-for-discord-under-the-25mb-limit

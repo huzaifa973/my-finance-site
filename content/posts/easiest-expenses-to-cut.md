@@ -3,6 +3,7 @@ title: "15 Easiest Expenses to Cut Without Feeling Deprived"
 description: "15 expenses you can cut today without feeling deprived — subscriptions, bills, and sneaky spending leaks, with real dollar amounts for each saving."
 date: 2026-09-29
 tags: ["saving money", "cut expenses", "frugal living"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is the easiest expense to cut first?"

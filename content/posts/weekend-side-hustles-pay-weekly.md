@@ -3,6 +3,7 @@ title: "9 Weekend Side Hustles That Pay Weekly in the USA"
 description: "Need cash fast? These 9 weekend side hustles pay weekly in the US — real pay rates, how to start each one, and which fit your schedule."
 date: 2026-09-29
 tags: ["side hustle", "make money", "weekend jobs", "extra income"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "Which side hustle pays the fastest?"

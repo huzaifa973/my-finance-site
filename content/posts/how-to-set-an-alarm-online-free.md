@@ -3,6 +3,7 @@ title: "How to Set an Alarm Online Free (No App Needed)"
 description: "Set an alarm online free with no app or download — how browser alarms work, keeping the tab alive, and a free online alarm clock tool."
 date: 2026-10-16
 tags: ["alarm", "productivity", "tools"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-set-an-alarm-online-free.svg
 slug: how-to-set-an-alarm-online-free

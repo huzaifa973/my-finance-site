@@ -3,6 +3,7 @@ title: "Alabama Income Tax 2026: Brackets, Rates, and Free Calculator"
 description: "Alabama income tax for 2026: illustrative brackets and rates, deductions, credits, a calculation example, and a free calculator."
 date: 2026-10-13
 tags: ["tax", "alabama", "income tax"]
+categories: ["finance"]
 draft: false
 image: /images/alabama-income-tax-2026-brackets-rates-calculator.svg
 faq:

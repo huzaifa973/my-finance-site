@@ -30,6 +30,7 @@ enableRobotsTXT = false
 # Taxonomies
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 # Markdown rendering niceties
 [markup]
@@ -45,6 +46,7 @@ enableRobotsTXT = false
 [params]
   adsense_publisher_id = "ca-pub-8574339224228858" # AdSense linked 2026-10-06; ad slots auto-render
   google_site_verification = "" # paste your Google Search Console verification code here
+  pinterest_domain_verify = "" # paste ONLY the content value of Pinterest's p:domain_verify meta tag here (Settings → Claimed accounts → Claim)
   google_analytics_id = "G-N8W2MP31D6" # GA4 measurement ID — analytics active
   cloudflare_analytics_token = "" # or paste your Cloudflare Web Analytics beacon token here (alternative to GA4)
   # newsletter_provider = "" # e.g. "buttondown" or "convertkit" — see homepage newsletter section comments

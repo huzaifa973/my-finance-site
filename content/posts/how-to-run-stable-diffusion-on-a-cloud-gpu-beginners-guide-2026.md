@@ -3,6 +3,7 @@ title: "How to Run Stable Diffusion on a Cloud GPU: Beginner's Guide 2026"
 description: "Run Stable Diffusion on a cloud GPU in 2026 — pick a provider, choose a GPU, launch a pod, install the UI, and control costs. Beginner-friendly walkthrough."
 date: 2026-10-16
 tags: ["ai", "gpu", "stable diffusion"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-run-stable-diffusion-on-a-cloud-gpu-beginners-guide-2026.svg
 slug: how-to-run-stable-diffusion-on-a-cloud-gpu-beginners-guide-2026

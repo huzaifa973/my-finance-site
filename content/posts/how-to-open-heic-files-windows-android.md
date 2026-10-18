@@ -4,6 +4,7 @@ description: "Can't open HEIC photos on Windows or Android? Learn what HEIC is a
 date: 2026-10-09
 draft: false
 tags: ["heic", "images", "how-to"]
+categories: ["image"]
 image: /images/how-to-open-heic-files-windows-android.svg
 faq:
   - q: "Does converting HEIC to JPG lose quality?"

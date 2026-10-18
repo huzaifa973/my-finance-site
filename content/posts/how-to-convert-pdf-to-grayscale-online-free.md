@@ -3,6 +3,7 @@ title: "How to Convert a PDF to Grayscale Online Free (Save Ink)"
 description: "Convert any PDF to grayscale online free — save printer ink, shrink file size, and fix color scans. Free in-browser tool, step-by-step guide."
 date: 2026-10-16
 tags: ["pdf", "grayscale", "printing"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-pdf-to-grayscale-online-free.svg
 slug: how-to-convert-pdf-to-grayscale-online-free

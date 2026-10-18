@@ -3,6 +3,7 @@ title: "How to Split a PDF Into Single Pages Online Free"
 description: "Split a PDF into single pages free: extract each page as its own file in seconds, keep quality and filenames tidy, all in your browser."
 date: 2026-10-14
 tags: ["pdf", "split pdf", "how to"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-split-pdf-into-single-pages.svg
 faq:

@@ -3,6 +3,7 @@ title: "Canonical Tags Explained: Fix Duplicate Content the Right Way"
 description: "Canonical tags tell search engines which page is the original when duplicates exist. Learn how they work, when to use them, and how to add them right."
 date: 2026-10-14
 tags: ["seo", "canonical tags", "duplicate content"]
+categories: ["seo"]
 draft: false
 image: /images/canonical-tags-explained-duplicate-content-fix.svg
 faq:

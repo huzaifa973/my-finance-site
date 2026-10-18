@@ -3,6 +3,7 @@ title: "How to Make Your First $100 Freelancing on Upwork (2026)"
 description: "A realistic beginner plan to earn your first $100 on Upwork in 2026: profile setup, winning proposals, first clients and avoiding common traps."
 date: 2026-09-29
 tags: ["freelancing", "upwork", "side hustle", "make money online"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How long does it take to make your first $100 on Upwork?"

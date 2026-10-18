@@ -3,6 +3,7 @@ title: "M4V to M4A and OGG: Convert M4V Audio Tracks Online Free"
 description: "Extract audio from M4V video files free. Learn the M4V to M4A and M4V to OGG conversion steps, DRM caveats, and which format to choose."
 date: 2026-10-13
 tags: ["video", "m4v", "audio converter"]
+categories: ["video"]
 draft: false
 image: /images/m4v-to-m4a-ogg-convert-m4v-audio-tracks.svg
 faq:

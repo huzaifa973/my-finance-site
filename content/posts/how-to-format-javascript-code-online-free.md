@@ -4,6 +4,7 @@ title: "How to Format JavaScript Code Online Free"
 description: "Format JavaScript code online free — fix messy indentation, minified code, and inconsistent style instantly with a browser-based formatter."
 date: 2026-10-17
 tags: ["text", "javascript", "developer-tools"]
+categories: ["text"]
 draft: false
 image: /images/how-to-format-javascript-code-online-free.svg
 faq:

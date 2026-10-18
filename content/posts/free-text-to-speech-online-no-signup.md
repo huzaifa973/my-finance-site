@@ -4,6 +4,7 @@ description: "Convert text to speech online free with no sign-up. Learn how brow
 date: 2026-10-09
 draft: false
 tags: ["text-to-speech", "tools", "accessibility"]
+categories: ["audio"]
 image: /images/free-text-to-speech-online-no-signup.svg
 faq:
   - q: "Is online text to speech really free?"

@@ -3,6 +3,7 @@ title: "How to Pixelate an Image Online Free (Blur Faces & Sensitive Areas)"
 description: "Pixelate faces, license plates, and sensitive details in any photo in seconds. Free in-browser method, when to pixelate vs blur, and privacy tips."
 date: 2026-10-16
 tags: ["image", "pixelate", "privacy"]
+categories: ["image"]
 draft: false
 image: /images/how-to-pixelate-an-image-online-free.svg
 slug: how-to-pixelate-an-image-online-free

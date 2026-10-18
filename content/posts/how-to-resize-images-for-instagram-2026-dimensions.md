@@ -3,6 +3,7 @@ title: "How to Resize Images for Instagram: Exact Dimensions for 2026"
 description: "The exact Instagram image sizes for 2026 — posts, stories, reels, and profile — plus how to resize, crop, and compress photos for crisp uploads."
 date: 2026-10-13
 tags: ["image", "instagram", "photo editing"]
+categories: ["image"]
 draft: false
 image: /images/how-to-resize-images-for-instagram-2026-dimensions.svg
 faq:

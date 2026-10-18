@@ -3,6 +3,7 @@ title: "How to Rent a GPU for AI Training: Beginner's Guide (2026)"
 description: "How to rent a GPU for AI training in 2026 — pick the right card, estimate costs, launch your first cloud GPU, and avoid the beginner money traps."
 date: 2026-10-16
 tags: ["seo", "cloud-gpu", "ai"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-rent-gpu-for-ai-training-beginners-guide-2026.svg
 slug: how-to-rent-gpu-for-ai-training-beginners-guide-2026

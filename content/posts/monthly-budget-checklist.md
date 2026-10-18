@@ -3,6 +3,7 @@ title: "The Monthly Budget Checklist: 12 Steps for First-Time Budgeters"
 description: "A 12-step monthly budget checklist for first-time budgeters: exactly what to do on the 1st, weekly, and month-end to keep your budget working all year."
 date: 2026-09-29
 tags: ["budgeting", "checklist", "beginners"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What should I do on the first of the month for my budget?"

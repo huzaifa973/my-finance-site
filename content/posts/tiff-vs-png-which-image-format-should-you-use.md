@@ -3,6 +3,7 @@ title: "TIFF vs PNG: Which Image Format Should You Use?"
 description: "TIFF vs PNG explained: quality, file size, transparency, and best uses. Learn which format fits your project — and how to convert between them free."
 date: 2026-10-15
 tags: ["image", "formats", "guide"]
+categories: ["image"]
 draft: false
 image: /images/tiff-vs-png-which-image-format-should-you-use.svg
 slug: tiff-vs-png-which-image-format-should-you-use

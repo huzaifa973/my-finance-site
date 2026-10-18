@@ -3,6 +3,7 @@ title: "How to Hit an Exact Video File Size (Target-Size Compression Guide)"
 description: "Need a video under 25MB or exactly 100MB? Learn target-size compression: how bitrate math works and how to hit any size free."
 date: 2026-10-14
 tags: ["video", "compression", "how to"]
+categories: ["video"]
 draft: false
 image: /images/video-file-size-target-guide.svg
 faq:

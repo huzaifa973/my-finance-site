@@ -8,6 +8,14 @@
     <div class="section-head">
       <h2><span class="bar-gold"></span>{{ .Title }}</h2>
     </div>
+    {{ if or (eq .Section "posts") (eq .Data.Plural "categories") }}
+    <div class="cat-chips">
+      <a class="cat-chip{{ if eq .Section "posts" }} active{{ end }}" href="{{ "/posts/" | relURL }}">All</a>
+      {{ range $name, $tax := .Site.Taxonomies.categories }}
+      <a class="cat-chip{{ if eq $.RelPermalink $tax.Page.RelPermalink }} active{{ end }}" href="{{ $tax.Page.RelPermalink }}">{{ if eq $name "image" }}Images{{ else }}{{ if eq $name "audio" }}Audio{{ else }}{{ if eq $name "video" }}Video{{ else }}{{ if eq $name "pdf" }}PDF{{ else }}{{ if eq $name "text" }}Text{{ else }}{{ if eq $name "seo" }}SEO{{ else }}{{ if eq $name "finance" }}Finance{{ else }}{{ if eq $name "everyday" }}Everyday{{ else }}{{ $name }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }}{{ end }} ({{ $tax.Count }})</a>
+      {{ end }}
+    </div>
+    {{ end }}
     {{ with .Content }}
     <div class="archive-intro">
       {{ . }}

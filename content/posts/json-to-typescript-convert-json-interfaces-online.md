@@ -3,6 +3,7 @@ title: "JSON to TypeScript: Convert JSON to TS Interfaces Online"
 description: "Convert JSON to TypeScript interfaces free: paste JSON, get clean TS types with nested objects, arrays, and optional fields handled."
 date: 2026-10-13
 tags: ["developers", "typescript", "json"]
+categories: ["text"]
 draft: false
 image: /images/json-to-typescript-convert-json-interfaces-online.svg
 faq:

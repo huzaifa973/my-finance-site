@@ -4,6 +4,7 @@ title: "How to Compress a PDF to 1MB Online Free"
 description: "Compress a PDF to 1MB or less online free — shrink oversized PDFs for email, uploads, and forms without readable quality loss."
 date: 2026-10-17
 tags: ["pdf", "compression", "productivity"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-compress-a-pdf-to-1mb-online-free.svg
 faq:

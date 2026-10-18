@@ -3,6 +3,7 @@ title: "7 Money Habits That Separate Savers From Spenders"
 description: "Savers aren't luckier — they just run different habits. Here are 7 money habits that separate savers from spenders, plus how to build each one starting today."
 date: 2026-09-29
 tags: ["money habits", "saving money", "mindset"]
+categories: ["finance"]
 draft: false
 image: /images/money-habits-savers-vs-spenders.svg
 faq:

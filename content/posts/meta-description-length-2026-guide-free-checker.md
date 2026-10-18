@@ -3,6 +3,7 @@ title: "Meta Description Length in 2026: How Long Is Too Long?"
 description: "Meta description length in 2026: the ~155-160 character sweet spot, how Google truncates, writing tips that lift CTR, and a free length checker."
 date: 2026-10-16
 tags: ["seo", "meta description", "ctr"]
+categories: ["seo"]
 draft: false
 image: /images/meta-description-length-2026-guide-free-checker.svg
 slug: meta-description-length-2026-guide-free-checker

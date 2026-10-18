@@ -3,6 +3,7 @@ title: "How to Normalize Audio Volume Online Free (Loudness Explained)"
 description: "Normalize audio volume online free — what loudness normalization does, LUFS vs peak explained, and a free in-browser audio normalizer tool."
 date: 2026-10-16
 tags: ["audio", "volume", "lufs"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-normalize-audio-volume-online-free.svg
 slug: how-to-normalize-audio-volume-online-free

@@ -3,6 +3,7 @@ title: "Arizona Income Tax 2026: Flat 2.5% Rate, Deductions & Calculator"
 description: "Arizona charges a flat 2.5% income tax for 2026. Learn the standard deductions, the $40 family credit, and estimate your tax with a free calculator."
 date: 2026-10-14
 tags: ["tax", "arizona", "income tax"]
+categories: ["finance"]
 draft: false
 image: /images/arizona-income-tax-2026-flat-rate-guide.svg
 faq:

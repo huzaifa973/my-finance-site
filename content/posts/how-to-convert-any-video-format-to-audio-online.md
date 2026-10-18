@@ -3,6 +3,7 @@ title: "How to Convert Any Video Format to Audio Online (Free)"
 description: "Extract audio from any video free. Learn when to convert video to audio, how to pick M4A, MP3, OGG, or WAV, and the fastest online steps."
 date: 2026-10-13
 tags: ["video", "convert video", "audio"]
+categories: ["video"]
 draft: false
 image: /images/how-to-convert-any-video-format-to-audio-online.svg
 faq:

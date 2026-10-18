@@ -3,6 +3,7 @@ title: "12 Best Side Hustles for College Students (No Experience Needed)"
 description: "The 12 best side hustles for college students in 2026 — flexible, no experience required, and realistic about pay. Start earning this week around your class schedule."
 date: 2026-09-29
 tags: ["side hustles", "college", "make money"]
+categories: ["finance"]
 draft: false
 image: /images/best-side-hustles-for-college-students.svg
 faq:

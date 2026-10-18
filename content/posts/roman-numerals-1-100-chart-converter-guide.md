@@ -3,6 +3,7 @@ title: "Roman Numerals 1-100: Complete Chart and Converter Guide"
 description: "Roman numerals 1 to 100 explained: full chart, how I V X L C work, subtractive notation (IV, IX, XL), worked examples, and a free converter tool."
 date: 2026-10-13
 tags: ["education", "roman numerals", "converter"]
+categories: ["everyday"]
 draft: false
 image: /images/roman-numerals-1-100-chart-converter-guide.svg
 faq:

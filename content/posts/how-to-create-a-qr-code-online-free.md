@@ -3,6 +3,7 @@ title: "How to Create a QR Code Online Free"
 description: "Create a QR code online free. Turn any link, text, WiFi password, or contact into a scannable QR code in seconds — no signup needed."
 date: 2026-10-17
 tags: ["tools", "qr code", "generator"]
+categories: ["everyday"]
 draft: false
 slug: "how-to-create-a-qr-code-online-free"
 image: /images/how-to-create-a-qr-code-online-free.svg

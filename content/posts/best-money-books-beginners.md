@@ -3,6 +3,7 @@ title: "11 Best Money Books for Beginners That Are Actually Worth Reading"
 description: "Skip the hype. These 11 best money books for beginners actually teach you to budget, save, invest, and build wealth — plus which one to read first and how to finish them."
 date: 2026-09-29
 tags: ["books", "beginners", "investing"]
+categories: ["everyday"]
 draft: false
 image: /images/best-money-books-beginners.svg
 faq:

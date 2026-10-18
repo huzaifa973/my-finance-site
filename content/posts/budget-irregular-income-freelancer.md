@@ -3,6 +3,7 @@ title: "How to Budget on an Irregular Income: A Freelancer's System"
 description: "A practical budgeting system for freelancers and gig workers with irregular income: the baseline method, buffer accounts, and real numbers that smooth the feast-or-famine cycle."
 date: 2026-09-29
 tags: ["budgeting", "freelancing", "irregular income"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How do you budget when you don't know what you'll earn?"

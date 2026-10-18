@@ -3,6 +3,7 @@ title: "How to Compress a PDF to 500KB Online Free"
 description: "Shrink any PDF down to 500KB for uploads and applications. Why PDFs get bloated, what survives compression, and a free in-browser tool."
 date: 2026-10-15
 tags: ["pdf", "compression", "guide"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-compress-a-pdf-to-500kb-online-free.svg
 slug: how-to-compress-a-pdf-to-500kb-online-free

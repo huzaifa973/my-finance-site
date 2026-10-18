@@ -4,6 +4,7 @@ title: "How to Use Broad, Phrase, and Exact Match Keywords in 2026"
 description: "Learn how broad, phrase, and exact match keywords work in 2026 — what each type does, real examples, and how to pick the right match type."
 date: 2026-10-17
 tags: ["seo", "keywords", "google-ads"]
+categories: ["seo"]
 draft: false
 image: /images/keyword-match-types-explained-broad-phrase-exact-guide.svg
 faq:

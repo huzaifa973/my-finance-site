@@ -3,6 +3,7 @@ title: "Colorado Income Tax 2026: Flat 4.4% Rate Explained + Calculator"
 description: "Colorado income tax 2026: how the flat 4.4% rate works, the standard deduction, a worked example, and a free calculator for your estimate."
 date: 2026-10-14
 tags: ["tax", "colorado", "income tax"]
+categories: ["finance"]
 draft: false
 image: /images/colorado-income-tax-2026-flat-rate-guide.svg
 faq:

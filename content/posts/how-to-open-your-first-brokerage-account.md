@@ -3,6 +3,7 @@ title: "How to Open Your First Brokerage Account (A Beginner's Guide)"
 description: "Opening your first brokerage account is simpler than you think. Learn how to choose a broker, fund your account, and start investing with confidence."
 date: 2026-10-01
 tags: ["investing", "brokerage account", "beginners"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-open-your-first-brokerage-account.svg
 faq:

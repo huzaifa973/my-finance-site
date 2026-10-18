@@ -3,6 +3,7 @@ title: "Cheapest GPU for AI Training in 2026: Rental Price Guide"
 description: "Cheapest GPUs to rent for AI training in 2026 — RTX 4090 vs A6000 vs H100 per-hour prices, spot vs on-demand, and how to pick the right card."
 date: 2026-10-16
 tags: ["ai", "gpu", "cloud"]
+categories: ["seo"]
 draft: false
 image: /images/cheapest-gpu-for-ai-training-2026-rental-price-guide.svg
 slug: cheapest-gpu-for-ai-training-2026-rental-price-guide

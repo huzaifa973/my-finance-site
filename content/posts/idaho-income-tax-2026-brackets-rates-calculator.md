@@ -3,6 +3,7 @@ title: "Idaho Income Tax 2026: Brackets, Rates & Calculator"
 description: "Idaho income tax 2026 — the 5.3% flat rate explained, zero-bracket threshold, deductions, and how to estimate your tax. Free guide."
 date: 2026-10-16
 tags: ["finance", "taxes", "idaho"]
+categories: ["finance"]
 draft: false
 image: /images/idaho-income-tax-2026-brackets-rates-calculator.svg
 slug: idaho-income-tax-2026-brackets-rates-calculator

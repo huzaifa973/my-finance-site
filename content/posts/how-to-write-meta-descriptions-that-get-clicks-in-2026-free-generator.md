@@ -3,6 +3,7 @@ title: "How to Write Meta Descriptions That Get Clicks in 2026 (Free Generator)"
 description: "Learn how to write meta descriptions that earn clicks in 2026: ideal length, proven formulas, common mistakes, and a free generator to draft yours fast."
 date: 2026-10-15
 tags: ["seo", "meta-tags", "guide"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-write-meta-descriptions-that-get-clicks-in-2026-free-generator.svg
 slug: how-to-write-meta-descriptions-that-get-clicks-in-2026-free-generator

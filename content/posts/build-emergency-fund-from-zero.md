@@ -3,6 +3,7 @@ title: "How to Build an Emergency Fund From $0 (Step-by-Step)"
 description: "Build an emergency fund from $0 with this step-by-step plan: starter fund, milestones, automation tricks, and where to keep it for beginners in 2026."
 date: 2026-09-29
 tags: ["emergency fund", "saving money", "beginners"]
+categories: ["finance"]
 draft: false
 image: /images/build-emergency-fund-from-zero.svg
 faq:

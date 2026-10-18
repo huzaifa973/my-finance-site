@@ -3,6 +3,7 @@ title: "How to Build Credit From Scratch in the USA at 18"
 description: "Just turned 18? Learn how to build credit from scratch in the USA: secured cards, authorized user status, credit-builder loans, and the exact timeline to a 700+ score."
 date: 2026-09-29
 tags: ["credit score", "credit building", "usa", "beginners"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How long does it take to build credit from scratch at 18?"

@@ -3,6 +3,7 @@ title: "What Is a Good Credit Score in the US & UK? (2026 Ranges)"
 description: "What is a good credit score? Complete 2026 ranges for US FICO/VantageScore and UK Experian, Equifax & TransUnion — plus what each band unlocks and how to improve."
 date: 2026-09-29
 tags: ["credit score", "usa", "uk", "beginners"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is considered a good credit score in the US?"

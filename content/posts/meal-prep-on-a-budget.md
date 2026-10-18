@@ -3,6 +3,7 @@ title: "How to Meal Prep on a Budget and Save $300 a Month"
 description: "Meal prep on a budget with this 2026 guide: a $60/week grocery plan, 5 cheap batch recipes, storage tips, and the exact system that saves $300 a month."
 date: 2026-09-29
 tags: ["meal prep", "groceries", "saving money"]
+categories: ["everyday"]
 draft: false
 image: /images/meal-prep-on-a-budget.svg
 faq:

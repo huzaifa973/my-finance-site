@@ -4,6 +4,7 @@ title: "How to Convert a .env File to JSON Online Free"
 description: "Convert a .env file to JSON online free — turn KEY=value pairs into clean JSON for configs, APIs, and deployment pipelines."
 date: 2026-10-17
 tags: ["text", "developer-tools", "json"]
+categories: ["text"]
 draft: false
 image: /images/how-to-convert-env-file-to-json-online-free.svg
 faq:

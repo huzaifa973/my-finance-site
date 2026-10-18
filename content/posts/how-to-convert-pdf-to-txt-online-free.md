@@ -3,6 +3,7 @@ title: "How to Convert PDF to TXT Online Free"
 description: "Turn any PDF into clean plain text in seconds. What survives conversion, how to handle scanned PDFs, and a free in-browser converter."
 date: 2026-10-15
 tags: ["pdf", "converter", "text"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-pdf-to-txt-online-free.svg
 slug: how-to-convert-pdf-to-txt-online-free

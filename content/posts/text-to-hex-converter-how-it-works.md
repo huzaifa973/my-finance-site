@@ -3,6 +3,7 @@ title: "Text to Hex Converter: How Hex Encoding Works (With Examples)"
 description: "Hex encoding turns text into hexadecimal bytes. Learn how it works, why developers use it, and how to convert text to hex free online."
 date: 2026-10-14
 tags: ["text tools", "hex", "encoding"]
+categories: ["text"]
 draft: false
 image: /images/text-to-hex-converter-how-it-works.svg
 faq:

@@ -3,6 +3,7 @@ title: "Book Schema Markup: Get Your Book into Google's Rich Results"
 description: "Book schema markup helps your book appear in Google's rich results with cover, author, ratings, and price. Includes a JSON-LD example, key properties, and a free generator."
 date: 2026-10-13
 tags: ["seo", "book schema", "structured data"]
+categories: ["seo"]
 draft: false
 image: /images/book-schema-markup-google-rich-results-guide.svg
 faq:

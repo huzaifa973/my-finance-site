@@ -4,6 +4,7 @@ title: "How to Send a PDF on WhatsApp Without Losing Quality"
 description: "Send a PDF on WhatsApp without losing quality — as a document, not a photo. Avoid compression, size limits, and blurry pages."
 date: 2026-10-17
 tags: ["pdf", "whatsapp", "productivity"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-send-a-pdf-on-whatsapp-free-guide.svg
 faq:

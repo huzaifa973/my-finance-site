@@ -3,6 +3,7 @@ title: "How to Compress a PDF to 200KB Online Free"
 description: "Squeeze a PDF down to 200KB for strict upload limits. What fits in 200KB, a step-by-step shrinking workflow, and a free exact-size compressor."
 date: 2026-10-16
 tags: ["pdf", "compression", "guide"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-compress-a-pdf-to-200kb-online-free.svg
 slug: how-to-compress-a-pdf-to-200kb-online-free

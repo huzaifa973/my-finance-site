@@ -3,6 +3,7 @@ title: "Open Graph Debugger: Fix Broken Social Previews"
 description: "Open Graph debugger guide — fix broken link previews on Facebook, X, LinkedIn & Discord. Diagnose missing images, wrong titles, and cache issues."
 date: 2026-10-16
 tags: ["seo", "open-graph", "social-media"]
+categories: ["seo"]
 draft: false
 image: /images/open-graph-debugger-fix-broken-social-previews.svg
 slug: open-graph-debugger-fix-broken-social-previews

@@ -3,6 +3,7 @@ title: "Roth IRA vs Traditional IRA: Which Is Better for Beginners?"
 description: "Roth IRA vs Traditional IRA explained for beginners: tax differences, income limits, withdrawal rules, and a simple decision framework for choosing the right one in 2026."
 date: 2026-09-29
 tags: ["retirement", "ira", "investing"]
+categories: ["finance"]
 draft: false
 image: /images/roth-ira-vs-traditional-ira.svg
 faq:

@@ -3,6 +3,7 @@ title: "Free Gradient Maker Online: Design Beautiful CSS Gradients in 2026"
 description: "Design smooth CSS gradients online free — linear, radial, and mesh styles with live preview, color-stop controls, and copy-paste CSS code."
 date: 2026-10-16
 tags: ["design", "gradient", "css"]
+categories: ["image"]
 draft: false
 image: /images/free-gradient-maker-online-guide.svg
 slug: free-gradient-maker-online-guide

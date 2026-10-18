@@ -3,6 +3,7 @@ title: "Zero-Based Budgeting vs Envelope Method: Which Actually Works?"
 description: "Zero-based budgeting vs the envelope method: how each works, who each suits, real examples, and which one actually works for beginners in 2026."
 date: 2026-09-29
 tags: ["budgeting", "zero-based", "envelope method"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is the difference between zero-based budgeting and the envelope method?"

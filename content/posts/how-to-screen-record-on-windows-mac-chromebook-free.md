@@ -3,6 +3,7 @@ title: "How to Screen Record on Windows, Mac & Chromebook Free"
 description: "Screen record on any device for free: Windows Game Bar, Mac screenshot toolbar, Chromebook recorder, and a free online screen recorder that works in your browser."
 date: 2026-10-11
 tags: ["screen recording", "free tools", "tutorials"]
+categories: ["video"]
 draft: false
 image: /images/how-to-screen-record-on-windows-mac-chromebook-free.svg
 faq:

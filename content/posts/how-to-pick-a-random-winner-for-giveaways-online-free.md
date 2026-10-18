@@ -3,6 +3,7 @@ title: "How to Pick a Random Winner for Giveaways Online Free"
 description: "Learn how to pick a random winner for giveaways fairly and transparently, with a free online winner picker wheel for Instagram, raffles, and contests."
 date: 2026-10-15
 tags: ["everyday", "random", "giveaway"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-pick-a-random-winner-for-giveaways-online-free.svg
 slug: how-to-pick-a-random-winner-for-giveaways-online-free

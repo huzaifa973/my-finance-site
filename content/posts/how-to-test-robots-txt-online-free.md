@@ -3,6 +3,7 @@ title: "How to Test Your robots.txt Online Free (2026 Guide)"
 description: "Test your robots.txt online free — validate syntax, check blocked URLs, understand wildcards, and fix the mistakes that hide sites from Google."
 date: 2026-10-16
 tags: ["seo", "robots.txt", "technical"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-test-robots-txt-online-free.svg
 slug: how-to-test-robots-txt-online-free

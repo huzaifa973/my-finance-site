@@ -4,6 +4,7 @@ description: "Learn what meta tags do for SEO — title, description, Open Graph
 date: 2026-10-10
 draft: false
 tags: ["seo", "blogging", "how-to"]
+categories: ["seo"]
 image: /images/meta-tags-explained-free-generator.svg
 faq:
   - q: "What are meta tags in simple terms?"

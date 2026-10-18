@@ -3,6 +3,7 @@ title: "How to Calculate Days Until Any Date Online Free"
 description: "Learn how to calculate days until any date — vacations, birthdays, deadlines — plus a free online countdown calculator that does the date math instantly."
 date: 2026-10-15
 tags: ["everyday", "dates", "calculator"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-calculate-days-until-any-date-online-free.svg
 slug: how-to-calculate-days-until-any-date-online-free

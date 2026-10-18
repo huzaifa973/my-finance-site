@@ -3,6 +3,7 @@ title: "How to Negotiate a Higher Salary: Scripts That Actually Work (2026)"
 description: "Learn how to negotiate a higher salary with word-for-word scripts for job offers, raises, and counteroffers — plus the research and timing tactics that win in 2026."
 date: 2026-09-29
 tags: ["career", "salary", "negotiation"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-negotiate-salary.svg
 faq:

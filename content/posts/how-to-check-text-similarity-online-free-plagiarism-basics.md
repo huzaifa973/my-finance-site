@@ -3,6 +3,7 @@ title: "How to Check Text Similarity Online Free (Plagiarism Basics)"
 description: "Learn how to check text similarity online for free: how similarity checkers work, what your score means, and the exact steps to fix overlapping text."
 date: 2026-10-15
 tags: ["text", "similarity", "guide"]
+categories: ["text"]
 draft: false
 image: /images/how-to-check-text-similarity-online-free-plagiarism-basics.svg
 slug: how-to-check-text-similarity-online-free-plagiarism-basics

@@ -3,6 +3,7 @@ title: "UTM Parameters Explained: Track Every Click With a Free UTM Builder"
 description: "UTM parameters explained in plain English: what the 5 tags mean, how to build clean tracking links, naming rules, and a free UTM builder tool."
 date: 2026-10-15
 tags: ["seo", "analytics", "utm"]
+categories: ["seo"]
 draft: false
 image: /images/utm-parameters-explained-track-every-click-with-a-free-utm-builder.svg
 slug: utm-parameters-explained-track-every-click-with-a-free-utm-builder

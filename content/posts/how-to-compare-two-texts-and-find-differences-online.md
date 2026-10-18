@@ -3,6 +3,7 @@ title: "How to Compare Two Texts and Find Differences Online (5 Free Ways)"
 description: "Compare two texts and spot every difference: free online diff tools, Word's Compare feature, Google Docs history, and the command line."
 date: 2026-10-07
 tags: ["writing", "productivity", "developer tools"]
+categories: ["text"]
 draft: false
 image: /images/how-to-compare-two-texts-and-find-differences-online.svg
 faq:

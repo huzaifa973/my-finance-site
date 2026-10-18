@@ -3,6 +3,7 @@ title: "How to Create an Invoice Online Free (US Guide 2026)"
 description: "Create a professional invoice online free. Learn what belongs on a US invoice, the step-by-step process, when to send it, and proven tricks to get paid faster."
 date: 2026-10-11
 tags: ["invoicing", "freelancing", "free tools"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-create-an-invoice-online-free.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Start Investing With Just $100 (2026 Beginner's Guide)"
 description: "You can start investing with just $100 in 2026. This beginner's guide shows the exact account to open, what to buy, and how small amounts compound into real wealth."
 date: 2026-09-29
 tags: ["investing", "beginners", "retirement"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-start-investing-with-100-dollars.svg
 faq:

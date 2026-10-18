@@ -3,6 +3,7 @@ title: "Best High-Yield Savings Accounts in the US for Beginners (2026)"
 description: "Compare the best high-yield savings accounts in the US for beginners in 2026: rates, fees, minimums, and how to pick the right one for your emergency fund."
 date: 2026-09-29
 tags: ["saving money", "savings accounts", "emergency fund"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is a high-yield savings account?"

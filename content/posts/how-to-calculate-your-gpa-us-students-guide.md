@@ -4,6 +4,7 @@ description: "Learn exactly how to calculate GPA — the 4.0 scale, weighted vs 
 date: 2026-10-10
 draft: false
 tags: ["education", "calculators", "how-to"]
+categories: ["everyday"]
 image: /images/how-to-calculate-your-gpa-us-students-guide.svg
 faq:
   - q: "How do I calculate my GPA on a 4.0 scale?"

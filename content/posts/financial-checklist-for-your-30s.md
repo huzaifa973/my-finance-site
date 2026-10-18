@@ -3,6 +3,7 @@ title: "The Ultimate Financial Checklist for Your 30s"
 description: "Your 30s are the decade money habits pay off. The complete financial checklist for your 30s: debt, savings, investing, insurance, career, and money conversations to have."
 date: 2026-09-29
 tags: ["30s", "financial planning", "checklist"]
+categories: ["everyday"]
 draft: false
 image: /images/financial-checklist-for-your-30s.svg
 faq:

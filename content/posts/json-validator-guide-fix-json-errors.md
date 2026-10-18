@@ -3,6 +3,7 @@ title: "JSON Validator: How to Find and Fix JSON Errors Fast"
 description: "Invalid JSON breaks APIs and apps. Learn the most common JSON syntax errors, how to read error messages, and how to validate JSON free online."
 date: 2026-10-14
 tags: ["json", "validator", "developer tools"]
+categories: ["text"]
 draft: false
 image: /images/json-validator-guide-fix-json-errors.svg
 faq:

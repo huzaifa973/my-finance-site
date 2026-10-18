@@ -3,6 +3,7 @@ title: "Illinois Income Tax 2026: Flat 4.95% Rate, Deductions & Free Calculator"
 description: "Illinois income tax 2026 guide: the flat 4.95% rate, key deductions and credits, who pays, and a free calculator to estimate your tax."
 date: 2026-10-17
 tags: ["tax", "illinois", "income tax"]
+categories: ["finance"]
 draft: false
 slug: "illinois-income-tax-2026-flat-4.95-rate-free-calculator"
 image: /images/illinois-income-tax-2026-flat-4.95-rate-free-calculator.svg

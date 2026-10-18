@@ -3,6 +3,7 @@ title: "How to Convert MKV to WebM Online Free (Smaller Files, Same Quality)"
 description: "Convert MKV to WebM online free — when WebM beats MP4, how to shrink videos for the web, and a free in-browser converter with no uploads."
 date: 2026-10-16
 tags: ["video", "mkv", "webm"]
+categories: ["video"]
 draft: false
 image: /images/how-to-convert-mkv-to-webm-online-free.svg
 slug: how-to-convert-mkv-to-webm-online-free

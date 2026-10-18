@@ -3,6 +3,7 @@ title: "Rocket Money Review (2026): Is It Worth Paying For?"
 description: "Honest Rocket Money review for 2026: features, pricing, pros and cons. Find out if the subscription tracker and budgeting app is worth paying for — or if free is enough."
 date: 2026-09-29
 tags: ["rocket money", "app reviews", "budgeting apps"]
+categories: ["everyday"]
 draft: false
 faq:
   - q: "How much does Rocket Money cost in 2026?"

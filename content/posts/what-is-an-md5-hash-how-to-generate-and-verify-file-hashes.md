@@ -3,6 +3,7 @@ title: "What Is an MD5 Hash? How to Generate and Verify File Hashes"
 description: "MD5 hashes explained in plain English: what they are, how to generate one online, and how to verify a file's integrity with its checksum."
 date: 2026-10-07
 tags: ["developer tools", "md5", "file security"]
+categories: ["text"]
 draft: false
 image: /images/what-is-an-md5-hash-how-to-generate-and-verify-file-hashes.svg
 faq:

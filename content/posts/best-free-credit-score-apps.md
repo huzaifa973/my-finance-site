@@ -3,6 +3,7 @@ title: "Best Free Credit Score Apps in the US & UK (2026)"
 description: "Compare the best free credit score apps in the US and UK for 2026. Which bureaus they cover, what's actually free, and how to use them."
 date: 2026-09-29
 tags: ["credit score", "apps", "uk", "personal finance"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "Does checking my own credit score lower it?"

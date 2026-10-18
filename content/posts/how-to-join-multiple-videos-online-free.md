@@ -3,6 +3,7 @@ title: "How to Join Multiple Videos Into One Online Free"
 description: "Join multiple videos into one online free. Merge clips into a single video in your browser — perfect for compilations, vlogs, and reels."
 date: 2026-10-17
 tags: ["video", "merge", "editing"]
+categories: ["video"]
 draft: false
 slug: "how-to-join-multiple-videos-online-free"
 image: /images/how-to-join-multiple-videos-online-free.svg

@@ -3,6 +3,7 @@ title: "Unit Converter Guide: Length & Weight Conversions Made Easy"
 description: "Master length and weight conversions: inches to cm, feet to meters, miles to km, pounds to kg, ounces to grams — with tables, mental-math tricks, and a free converter."
 date: 2026-10-13
 tags: ["converters", "units", "everyday"]
+categories: ["everyday"]
 draft: false
 image: /images/unit-converter-guide-length-weight-conversions.svg
 faq:

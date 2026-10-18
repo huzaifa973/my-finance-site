@@ -3,6 +3,7 @@ title: "TOML vs JSON: Which Config Format Should You Use?"
 description: "TOML vs JSON for config files: readability, comments, data types, and when to pick each — plus a free converter to switch between them."
 date: 2026-10-14
 tags: ["toml", "json", "configuration"]
+categories: ["text"]
 draft: false
 image: /images/toml-vs-json-config-files-guide.svg
 faq:

@@ -3,6 +3,7 @@ title: "California Income Tax 2026: Brackets, Rates, and How to Calculate"
 description: "California income tax brackets explained for 2026: illustrative rates, standard deduction basics, a marginal-rate example, and steps to estimate your tax."
 date: 2026-10-13
 tags: ["tax", "california", "income tax"]
+categories: ["finance"]
 draft: false
 image: /images/california-income-tax-2026-brackets-rates-guide.svg
 faq:

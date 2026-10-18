@@ -3,6 +3,7 @@ title: "Pig Latin Translator: How Pig Latin Works (+ Free Tool)"
 description: "Pig Latin translator guide — learn the rules of Pig Latin with examples, then translate any text instantly with our free browser tool."
 date: 2026-10-16
 tags: ["text", "translator", "fun"]
+categories: ["text"]
 draft: false
 image: /images/pig-latin-translator-guide-how-it-works.svg
 slug: pig-latin-translator-guide-how-it-works

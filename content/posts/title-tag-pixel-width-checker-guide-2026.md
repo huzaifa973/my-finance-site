@@ -3,6 +3,7 @@ title: "Title Tag Pixel Width in 2026: How Long Before Google Truncates"
 description: "Google truncates titles by pixel width, not characters — about 580-600px. Learn the 2026 limits, why some titles get rewritten, and a free checker."
 date: 2026-10-16
 tags: ["seo", "title tags", "serp"]
+categories: ["seo"]
 draft: false
 image: /images/title-tag-pixel-width-checker-guide-2026.svg
 slug: title-tag-pixel-width-checker-guide-2026

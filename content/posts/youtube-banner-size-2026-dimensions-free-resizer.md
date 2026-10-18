@@ -3,6 +3,7 @@ title: "YouTube Banner Size 2026: Dimensions and Free Resizer"
 description: "The exact YouTube banner dimensions for 2026 — full size, safe area, and device crops — plus how to resize a banner and design tips that work everywhere."
 date: 2026-10-13
 tags: ["image", "youtube", "design"]
+categories: ["image"]
 draft: false
 image: /images/youtube-banner-size-2026-dimensions-free-resizer.svg
 faq:

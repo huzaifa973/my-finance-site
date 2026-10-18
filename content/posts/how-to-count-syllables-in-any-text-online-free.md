@@ -3,6 +3,7 @@ title: "How to Count Syllables in Any Text Online Free"
 description: "Count syllables in any word, sentence, or poem instantly. The rules behind the count, haiku and readability uses, and a free counter tool."
 date: 2026-10-15
 tags: ["text", "syllables", "guide"]
+categories: ["text"]
 draft: false
 image: /images/how-to-count-syllables-in-any-text-online-free.svg
 slug: how-to-count-syllables-in-any-text-online-free

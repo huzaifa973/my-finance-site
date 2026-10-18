@@ -3,6 +3,7 @@ title: "How to Add Course Schema Markup to Your Website (Free Generator)"
 description: "Learn how to add Course schema markup to your website with a simple JSON-LD example, the key properties Google needs, and a free generator to build it in seconds."
 date: 2026-10-13
 tags: ["seo", "schema markup", "structured data"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-add-course-schema-markup-free-generator.svg
 faq:

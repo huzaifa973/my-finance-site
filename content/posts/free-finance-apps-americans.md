@@ -3,6 +3,7 @@ title: "7 Free Finance Apps Every American Should Try"
 description: "The 7 best free finance apps for Americans in 2026: budgeting, saving, investing and credit monitoring — all with genuinely useful free tiers."
 date: 2026-09-29
 tags: ["apps", "budgeting", "saving money", "personal finance"]
+categories: ["seo"]
 draft: false
 faq:
   - q: "What is the best completely free budgeting app?"

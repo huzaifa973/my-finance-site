@@ -3,6 +3,7 @@ title: "PNG vs JPG vs WebP: Which Image Format Should You Use?"
 description: "PNG vs JPG vs WebP explained: transparency, quality, file size, and browser support — plus a free converter to switch formats in your browser."
 date: 2026-10-14
 tags: ["image", "png", "webp"]
+categories: ["image"]
 draft: false
 image: /images/png-vs-jpg-vs-webp-which-format.svg
 faq:

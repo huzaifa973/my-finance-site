@@ -3,6 +3,7 @@ title: "Robots Meta Tags Explained: noindex, nofollow & More"
 description: "Robots meta tags explained — what noindex, nofollow, noarchive and nosnippet do, when to use each, and how to add them correctly in 2026."
 date: 2026-10-16
 tags: ["seo", "meta-tags", "guide"]
+categories: ["seo"]
 draft: false
 image: /images/robots-meta-tags-explained-noindex-nofollow-guide.svg
 slug: robots-meta-tags-explained-noindex-nofollow-guide

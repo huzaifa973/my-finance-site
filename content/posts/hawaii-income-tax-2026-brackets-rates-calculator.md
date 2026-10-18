@@ -3,6 +3,7 @@ title: "Hawaii Income Tax 2026: Brackets, Rates & Free Calculator"
 description: "Hawaii income tax 2026 — all 12 brackets and rates from 1.4% to 11%, standard deduction, and how to estimate what you'll owe. Free guide."
 date: 2026-10-16
 tags: ["finance", "taxes", "hawaii"]
+categories: ["finance"]
 draft: false
 image: /images/hawaii-income-tax-2026-brackets-rates-calculator.svg
 slug: hawaii-income-tax-2026-brackets-rates-calculator

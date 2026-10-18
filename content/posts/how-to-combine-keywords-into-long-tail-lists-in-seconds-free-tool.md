@@ -3,6 +3,7 @@ title: "How to Combine Keywords Into Long-Tail Lists in Seconds (Free Tool)"
 description: "Turn a handful of seed keywords into a long-tail keyword list in seconds. Learn the combining method, power modifiers, and how to clean the list."
 date: 2026-10-15
 tags: ["seo", "keywords", "guide"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-combine-keywords-into-long-tail-lists-in-seconds-free-tool.svg
 slug: how-to-combine-keywords-into-long-tail-lists-in-seconds-free-tool

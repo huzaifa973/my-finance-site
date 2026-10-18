@@ -3,6 +3,7 @@ title: "Faceless TikTok + Affiliate Marketing: Beginner's Blueprint"
 description: "Start a faceless TikTok channel and earn affiliate commissions in 2026. Niche picking, content system, posting schedule and realistic earnings timeline."
 date: 2026-09-29
 tags: ["tiktok", "affiliate marketing", "side hustle", "passive income"]
+categories: ["seo"]
 draft: false
 faq:
   - q: "Can you really do TikTok affiliate marketing without showing your face?"

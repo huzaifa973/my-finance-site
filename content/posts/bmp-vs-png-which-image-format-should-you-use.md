@@ -3,6 +3,7 @@ title: "BMP vs PNG: Which Image Format Should You Use?"
 description: "BMP vs PNG compared: file size, quality, transparency, and browser support. Learn which format fits your project — and convert between them free."
 date: 2026-10-16
 tags: ["image", "formats", "guide"]
+categories: ["image"]
 draft: false
 image: /images/bmp-vs-png-which-image-format-should-you-use.svg
 slug: bmp-vs-png-which-image-format-should-you-use

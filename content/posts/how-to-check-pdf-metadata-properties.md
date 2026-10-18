@@ -3,6 +3,7 @@ title: "How to Check PDF Metadata and Properties (Free Methods)"
 description: "Learn how to check PDF metadata and properties free: author, title, creation date, fonts, and how to inspect or clean hidden data before sharing."
 date: 2026-10-14
 tags: ["pdf", "metadata", "privacy"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-check-pdf-metadata-properties.svg
 faq:

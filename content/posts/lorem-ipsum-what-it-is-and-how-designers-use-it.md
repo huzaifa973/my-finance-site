@@ -3,6 +3,7 @@ title: "Lorem Ipsum: What It Is and How Designers Actually Use It"
 description: "What is lorem ipsum, where it came from, and why designers still use placeholder text. Plus how to generate it free in seconds."
 date: 2026-10-07
 tags: ["design", "writing", "web design"]
+categories: ["image"]
 draft: false
 image: /images/lorem-ipsum-what-it-is-and-how-designers-use-it.svg
 faq:

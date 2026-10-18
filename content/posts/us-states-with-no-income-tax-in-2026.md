@@ -3,6 +3,7 @@ title: "US States With No Income Tax in 2026"
 description: "The 9 states with no income tax in 2026, what they charge instead in sales and property taxes, and a worked example of what moving really saves."
 date: 2026-10-12
 tags: ["state taxes", "income tax", "personal finance"]
+categories: ["finance"]
 draft: false
 image: /images/us-states-with-no-income-tax-in-2026.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Compress a Video for Email (Under 25MB Attachments)"
 description: "Compress a video for email so it fits under the 25MB attachment limit. Exact provider limits, quality-safe settings, and a free in-browser tool."
 date: 2026-10-15
 tags: ["video", "compression", "email"]
+categories: ["video"]
 draft: false
 image: /images/how-to-compress-a-video-for-email-under-25mb-attachments.svg
 slug: how-to-compress-a-video-for-email-under-25mb-attachments

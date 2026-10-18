@@ -3,6 +3,7 @@ title: "Freelancer Taxes Made Simple: What to Track and Deduct"
 description: "Freelance taxes explained in plain English: what to track, which deductions save you real money, how quarterly estimated taxes work, and a simple year-round system."
 date: 2026-09-29
 tags: ["freelance", "taxes", "deductions", "self-employment"]
+categories: ["finance"]
 draft: false
 image: /images/freelancer-taxes-simple-guide.svg
 faq:

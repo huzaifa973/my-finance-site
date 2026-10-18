@@ -4,6 +4,7 @@ description: "What is keyword density? Learn the safe range, how to calculate it
 date: 2026-10-10
 draft: false
 tags: ["seo", "writing", "how-to"]
+categories: ["seo"]
 image: /images/keyword-density-what-it-is-how-to-check.svg
 faq:
   - q: "What is keyword density in SEO?"

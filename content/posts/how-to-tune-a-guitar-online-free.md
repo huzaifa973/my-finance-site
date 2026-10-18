@@ -3,6 +3,7 @@ title: "How to Tune a Guitar Online Free: The 2026 Beginner's Guide"
 description: "Tune your guitar online free with no app or downloads. Standard tuning notes, a step-by-step tuning walkthrough, and tips for staying in tune."
 date: 2026-10-16
 tags: ["music", "guitar", "tuner"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-tune-a-guitar-online-free.svg
 slug: how-to-tune-a-guitar-online-free

@@ -3,6 +3,7 @@ title: "How to Extract Text From Images and Scanned PDFs Free"
 description: "Extract text from images and scanned PDFs free with OCR. Learn how image-to-text extraction works, pull text from scanned PDFs, and get clean, copyable text in minutes."
 date: 2026-10-11
 tags: ["ocr", "free tools", "pdf tools"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-extract-text-from-images-and-scanned-pdfs-free.svg
 faq:

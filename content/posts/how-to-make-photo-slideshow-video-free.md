@@ -3,6 +3,7 @@ title: "How to Make a Photo Slideshow Video Online Free"
 description: "Turn your photos into a polished slideshow video with music and transitions. Learn the simple steps — free, right in your browser."
 date: 2026-10-14
 tags: ["video", "slideshow", "photo video"]
+categories: ["video"]
 draft: false
 image: /images/how-to-make-photo-slideshow-video-free.svg
 faq:

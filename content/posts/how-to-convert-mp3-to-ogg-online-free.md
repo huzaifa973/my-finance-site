@@ -3,6 +3,7 @@ title: "How to Convert MP3 to OGG Online Free (No Signup)"
 description: "Convert MP3 to OGG free online with no signup. Learn why OGG Vorbis beats MP3 for game dev and web audio, plus step-by-step conversion and quality tips."
 date: 2026-10-13
 tags: ["audio", "mp3 to ogg", "audio converter"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-convert-mp3-to-ogg-online-free.svg
 faq:

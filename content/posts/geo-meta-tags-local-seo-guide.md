@@ -3,6 +3,7 @@ title: "Geo Meta Tags: A Practical Local SEO Location Guide"
 description: "Geo meta tags (ICBM, geo.region, geo.placename) explained: what they do, how to add them to your site, and how to validate them for local SEO."
 date: 2026-10-14
 tags: ["seo", "local seo", "meta tags"]
+categories: ["seo"]
 draft: false
 image: /images/geo-meta-tags-local-seo-guide.svg
 faq:

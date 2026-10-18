@@ -4,6 +4,7 @@ description: "Resize images to exact pixels, percentages, or target file sizes w
 date: 2026-10-08
 draft: false
 tags: ["images", "web-design", "social-media"]
+categories: ["image"]
 image: /images/how-to-resize-an-image-without-losing-quality.svg
 faq:
   - q: "Can I resize an image without losing quality?"

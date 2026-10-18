@@ -3,6 +3,7 @@ title: "How to Find and Cancel Subscriptions Quietly Eating Your Budget"
 description: "Find every subscription draining your money with this 2026 audit: where to look, cancellation scripts for tricky services, and how to stop zombie charges for good."
 date: 2026-09-29
 tags: ["subscriptions", "budgeting", "saving money"]
+categories: ["finance"]
 draft: false
 image: /images/find-and-cancel-subscriptions.svg
 faq:

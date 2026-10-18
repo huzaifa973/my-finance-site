@@ -3,6 +3,7 @@ title: "9 Free Budgeting Spreadsheets for UK Beginners (2026)"
 description: "The 9 best free budgeting spreadsheets for UK beginners in 2026 — Google Sheets and Excel templates for monthly budgets, zero-based plans, and debt payoff."
 date: 2026-09-29
 tags: ["budgeting", "uk", "free tools", "spreadsheets"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is the best free budgeting spreadsheet for UK beginners?"

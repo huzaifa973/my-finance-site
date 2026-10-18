@@ -4,6 +4,7 @@ description: "Trim audio files in your browser: cut ringtones, podcast clips, an
 date: 2026-10-08
 draft: false
 tags: ["audio", "productivity", "creators"]
+categories: ["audio"]
 image: /images/how-to-trim-audio-online-for-free.svg
 faq:
   - q: "How do I trim an MP3 online for free?"

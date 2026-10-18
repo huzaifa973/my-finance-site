@@ -3,6 +3,7 @@ title: "Indiana Income Tax 2026: Flat 2.95% Rate, Deductions & Free Calculator"
 description: "Indiana income tax 2026 guide: the flat 2.95% rate, county taxes, key deductions and credits, plus a free calculator to estimate your bill."
 date: 2026-10-17
 tags: ["tax", "indiana", "income tax"]
+categories: ["finance"]
 draft: false
 slug: "indiana-income-tax-2026-flat-2.95-rate-free-calculator"
 image: /images/indiana-income-tax-2026-flat-2.95-rate-free-calculator.svg

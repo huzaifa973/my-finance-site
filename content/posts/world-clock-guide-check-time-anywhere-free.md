@@ -3,6 +3,7 @@ title: "World Clock Guide: Check the Time Anywhere Free"
 description: "World clock guide — check the time anywhere free, master time zones for meetings and travel, and never miss a call across zones again."
 date: 2026-10-16
 tags: ["everyday", "time", "travel"]
+categories: ["everyday"]
 draft: false
 image: /images/world-clock-guide-check-time-anywhere-free.svg
 slug: world-clock-guide-check-time-anywhere-free

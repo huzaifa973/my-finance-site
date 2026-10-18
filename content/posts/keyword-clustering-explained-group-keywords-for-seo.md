@@ -3,6 +3,7 @@ title: "Keyword Clustering Explained: Group Keywords for SEO"
 description: "Keyword clustering explained — group related keywords into topic clusters to rank for more terms with fewer, stronger pages. Step-by-step method inside."
 date: 2026-10-16
 tags: ["seo", "keywords", "strategy"]
+categories: ["seo"]
 draft: false
 image: /images/keyword-clustering-explained-group-keywords-for-seo.svg
 slug: keyword-clustering-explained-group-keywords-for-seo

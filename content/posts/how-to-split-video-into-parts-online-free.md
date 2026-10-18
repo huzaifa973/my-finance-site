@@ -3,6 +3,7 @@ title: "How to Split a Video Into Parts Online Free"
 description: "Split a video into parts online free — cut long recordings into clips for social media, courses, or highlights. No signup, processed privately."
 date: 2026-10-16
 tags: ["video", "editing", "how-to"]
+categories: ["video"]
 draft: false
 image: /images/how-to-split-video-into-parts-online-free.svg
 slug: how-to-split-video-into-parts-online-free

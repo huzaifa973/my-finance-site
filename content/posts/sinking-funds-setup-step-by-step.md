@@ -3,6 +3,7 @@ title: "Sinking Funds: The Complete Step-by-Step Setup Guide"
 description: "Sinking funds turn big irregular bills into small monthly savings. This step-by-step setup guide covers categories, amounts, and tracking tips."
 date: 2026-10-01
 tags: ["budgeting", "sinking funds", "saving"]
+categories: ["finance"]
 draft: false
 image: /images/sinking-funds-setup-step-by-step.svg
 faq:

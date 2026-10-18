@@ -3,6 +3,7 @@ title: "Debt Snowball vs Avalanche: Which Pays Off Faster? (With Examples)"
 description: "Debt snowball vs avalanche compared with real numbers. See which method pays off debt faster and cheaper — plus a hybrid approach that gives you both wins."
 date: 2026-09-29
 tags: ["debt", "debt snowball", "debt avalanche", "debt payoff"]
+categories: ["finance"]
 draft: false
 image: /images/debt-snowball-vs-avalanche.svg
 faq:

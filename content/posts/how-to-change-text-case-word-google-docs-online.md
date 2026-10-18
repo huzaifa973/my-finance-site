@@ -3,6 +3,7 @@ title: "How to Change Text Case in Word, Google Docs & Online (Fast Methods)"
 description: "Change text case in Word, Google Docs, or free online in seconds — uppercase, lowercase, title case, camelCase and more, step by step."
 date: 2026-10-03
 tags: ["text tools", "case converter", "productivity"]
+categories: ["text"]
 draft: false
 image: /images/how-to-change-text-case-word-google-docs-online.svg
 faq:

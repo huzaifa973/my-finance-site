@@ -3,6 +3,7 @@ title: "Credit Utilization Explained and How Much of Your Limit to Use"
 description: "Credit utilization explained: the under-10% zone, why one maxed card hurts, and the statement-date trick that improves your score in one cycle."
 date: 2026-10-12
 tags: ["credit utilization", "credit score", "credit cards"]
+categories: ["finance"]
 draft: false
 image: /images/credit-utilization-explained-and-how-much-of-your-limit-to-use.svg
 faq:

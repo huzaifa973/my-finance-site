@@ -3,6 +3,7 @@ title: "Print on Demand for Beginners: Step-by-Step US Guide (2026)"
 description: "Start a print on demand business in the US with no inventory. Platform choice, niche research, design tools and realistic profit math for 2026."
 date: 2026-09-29
 tags: ["print on demand", "side hustle", "ecommerce", "passive income"]
+categories: ["everyday"]
 draft: false
 faq:
   - q: "How much money do I need to start print on demand?"

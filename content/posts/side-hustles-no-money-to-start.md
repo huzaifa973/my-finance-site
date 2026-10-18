@@ -3,6 +3,7 @@ title: "10 Legit Side Hustles You Can Start With No Money (2026)"
 description: "10 legit side hustles that cost $0 to start: freelancing, delivery gigs, print on demand, and more. Realistic earnings and first steps for US/UK beginners."
 date: 2026-09-29
 tags: ["side hustles", "extra income", "freelancing", "make money"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is the best side hustle with no startup cost?"

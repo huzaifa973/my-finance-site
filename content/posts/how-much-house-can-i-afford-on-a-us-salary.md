@@ -3,6 +3,7 @@ title: "How Much House Can I Afford on a US Salary"
 description: "Use the 28/36 rule to find what you can really afford: worked examples, the taxes and insurance listings hide, and how debts change your price."
 date: 2026-10-12
 tags: ["house affordability", "mortgage", "home buying"]
+categories: ["finance"]
 draft: false
 image: /images/how-much-house-can-i-afford-on-a-us-salary.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Scramble Words Online Free (Games, Puzzles & Teaching)"
 description: "Scramble any word online free — create anagrams for games, puzzles, and classrooms. How scrambling works, difficulty tips, and a free tool."
 date: 2026-10-16
 tags: ["text", "word games", "puzzles"]
+categories: ["text"]
 draft: false
 image: /images/how-to-scramble-words-online-free.svg
 slug: how-to-scramble-words-online-free

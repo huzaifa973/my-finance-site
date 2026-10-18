@@ -3,6 +3,7 @@ title: "How to Turn a PDF into an HTML Web Page (Free)"
 description: "Convert PDF to HTML free: why HTML beats PDF for SEO and mobile, plus step-by-step conversion, cleanup tips, and responsive output."
 date: 2026-10-13
 tags: ["pdf", "pdf to html", "web design"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-turn-pdf-into-html-web-page.svg
 faq:

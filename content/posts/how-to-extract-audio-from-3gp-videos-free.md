@@ -3,6 +3,7 @@ title: "How to Extract Audio from 3GP Videos (Free Converter)"
 description: "Turn old 3GP phone videos into audio files. Learn how to extract audio from 3GP to M4A or OGG free, right in your browser — no sign-up."
 date: 2026-10-13
 tags: ["video", "3gp", "audio"]
+categories: ["video"]
 draft: false
 image: /images/how-to-extract-audio-from-3gp-videos-free.svg
 faq:

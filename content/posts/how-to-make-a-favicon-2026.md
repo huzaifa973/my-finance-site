@@ -3,6 +3,7 @@ title: "How to Make a Favicon for Your Website in 2026"
 description: "How to make a favicon for your website: sizes, formats, design tips, and a free generator that builds every size from one image."
 date: 2026-10-14
 tags: ["favicon", "web design", "how to"]
+categories: ["image"]
 draft: false
 image: /images/how-to-make-a-favicon-2026.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Convert MOV to MP4 Online Free"
 description: "Convert MOV to MP4 online free. Turn iPhone MOV videos into universally playable MP4 files in your browser — no signup, no watermark."
 date: 2026-10-17
 tags: ["video", "converter", "mov"]
+categories: ["video"]
 draft: false
 slug: "how-to-convert-mov-to-mp4-online-free"
 image: /images/how-to-convert-mov-to-mp4-online-free.svg

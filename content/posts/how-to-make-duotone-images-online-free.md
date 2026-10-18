@@ -3,6 +3,7 @@ title: "How to Make Duotone Images Online Free"
 description: "Make duotone images online free in seconds. Turn any photo into a two-color design with our browser-based duotone maker — no signup, no cost."
 date: 2026-10-17
 tags: ["image", "duotone", "design"]
+categories: ["image"]
 draft: false
 slug: "how-to-make-duotone-images-online-free"
 image: /images/how-to-make-duotone-images-online-free.svg

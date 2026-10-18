@@ -3,6 +3,7 @@ title: "17 Grocery Saving Hacks That Actually Work in the USA"
 description: "17 proven grocery saving hacks for the USA: cut your food bill 25–40% with meal planning, store strategies, and waste-killing habits that actually work."
 date: 2026-09-29
 tags: ["saving money", "groceries", "frugal living"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How much should a beginner budget for groceries in the US?"

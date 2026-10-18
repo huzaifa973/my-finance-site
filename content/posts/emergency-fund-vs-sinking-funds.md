@@ -3,6 +3,7 @@ title: "Emergency Fund vs Sinking Funds: What's the Difference?"
 description: "Emergency fund vs sinking funds explained: what each covers, how much to save in each, and how to run both without complicating your budget. Includes setup examples."
 date: 2026-09-29
 tags: ["emergency fund", "sinking funds", "saving money"]
+categories: ["finance"]
 draft: false
 image: /images/emergency-fund-vs-sinking-funds.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Pay Off Credit Card Debt Fast on a Low Income"
 description: "Pay off credit card debt fast even on a low income. Six practical steps: stop the bleeding, lower your APR, find extra payments, and automate the payoff."
 date: 2026-09-29
 tags: ["credit cards", "debt", "debt payoff", "low income"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How can I pay off credit card debt fast with no extra money?"

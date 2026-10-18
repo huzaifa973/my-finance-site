@@ -3,6 +3,7 @@ title: "How to Remove PMI and When You Can Drop It"
 description: "Paying PMI every month? Learn the 80% and 78% rules, the appraisal route, and the exact steps to request PMI removal and save hundreds a year."
 date: 2026-10-12
 tags: ["pmi", "mortgage", "home buying"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-remove-pmi-and-when-you-can-drop-it.svg
 faq:

@@ -3,6 +3,7 @@ title: "How to Remove Line Breaks From Text Online Free"
 description: "Remove line breaks from text online free — join broken lines into clean paragraphs in one click. Fix copied PDFs, chats, and spreadsheets fast."
 date: 2026-10-16
 tags: ["text", "formatting", "how-to"]
+categories: ["text"]
 draft: false
 image: /images/how-to-remove-line-breaks-from-text-online-free.svg
 slug: how-to-remove-line-breaks-from-text-online-free

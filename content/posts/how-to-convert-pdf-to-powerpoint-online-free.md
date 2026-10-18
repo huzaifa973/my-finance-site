@@ -3,6 +3,7 @@ title: "How to Convert PDF to PowerPoint Online Free"
 description: "Convert PDF to PowerPoint online free — turn static PDFs into editable slides in minutes. Keep text, images, and layout intact. No signup."
 date: 2026-10-16
 tags: ["pdf", "conversion", "powerpoint"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-pdf-to-powerpoint-online-free.svg
 slug: how-to-convert-pdf-to-powerpoint-online-free

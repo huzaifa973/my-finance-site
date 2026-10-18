@@ -4,6 +4,7 @@ title: "How to Redact a PDF Online Free: Black Out Sensitive Text"
 description: "Redact a PDF online free — permanently black out names, SSNs, and sensitive text so it can never be recovered. Step-by-step guide."
 date: 2026-10-17
 tags: ["pdf", "privacy", "security"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-redact-a-pdf-online-free-guide.svg
 faq:

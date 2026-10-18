@@ -4,6 +4,7 @@ title: "How to Fine-Tune Llama on a Rented GPU: A Beginner's Guide for 2026"
 description: "Fine-tune Llama on a rented cloud GPU step by step — VRAM requirements, picking a GPU, cost math, and the beginner-friendly workflow."
 date: 2026-10-17
 tags: ["seo", "cloud-gpu", "ai"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-fine-tune-llama-on-a-rented-gpu-beginners-guide-2026.svg
 faq:

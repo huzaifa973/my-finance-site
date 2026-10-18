@@ -3,6 +3,7 @@ title: "How to Convert PDF to PNG Online Free (No Signup)"
 description: "Convert PDF to PNG online free with no signup. Turn every PDF page into a high-quality PNG image in your browser — step by step, plus quality and privacy tips."
 date: 2026-10-13
 tags: ["pdf", "convert pdf", "png"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-pdf-to-png-online-free.svg
 faq:

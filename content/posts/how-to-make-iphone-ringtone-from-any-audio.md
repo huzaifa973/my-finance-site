@@ -3,6 +3,7 @@ title: "How to Make an iPhone Ringtone From Any Audio File (Free)"
 description: "Make an iPhone ringtone from any audio free: convert to M4R, trim to 40 seconds, and add it via Finder or iTunes — no paid apps needed."
 date: 2026-10-14
 tags: ["iphone", "ringtone", "audio"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-make-iphone-ringtone-from-any-audio.svg
 faq:

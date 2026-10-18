@@ -3,6 +3,7 @@ title: "How to Read Your Payslip: Every Deduction Explained"
 description: "Your payslip is a story about where your money goes. Every line explained — gross pay, FICA, federal tax, pre-tax deductions, YTD totals — plus errors to watch for."
 date: 2026-09-29
 tags: ["paycheck", "taxes", "basics"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-read-your-payslip.svg
 faq:

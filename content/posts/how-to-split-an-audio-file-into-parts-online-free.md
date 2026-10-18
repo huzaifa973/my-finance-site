@@ -3,6 +3,7 @@ title: "How to Split an Audio File Into Parts Online Free"
 description: "Split an audio file into parts free — trim podcasts into chapters, cut ringtones, or divide long recordings. Three easy methods with step-by-step instructions."
 date: 2026-10-15
 tags: ["audio", "splitter", "guide"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-split-an-audio-file-into-parts-online-free.svg
 slug: how-to-split-an-audio-file-into-parts-online-free

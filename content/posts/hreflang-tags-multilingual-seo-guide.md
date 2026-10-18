@@ -3,6 +3,7 @@ title: "Hreflang Tags: The Complete Guide to Multilingual SEO"
 description: "Hreflang tags tell Google which language and region each page serves. Learn the syntax, common errors, and how to build correct hreflang markup."
 date: 2026-10-14
 tags: ["seo", "hreflang", "international seo"]
+categories: ["seo"]
 draft: false
 image: /images/hreflang-tags-multilingual-seo-guide.svg
 faq:

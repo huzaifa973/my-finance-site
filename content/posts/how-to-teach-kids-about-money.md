@@ -3,6 +3,7 @@ title: "How to Teach Kids About Money (By Age Group)"
 description: "Teaching kids about money gets easier when you match the lesson to the age. Practical, no-pressure money lessons for ages 3 through teens, with scripts that work."
 date: 2026-09-29
 tags: ["kids", "parenting", "financial literacy"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-teach-kids-about-money.svg
 faq:

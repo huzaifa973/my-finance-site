@@ -4,6 +4,7 @@ description: "Convert any video to GIF for free — pick your clip, set size and
 date: 2026-10-10
 draft: false
 tags: ["video", "gif", "how-to"]
+categories: ["video"]
 image: /images/how-to-convert-video-to-gif-free.svg
 faq:
   - q: "How do I convert a video to a GIF for free?"

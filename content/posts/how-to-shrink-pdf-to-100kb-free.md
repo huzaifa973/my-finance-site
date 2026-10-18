@@ -3,6 +3,7 @@ title: "How to Shrink a PDF to 100KB Online Free"
 description: "Need a PDF under 100KB for an application portal? Learn why portals set size limits and how to compress a PDF to exactly 100KB free."
 date: 2026-10-14
 tags: ["pdf", "compress pdf", "reduce pdf size"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-shrink-pdf-to-100kb-free.svg
 faq:

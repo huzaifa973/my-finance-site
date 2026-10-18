@@ -3,6 +3,7 @@ title: "Meta Refresh Redirects: When to Use Them (and When Not To)"
 description: "Meta refresh redirects reload or move a page via HTML. Learn when they are acceptable, why they hurt SEO, and what to use instead."
 date: 2026-10-14
 tags: ["seo", "redirects", "meta refresh"]
+categories: ["seo"]
 draft: false
 image: /images/meta-refresh-redirects-when-to-use.svg
 faq:

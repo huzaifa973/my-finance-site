@@ -3,6 +3,7 @@ title: "How to Create a Favicon From Text or Emoji Online Free"
 description: "Create a favicon from text or emoji online free. Make a custom browser tab icon in seconds — type a letter or emoji, pick colors, download."
 date: 2026-10-17
 tags: ["image", "favicon", "web design"]
+categories: ["image"]
 draft: false
 slug: "how-to-create-a-favicon-from-text-online-free"
 image: /images/how-to-create-a-favicon-from-text-online-free.svg

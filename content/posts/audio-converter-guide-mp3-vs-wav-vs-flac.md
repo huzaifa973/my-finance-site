@@ -3,6 +3,7 @@ title: "Audio Converter Guide: MP3 vs WAV vs FLAC — Which Format Should You Us
 description: "Confused by MP3 vs WAV vs FLAC? This guide explains lossy vs lossless audio formats, bitrates, when to use each, and how to convert audio free online."
 date: 2026-10-13
 tags: ["audio", "mp3", "audio converter"]
+categories: ["audio"]
 draft: false
 image: /images/audio-converter-guide-mp3-vs-wav-vs-flac.svg
 faq:

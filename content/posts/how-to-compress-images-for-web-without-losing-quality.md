@@ -4,6 +4,7 @@ description: "Compress images for your website, email, or social media without v
 date: 2026-10-08
 draft: false
 tags: ["images", "seo", "web-design"]
+categories: ["image"]
 image: /images/how-to-compress-images-for-web-without-losing-quality.svg
 faq:
   - q: "How much can I compress an image without losing quality?"

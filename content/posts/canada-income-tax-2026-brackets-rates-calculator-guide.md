@@ -3,6 +3,7 @@ title: "Canada Income Tax 2026: Federal Brackets, Rates & Free Calculator"
 description: "Canada's 2026 federal tax brackets explained — 14% to 33%, basic personal amount $16,452, provincial tax stacking, and a free calculator."
 date: 2026-10-16
 tags: ["canada", "income tax", "calculator"]
+categories: ["finance"]
 draft: false
 image: /images/canada-income-tax-2026-brackets-rates-calculator-guide.svg
 slug: canada-income-tax-2026-brackets-rates-calculator-guide

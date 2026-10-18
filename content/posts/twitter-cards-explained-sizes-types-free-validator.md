@@ -3,6 +3,7 @@ title: "Twitter Cards Explained: Sizes, Types, and a Free Validator"
 description: "Twitter Cards explained: the four card types, exact image sizes, the full meta tag reference, and a free validator to preview and fix your cards."
 date: 2026-10-13
 tags: ["seo", "twitter cards", "social media"]
+categories: ["seo"]
 draft: false
 image: /images/twitter-cards-explained-sizes-types-free-validator.svg
 faq:

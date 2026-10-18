@@ -3,6 +3,7 @@ title: "Delaware Income Tax 2026: Brackets, Rates & Free Calculator"
 description: "Delaware's 2026 income tax brackets, standard deduction, and personal credits explained, with a worked example and a free calculator to estimate your tax."
 date: 2026-10-15
 tags: ["finance", "taxes", "delaware"]
+categories: ["finance"]
 draft: false
 image: /images/delaware-income-tax-2026-brackets-rates-free-calculator.svg
 slug: delaware-income-tax-2026-brackets-rates-free-calculator

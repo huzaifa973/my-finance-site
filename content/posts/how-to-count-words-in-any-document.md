@@ -3,6 +3,7 @@ title: "Word Counter: How to Count Words in Any Document (7 Free Methods)"
 description: "Count words in any document fast — 7 free methods for Word, Google Docs, PDFs, and web text, plus the word and character limits that actually matter."
 date: 2026-10-05
 tags: ["text tools", "word counter", "productivity"]
+categories: ["text"]
 draft: false
 image: /images/how-to-count-words-in-any-document.svg
 faq:

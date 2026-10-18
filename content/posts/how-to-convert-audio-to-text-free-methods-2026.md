@@ -3,6 +3,7 @@ title: "How to Convert Audio to Text: Free Transcription Methods (2026)"
 description: "Convert audio to text free with the best 2026 methods — browser transcription, AI tools, and manual tricks for meetings, lectures, and podcasts."
 date: 2026-10-16
 tags: ["audio", "transcription", "how-to"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-convert-audio-to-text-free-methods-2026.svg
 slug: how-to-convert-audio-to-text-free-methods-2026

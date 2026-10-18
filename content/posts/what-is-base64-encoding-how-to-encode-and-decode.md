@@ -3,6 +3,7 @@ title: "What Is Base64 Encoding? How to Encode and Decode It"
 description: "Base64 encoding explained in plain English: how it works, where you'll meet it (email, images, APIs), and how to encode or decode it free online."
 date: 2026-10-06
 tags: ["developer tools", "base64", "encoding"]
+categories: ["text"]
 draft: false
 image: /images/what-is-base64-encoding-how-to-encode-and-decode.svg
 faq:

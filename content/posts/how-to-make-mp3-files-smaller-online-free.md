@@ -3,6 +3,7 @@ title: "How to Make MP3 Files Smaller Online Free"
 description: "Learn how to make MP3 files smaller online free — shrink audio with bitrate, sample rate, and channel tweaks. No signup, files stay private."
 date: 2026-10-16
 tags: ["audio", "mp3", "compression"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-make-mp3-files-smaller-online-free.svg
 slug: how-to-make-mp3-files-smaller-online-free

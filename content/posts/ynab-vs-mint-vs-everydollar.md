@@ -3,6 +3,7 @@ title: "YNAB vs Mint vs EveryDollar: Best Budgeting App in 2026?"
 description: "YNAB vs Mint vs EveryDollar compared for 2026: pricing, features, bank sync and who each budgeting app is actually best for."
 date: 2026-09-29
 tags: ["budgeting", "apps", "ynab", "money management"]
+categories: ["finance"]
 draft: false
 image: /images/ynab-vs-mint-vs-everydollar.svg
 faq:

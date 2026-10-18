@@ -3,6 +3,7 @@ title: "How to Sell Digital Planners on Etsy With Free Tools"
 description: "Sell digital planners on Etsy using only free tools. Niche selection, Canva creation, listing SEO and pricing strategy for beginners in 2026."
 date: 2026-09-29
 tags: ["etsy", "digital products", "side hustle", "passive income"]
+categories: ["seo"]
 draft: false
 faq:
   - q: "How much can you make selling digital planners on Etsy?"

@@ -3,6 +3,7 @@ title: "How to Convert TIFF to JPG Online Free (3 Easy Methods)"
 description: "Convert TIFF to JPG free in seconds with three easy methods — a browser-based converter, free desktop software, and built-in OS tools, plus quality tips."
 date: 2026-10-15
 tags: ["image", "converter", "tiff"]
+categories: ["image"]
 draft: false
 image: /images/how-to-convert-tiff-to-jpg-online-free-3-easy-methods.svg
 slug: how-to-convert-tiff-to-jpg-online-free-3-easy-methods

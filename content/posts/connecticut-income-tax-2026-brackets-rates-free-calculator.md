@@ -3,6 +3,7 @@ title: "Connecticut Income Tax 2026: Brackets, Rates & Free Calculator"
 description: "Connecticut's 2026 income tax brackets and rates for every filing status, plus the personal exemption phaseout, a worked example, and a free tax calculator."
 date: 2026-10-15
 tags: ["finance", "taxes", "connecticut"]
+categories: ["finance"]
 draft: false
 image: /images/connecticut-income-tax-2026-brackets-rates-free-calculator.svg
 slug: connecticut-income-tax-2026-brackets-rates-free-calculator

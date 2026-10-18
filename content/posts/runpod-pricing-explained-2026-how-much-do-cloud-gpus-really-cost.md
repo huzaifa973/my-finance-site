@@ -3,6 +3,7 @@ title: "RunPod Pricing Explained (2026): How Much Do Cloud GPUs Really Cost?"
 description: "RunPod pricing explained with real 2026 numbers: GPU pod rates, Community vs Secure Cloud, Serverless costs, hidden fees, and real project cost examples."
 date: 2026-10-15
 tags: ["seo", "cloud-gpu", "runpod"]
+categories: ["seo"]
 draft: false
 image: /images/runpod-pricing-explained-2026-how-much-do-cloud-gpus-really-cost.svg
 slug: runpod-pricing-explained-2026-how-much-do-cloud-gpus-really-cost

@@ -3,6 +3,7 @@ title: "How to Compress a PDF to 2MB Online Free (Exact-Size Guide)"
 description: "Hit an exact 2MB PDF target for email and uploads. Why 2MB is the magic number, a 6-step shrinking workflow, and a free exact-size tool."
 date: 2026-10-16
 tags: ["pdf", "compression", "email"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-compress-a-pdf-to-2mb-online-free.svg
 slug: how-to-compress-a-pdf-to-2mb-online-free

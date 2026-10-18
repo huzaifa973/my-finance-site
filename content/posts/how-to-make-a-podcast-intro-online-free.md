@@ -3,6 +3,7 @@ title: "How to Make a Podcast Intro Online Free"
 description: "Make a podcast intro online free. Plan, script, and produce a polished show opener in your browser with free tools — no studio needed."
 date: 2026-10-17
 tags: ["audio", "podcast", "intro"]
+categories: ["audio"]
 draft: false
 slug: "how-to-make-a-podcast-intro-online-free"
 image: /images/how-to-make-a-podcast-intro-online-free.svg

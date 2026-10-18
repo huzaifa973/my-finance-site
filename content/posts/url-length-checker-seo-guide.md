@@ -3,6 +3,7 @@ title: "URL Length and SEO: How Long Is Too Long? (Free Checker)"
 description: "How URL length affects SEO in 2026 — the practical limits, why short URLs win clicks, slug best practices, and a free URL length checker."
 date: 2026-10-17
 tags: ["seo", "urls", "on-page"]
+categories: ["seo"]
 draft: false
 image: /images/url-length-checker-seo-guide.svg
 slug: url-length-checker-seo-guide

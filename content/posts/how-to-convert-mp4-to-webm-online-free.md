@@ -3,6 +3,7 @@ title: "How to Convert MP4 to WebM Online Free"
 description: "Convert MP4 to WebM online free — smaller files, better web playback. Learn when WebM wins, exact steps, and quality settings that work."
 date: 2026-10-16
 tags: ["video", "conversion", "webm"]
+categories: ["video"]
 draft: false
 image: /images/how-to-convert-mp4-to-webm-online-free.svg
 slug: how-to-convert-mp4-to-webm-online-free

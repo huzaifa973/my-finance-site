@@ -3,6 +3,7 @@ title: "How to Track Your Net Worth With a Free Notion Template"
 description: "Learn how to track your net worth with a free Notion template. Simple setup for beginners — list assets and liabilities, update monthly, and watch your wealth grow."
 date: 2026-09-29
 tags: ["net worth", "notion", "tracking", "beginners"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is net worth and how do I calculate it?"

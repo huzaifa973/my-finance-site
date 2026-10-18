@@ -3,6 +3,7 @@ title: "The Pomodoro Technique: How to Focus in 25-Minute Sprints"
 description: "The Pomodoro Technique explained: work in focused 25-minute sprints with short breaks to beat procrastination. Includes a free timer and setup guide."
 date: 2026-10-06
 tags: ["productivity", "pomodoro timer", "focus"]
+categories: ["everyday"]
 draft: false
 image: /images/the-pomodoro-technique-how-to-focus-in-25-minute-sprints.svg
 faq:

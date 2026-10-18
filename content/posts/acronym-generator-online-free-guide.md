@@ -3,6 +3,7 @@ title: "Acronym Generator Online Free: Turn Any Phrase Into an Acronym"
 description: "Generate acronyms from any phrase online free — how acronym generators work, naming tips for projects and businesses, and a free tool."
 date: 2026-10-16
 tags: ["text", "acronym", "naming"]
+categories: ["text"]
 draft: false
 image: /images/acronym-generator-online-free-guide.svg
 slug: acronym-generator-online-free-guide

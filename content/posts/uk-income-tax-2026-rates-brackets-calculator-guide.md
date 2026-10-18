@@ -3,6 +3,7 @@ title: "UK Income Tax 2026/27: Rates, Brackets & Free Calculator"
 description: "UK income tax rates and brackets for 2026/27 explained — personal allowance £12,570, 20%/40%/45% bands, Scotland differences, and a free calculator."
 date: 2026-10-16
 tags: ["uk", "income tax", "calculator"]
+categories: ["finance"]
 draft: false
 image: /images/uk-income-tax-2026-rates-brackets-calculator-guide.svg
 slug: uk-income-tax-2026-rates-brackets-calculator-guide

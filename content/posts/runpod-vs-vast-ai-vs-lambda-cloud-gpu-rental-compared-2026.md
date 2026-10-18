@@ -3,6 +3,7 @@ title: "RunPod vs Vast.ai vs Lambda: Cloud GPU Rental Compared (2026)"
 description: "RunPod vs Vast.ai vs Lambda compared with real 2026 pricing: hourly rates, billing granularity, serverless options, GPU availability, and who wins."
 date: 2026-10-15
 tags: ["seo", "cloud-gpu", "comparison"]
+categories: ["seo"]
 draft: false
 image: /images/runpod-vs-vast-ai-vs-lambda-cloud-gpu-rental-compared-2026.svg
 slug: runpod-vs-vast-ai-vs-lambda-cloud-gpu-rental-compared-2026

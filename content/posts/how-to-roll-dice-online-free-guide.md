@@ -3,6 +3,7 @@ title: "How to Roll Dice Online Free: Virtual Dice Roller Guide"
 description: "Roll dice online free with our virtual dice roller. D4 to D20, multi-dice rolls, modifiers, and coin flips — no signup, unlimited rolls."
 date: 2026-10-17
 tags: ["games", "dice", "random"]
+categories: ["everyday"]
 draft: false
 slug: "how-to-roll-dice-online-free-guide"
 image: /images/how-to-roll-dice-online-free-guide.svg

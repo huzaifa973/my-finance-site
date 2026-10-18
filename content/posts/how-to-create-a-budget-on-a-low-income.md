@@ -3,6 +3,7 @@ title: "How to Create a Budget on a Low Income (2026 Beginner's Guide)"
 description: "Learn how to create a budget on a low income that actually works. Simple step-by-step system for US and UK beginners, with free templates and real examples."
 date: 2026-09-29
 tags: ["budgeting", "low income", "beginners", "money management"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How do I budget when my income is barely enough to cover bills?"

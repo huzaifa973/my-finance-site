@@ -3,6 +3,7 @@ title: "What Is Compound Interest? (With Examples That Finally Click)"
 description: "Compound interest explained with examples that finally make sense. See how small, consistent investing grows into real wealth — plus the Rule of 72 and a $100/month example."
 date: 2026-09-29
 tags: ["investing", "compound interest", "basics"]
+categories: ["finance"]
 draft: false
 image: /images/what-is-compound-interest.svg
 faq:

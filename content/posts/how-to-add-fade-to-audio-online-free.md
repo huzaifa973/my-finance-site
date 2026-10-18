@@ -3,6 +3,7 @@ title: "How to Add Fade In and Fade Out to Audio Online Free"
 description: "Add fade in and fade out to audio online free. Smooth harsh audio endings and jarring starts in seconds with our browser-based fade editor."
 date: 2026-10-17
 tags: ["audio", "editing", "fade"]
+categories: ["audio"]
 draft: false
 slug: "how-to-add-fade-to-audio-online-free"
 image: /images/how-to-add-fade-to-audio-online-free.svg

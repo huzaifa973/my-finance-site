@@ -3,6 +3,7 @@ title: "CSV to HTML Table: Free Online Converter"
 description: "Convert CSV to HTML table free: paste or upload your spreadsheet, get clean semantic markup with thead/tbody, plus styling and escaping tips."
 date: 2026-10-13
 tags: ["html", "csv", "developers"]
+categories: ["text"]
 draft: false
 image: /images/csv-to-html-table-free-online-converter.svg
 faq:

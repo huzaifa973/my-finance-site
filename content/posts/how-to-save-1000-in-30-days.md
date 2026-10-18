@@ -3,6 +3,7 @@ title: "How to Save $1,000 in 30 Days (Even on a Tight Budget)"
 description: "A realistic 30-day plan to save $1,000 fast: cut the right expenses, sell what you don't need, and earn quick cash with weekend gigs. US/UK beginner guide."
 date: 2026-09-29
 tags: ["saving", "emergency fund", "money challenge", "beginners"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-save-1000-in-30-days.svg
 faq:

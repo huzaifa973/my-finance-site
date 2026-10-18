@@ -3,6 +3,7 @@ title: "How to Convert FLV to MP4 Online Free: 3 Easy Methods"
 description: "Convert FLV to MP4 online free — why FLV is obsolete, 3 free conversion methods that keep your file private, and settings for best quality."
 date: 2026-10-16
 tags: ["video", "flv", "mp4"]
+categories: ["video"]
 draft: false
 image: /images/how-to-convert-flv-to-mp4-online-free.svg
 slug: how-to-convert-flv-to-mp4-online-free

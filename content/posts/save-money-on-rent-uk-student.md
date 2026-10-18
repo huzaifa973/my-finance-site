@@ -3,6 +3,7 @@ title: "How to Save Money on Rent as a Student in the UK"
 description: "Practical ways UK students can cut rent costs in 2026: house-hunting tactics, bills included deals, council tax rules and real savings examples."
 date: 2026-09-29
 tags: ["rent", "uk", "students", "saving money"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "Do students pay council tax in the UK?"

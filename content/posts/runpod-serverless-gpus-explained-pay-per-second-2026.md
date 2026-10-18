@@ -4,6 +4,7 @@ title: "RunPod Serverless GPUs Explained: Pay Per Second for AI in 2026"
 description: "What RunPod serverless GPUs are, how per-second billing works, cold starts, and when serverless beats renting a pod — a plain-English guide."
 date: 2026-10-17
 tags: ["seo", "cloud-gpu", "ai"]
+categories: ["seo"]
 draft: false
 image: /images/runpod-serverless-gpus-explained-pay-per-second-2026.svg
 faq:

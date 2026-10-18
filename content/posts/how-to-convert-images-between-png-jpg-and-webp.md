@@ -4,6 +4,7 @@ description: "Convert images between PNG, JPG, and WebP in seconds. Learn which 
 date: 2026-10-08
 draft: false
 tags: ["images", "web-design", "productivity"]
+categories: ["image"]
 image: /images/how-to-convert-images-between-png-jpg-and-webp.svg
 faq:
   - q: "Is WebP better than JPG?"

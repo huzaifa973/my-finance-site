@@ -3,6 +3,7 @@ title: "Lifestyle Creep: The Silent Budget Killer (and How to Beat It)"
 description: "Got a raise but still broke? That's lifestyle creep. Learn the 7 warning signs and the exact system that keeps your raises in your pocket — not your landlord's."
 date: 2026-09-30
 tags: ["lifestyle creep", "saving", "budgeting", "money habits"]
+categories: ["everyday"]
 draft: false
 image: /images/lifestyle-creep-how-to-beat-it.svg
 faq:

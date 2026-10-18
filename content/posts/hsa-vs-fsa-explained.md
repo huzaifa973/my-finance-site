@@ -3,6 +3,7 @@ title: "HSA vs FSA: Which Health Account Actually Saves You More Money?"
 description: "HSA vs FSA explained with 2026 IRS limits: triple tax advantage vs use-it-or-lose-it, who qualifies for each, and a simple decision framework for open enrollment."
 date: 2026-09-30
 tags: ["hsa", "fsa", "taxes", "health insurance"]
+categories: ["finance"]
 draft: false
 image: /images/hsa-vs-fsa-explained.svg
 faq:

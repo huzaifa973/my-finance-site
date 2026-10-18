@@ -4,6 +4,7 @@ description: "Trim videos online free — cut the boring start and end, keep the
 date: 2026-10-10
 draft: false
 tags: ["video", "editing", "how-to"]
+categories: ["video"]
 image: /images/how-to-trim-a-video-online-free.svg
 faq:
   - q: "How can I trim a video online for free?"

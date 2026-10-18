@@ -3,6 +3,7 @@ title: "How to Convert CSV to PDF Online Free"
 description: "Convert CSV to PDF online free — turn spreadsheets into clean, printable PDF tables in seconds. No signup, formatted automatically."
 date: 2026-10-16
 tags: ["pdf", "csv", "conversion"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-csv-to-pdf-online-free.svg
 slug: how-to-convert-csv-to-pdf-online-free

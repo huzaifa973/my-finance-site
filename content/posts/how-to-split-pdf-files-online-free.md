@@ -4,6 +4,7 @@ description: "Need to split PDF online? Learn how to extract pages, split chapte
 date: 2026-10-09
 draft: false
 tags: ["pdf", "tools", "how-to"]
+categories: ["pdf"]
 image: /images/how-to-split-pdf-files-online-free.svg
 faq:
   - q: "How can I split a PDF for free?"

@@ -3,6 +3,7 @@ title: "Best Balance Transfer Cards for 2026: A Beginner's Guide"
 description: "Balance transfer cards explained for beginners: how 0% APR offers work, what to look for, the real costs, and the mistakes that wipe out your savings."
 date: 2026-09-29
 tags: ["balance transfer", "credit cards", "debt payoff"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "How does a balance transfer credit card work?"

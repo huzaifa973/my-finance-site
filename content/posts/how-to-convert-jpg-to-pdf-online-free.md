@@ -4,6 +4,7 @@ description: "Convert JPG to PDF free in seconds. Learn the fastest browser meth
 date: 2026-10-09
 draft: false
 tags: ["pdf", "images", "how-to"]
+categories: ["pdf"]
 image: /images/how-to-convert-jpg-to-pdf-online-free.svg
 faq:
   - q: "Does converting JPG to PDF reduce image quality?"

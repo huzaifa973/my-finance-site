@@ -3,6 +3,7 @@ title: "How to Split a PDF in Half Online Free"
 description: "Split a PDF in half by page count in seconds. Exact steps, smarter splitting strategies, and a free tool that runs in your browser."
 date: 2026-10-15
 tags: ["pdf", "split", "guide"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-split-a-pdf-in-half-online-free.svg
 slug: how-to-split-a-pdf-in-half-online-free

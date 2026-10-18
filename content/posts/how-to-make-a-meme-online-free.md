@@ -4,6 +4,7 @@ description: "Make a meme online free in under a minute. Learn the anatomy of a 
 date: 2026-10-09
 draft: false
 tags: ["memes", "images", "how-to"]
+categories: ["image"]
 image: /images/how-to-make-a-meme-online-free.svg
 faq:
   - q: "Can I make memes online without a watermark?"

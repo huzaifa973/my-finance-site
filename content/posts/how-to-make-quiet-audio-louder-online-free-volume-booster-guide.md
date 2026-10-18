@@ -3,6 +3,7 @@ title: "How to Make Quiet Audio Louder Online Free (Volume Booster Guide)"
 description: "Make quiet audio louder free with an online volume booster. Learn safe gain levels, normalization vs amplification, and how to avoid distortion."
 date: 2026-10-15
 tags: ["audio", "volume", "guide"]
+categories: ["audio"]
 draft: false
 image: /images/how-to-make-quiet-audio-louder-online-free-volume-booster-guide.svg
 slug: how-to-make-quiet-audio-louder-online-free-volume-booster-guide

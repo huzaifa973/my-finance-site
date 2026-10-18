@@ -3,6 +3,7 @@ title: "How to Flatten PDF Forms Online Free (Lock Fillable Fields)"
 description: "Flattening a PDF locks fillable form fields into permanent text. Learn why it matters and how to flatten PDF forms free, right in your browser."
 date: 2026-10-14
 tags: ["pdf", "pdf forms", "flatten pdf"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-flatten-pdf-forms-online-free.svg
 faq:

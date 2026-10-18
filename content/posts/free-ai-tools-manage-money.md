@@ -3,6 +3,7 @@ title: "5 Free AI Tools to Manage Your Money Better"
 description: "Discover 5 free AI tools that help you budget, cut spending, and plan debt payoff. Practical prompts and real use cases — no paid subscriptions required."
 date: 2026-09-29
 tags: ["ai", "free tools", "money management", "budgeting"]
+categories: ["seo"]
 draft: false
 faq:
   - q: "Is it safe to share financial details with AI tools?"

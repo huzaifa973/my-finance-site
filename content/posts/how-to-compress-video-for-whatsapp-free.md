@@ -3,6 +3,7 @@ title: "How to Compress a Video for WhatsApp (Under the 16MB Limit)"
 description: "WhatsApp caps video uploads at 16MB. Learn why, how compression works, and how to shrink any video to fit — free, right in your browser."
 date: 2026-10-14
 tags: ["video", "compress video", "whatsapp"]
+categories: ["video"]
 draft: false
 image: /images/how-to-compress-video-for-whatsapp-free.svg
 faq:

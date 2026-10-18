@@ -3,6 +3,7 @@ title: "The No-Spend Challenge: A 30-Day Guide That Actually Works"
 description: "Thinking of trying a no-spend month? Here's the complete guide: the rules, what's allowed, a prep checklist, and how to survive all 30 days."
 date: 2026-10-01
 tags: ["saving", "money challenge", "frugality"]
+categories: ["finance"]
 draft: false
 image: /images/no-spend-challenge-month-guide.svg
 faq:

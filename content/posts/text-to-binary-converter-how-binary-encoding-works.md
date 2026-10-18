@@ -3,6 +3,7 @@ title: "Text to Binary Converter: How Binary Encoding Works"
 description: "Learn how text becomes binary: bits, bytes, ASCII, and UTF-8 explained, with steps to convert text to binary online and decode binary back to text."
 date: 2026-10-13
 tags: ["text tools", "binary", "coding"]
+categories: ["text"]
 draft: false
 image: /images/text-to-binary-converter-how-binary-encoding-works.svg
 faq:

@@ -3,6 +3,7 @@ title: "The 50/30/20 Budget Rule Explained (With Real Examples)"
 description: "The 50/30/20 budget rule explained simply: what it is, how to calculate it on your income, and real examples for $3,000 and $4,500/month budgets."
 date: 2026-09-29
 tags: ["budgeting", "50/30/20", "beginners"]
+categories: ["finance"]
 draft: false
 faq:
   - q: "What is the 50/30/20 rule in simple terms?"

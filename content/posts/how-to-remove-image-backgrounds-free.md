@@ -3,6 +3,7 @@ title: "How to Remove Background From Image Free (4 Easy Methods)"
 description: "Remove the background from any image free with 4 simple methods: a free online tool, Photoshop, phone apps, and Canva. Step-by-step guide for crisp cutouts in seconds."
 date: 2026-10-11
 tags: ["image tools", "free tools", "photo editing"]
+categories: ["image"]
 draft: false
 image: /images/how-to-remove-image-backgrounds-free.svg
 faq:

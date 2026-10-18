@@ -3,6 +3,7 @@ title: "Markdown Basics: A Beginner's Guide to Writing Online"
 description: "Learn Markdown basics with a complete syntax cheat sheet. See why writers and developers love it, write in a free markdown editor online, and export to HTML."
 date: 2026-10-11
 tags: ["markdown", "writing", "free tools"]
+categories: ["text"]
 draft: false
 image: /images/markdown-basics-beginners-guide.svg
 faq:

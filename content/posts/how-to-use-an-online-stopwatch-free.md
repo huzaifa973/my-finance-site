@@ -3,6 +3,7 @@ title: "How to Use an Online Stopwatch Free (Timing Tips & Uses)"
 description: "Use a free online stopwatch with no app needed — lap timing, accuracy tips, and smart everyday uses from workouts to cooking to productivity."
 date: 2026-10-16
 tags: ["stopwatch", "productivity", "tools"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-use-an-online-stopwatch-free.svg
 slug: how-to-use-an-online-stopwatch-free

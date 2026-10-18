@@ -4,6 +4,7 @@ title: "How to Count Keywords in Your Article: Free Keyword Counter Guide"
 description: "Learn how to count keywords in your article with a free keyword counter — keyword density, LSI terms, and how to avoid stuffing."
 date: 2026-10-17
 tags: ["seo", "keywords", "content-writing"]
+categories: ["seo"]
 draft: false
 image: /images/how-to-count-keywords-in-your-article-free-guide.svg
 faq:

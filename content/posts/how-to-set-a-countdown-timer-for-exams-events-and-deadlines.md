@@ -3,6 +3,7 @@ title: "How to Set a Countdown Timer for Exams, Events and Deadlines"
 description: "Set a free countdown timer in seconds — count down to exams, weddings, launches, workouts, and New Year on any device. No app or sign-up needed."
 date: 2026-10-06
 tags: ["productivity", "countdown timer", "time management"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-set-a-countdown-timer-for-exams-events-and-deadlines.svg
 faq:

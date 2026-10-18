@@ -3,6 +3,7 @@ title: "How to Save for a House Down Payment Fast (Even on an Average Salary)"
 description: "Saving a house down payment feels impossible until you build a system. Here's the step-by-step plan to hit your target faster — without extreme sacrifice."
 date: 2026-10-01
 tags: ["saving", "home buying", "down payment"]
+categories: ["finance"]
 draft: false
 image: /images/how-to-save-house-down-payment-fast.svg
 faq:

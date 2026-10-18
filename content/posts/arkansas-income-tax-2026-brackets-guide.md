@@ -3,6 +3,7 @@ title: "Arkansas Income Tax 2026: Brackets, Rates & Free Calculator"
 description: "Arkansas income tax 2026: the bracket table, standard deduction, $29 personal credit, a worked example, and a free calculator for your estimate."
 date: 2026-10-14
 tags: ["tax", "arkansas", "income tax"]
+categories: ["finance"]
 draft: false
 image: /images/arkansas-income-tax-2026-brackets-guide.svg
 faq:

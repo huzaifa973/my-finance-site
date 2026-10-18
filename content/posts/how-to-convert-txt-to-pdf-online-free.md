@@ -3,6 +3,7 @@ title: "How to Convert TXT to PDF Online Free"
 description: "Convert TXT to PDF free: paste or upload your text file, pick page size and fonts, and download a clean PDF in seconds. No signup needed."
 date: 2026-10-13
 tags: ["pdf", "txt to pdf", "convert"]
+categories: ["pdf"]
 draft: false
 image: /images/how-to-convert-txt-to-pdf-online-free.svg
 faq:

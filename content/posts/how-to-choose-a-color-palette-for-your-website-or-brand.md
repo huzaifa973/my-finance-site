@@ -3,6 +3,7 @@ title: "How to Choose a Color Palette for Your Website or Brand"
 description: "Choose website colors like a designer: anchor color, harmony formulas, the 60-30-10 rule, and contrast checks — with a worked example."
 date: 2026-10-12
 tags: ["color palette", "web design", "branding"]
+categories: ["image"]
 draft: false
 image: /images/how-to-choose-a-color-palette-for-your-website-or-brand.svg
 faq:

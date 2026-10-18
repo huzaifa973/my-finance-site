@@ -3,6 +3,7 @@ title: "Best Cashback Credit Cards for Beginners (2026)"
 description: "The best cashback credit cards for beginners in 2026: no-annual-fee picks, flat-rate vs rotating categories, and how to earn $300+/year without changing your spending."
 date: 2026-09-29
 tags: ["credit cards", "cashback", "beginners"]
+categories: ["finance"]
 draft: false
 image: /images/best-cashback-credit-cards-beginners.svg
 faq:

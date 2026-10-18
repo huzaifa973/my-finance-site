@@ -4,6 +4,7 @@ description: "Merge multiple PDFs into one document for free. Learn the fastest 
 date: 2026-10-08
 draft: false
 tags: ["pdf", "productivity", "privacy"]
+categories: ["pdf"]
 image: /images/how-to-merge-pdf-files-online-free.svg
 faq:
   - q: "How do I merge PDF files for free?"

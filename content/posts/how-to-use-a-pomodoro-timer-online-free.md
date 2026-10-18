@@ -3,6 +3,7 @@ title: "How to Use a Pomodoro Timer Online Free"
 description: "How to use a Pomodoro timer online free — the 25-minute focus method explained, with setup steps and tips to beat distraction. No signup needed."
 date: 2026-10-16
 tags: ["everyday", "productivity", "focus"]
+categories: ["everyday"]
 draft: false
 image: /images/how-to-use-a-pomodoro-timer-online-free.svg
 slug: how-to-use-a-pomodoro-timer-online-free

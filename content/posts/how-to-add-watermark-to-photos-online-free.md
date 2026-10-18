@@ -3,6 +3,7 @@ title: "How to Add a Watermark to Photos Online Free"
 description: "Learn how to add a watermark to photos online free — protect your images with text or logo watermarks in seconds, no signup or software needed."
 date: 2026-10-16
 tags: ["image", "watermark", "photo-editing"]
+categories: ["image"]
 draft: false
 image: /images/how-to-add-watermark-to-photos-online-free.svg
 slug: how-to-add-watermark-to-photos-online-free
