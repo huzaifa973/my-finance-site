@@ -1,6 +1,6 @@
 ---
 title: "Free Online Tools — Images, Audio, Video, PDF & More"
-description: "593 free online tools: format converters, video & audio tools, PDF utilities, SEO tools, finance calculators and more. No sign-up, no fees, files never leave your browser."
+description: "633 free online tools: format converters, video & audio tools, PDF utilities, SEO tools, finance calculators and more. No sign-up, no fees, files never leave your browser."
 date: 2026-10-12
 draft: false
 ---
@@ -11,7 +11,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">67 tools</span>
+    <span class="card-tag">72 tools</span>
     <h3 class="card-title"><a href="/tools/image/">🖼️ Image Tools</a></h3>
     <p class="card-excerpt">Compress, resize, and convert JPG, PNG, WebP &amp; HEIC — before/after quality comparison included.</p>
     <a class="card-link" href="/tools/image/">Browse image tools →</a>
@@ -29,7 +29,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">67 tools</span>
+    <span class="card-tag">71 tools</span>
     <h3 class="card-title"><a href="/tools/video/">🎬 Video Tools</a></h3>
     <p class="card-excerpt">Trim clips, compress videos, and make GIFs — free, no watermarks, no uploads.</p>
     <a class="card-link" href="/tools/video/">Browse video tools →</a>
@@ -38,7 +38,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">54 tools</span>
+    <span class="card-tag">63 tools</span>
     <h3 class="card-title"><a href="/tools/pdf/">📄 PDF Tools</a></h3>
     <p class="card-excerpt">Merge, split, and convert PDF files — your documents never leave your device.</p>
     <a class="card-link" href="/tools/pdf/">Browse PDF tools →</a>
@@ -47,7 +47,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">67 tools</span>
+    <span class="card-tag">73 tools</span>
     <h3 class="card-title"><a href="/tools/text/">✍️ Text &amp; Writing Tools</a></h3>
     <p class="card-excerpt">Word counters, case converters, text diff, Base64, hashes and more for writers &amp; developers.</p>
     <a class="card-link" href="/tools/text/">Browse text tools →</a>
@@ -56,7 +56,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">52 tools</span>
+    <span class="card-tag">62 tools</span>
     <h3 class="card-title"><a href="/tools/seo/">📈 SEO Tools</a></h3>
     <p class="card-excerpt">Meta tag generators, keyword checks, and page analyzers to lift your rankings.</p>
     <a class="card-link" href="/tools/seo/">Browse SEO tools →</a>
@@ -65,7 +65,7 @@ Every tool below is **100% free forever — no sign-up, no credit card, unlimite
 
 <article class="card">
   <div class="card-body">
-    <span class="card-tag">66 tools</span>
+    <span class="card-tag">72 tools</span>
     <h3 class="card-title"><a href="/tools/finance/">💰 Finance Calculators</a></h3>
     <p class="card-excerpt">Budgets, loans, investing, salary, retirement — every money question answered.</p>
     <a class="card-link" href="/tools/finance/">Browse finance tools →</a>
