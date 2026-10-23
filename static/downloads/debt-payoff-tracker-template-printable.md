@@ -1,67 +1,99 @@
 # Debt Payoff Tracker Template (Printable) — free download from DollarWise (dollarwise.xyz)
 
-Print this worksheet or copy it into a spreadsheet. Fill in one row per debt, then use the monthly tracker to log your progress.
+Print this sheet, fill it in with a pen, and update it with every payment. Includes the main tracker sheet plus extra payment-log pages.
 
-## Step 1: List every debt
+---
 
-```
-DEBT # | CREDITOR / ACCOUNT      | BALANCE  | APR    | MIN PAYMENT | DUE DATE | PAYOFF ORDER
--------|-------------------------|----------|--------|-------------|----------|-------------
-1      |                         |          |        |             |          |
-2      |                         |          |        |             |          |
-3      |                         |          |        |             |          |
-4      |                         |          |        |             |          |
-5      |                         |          |        |             |          |
-6      |                         |          |        |             |          |
--------|-------------------------|----------|--------|-------------|----------|-------------
-TOTAL  |                         |          |        |             |          |
-```
+## Debt Payoff Tracker
 
-Payoff order: for the SNOWBALL method, number debts from smallest balance to largest. For the AVALANCHE method, number them from highest APR to lowest.
+Month starting: [Month / Year]
 
-## Step 2: Set your monthly attack amount
+### My debts
 
-```
-Total minimum payments (all debts):  $__________
-Extra payment toward debt #1:        $__________
-TOTAL MONTHLY DEBT PAYMENT:          $__________
-```
+| # | Creditor | Balance | Rate (APR) | Min payment |
+|---|----------|---------|------------|-------------|
+| 1 | [Creditor name] | $[______] | [___]% | $[______] |
+| 2 | [Creditor name] | $[______] | [___]% | $[______] |
+| 3 | [Creditor name] | $[______] | [___]% | $[______] |
+| 4 | [Creditor name] | $[______] | [___]% | $[______] |
+| 5 | [Creditor name] | $[______] | [___]% | $[______] |
+| 6 | [Creditor name] | $[______] | [___]% | $[______] |
 
-Rule: pay minimums on every debt, then throw the entire extra amount at debt #1. When debt #1 is gone, roll its full payment (minimum + extra) into debt #2.
+TOTAL DEBT: $[______]
+TOTAL MINIMUM PAYMENTS: $[______]/month
 
-## Step 3: Monthly progress tracker
+### Snowball payoff order (smallest balance first)
 
-```
-MONTH | DEBT #1 BAL | DEBT #2 BAL | DEBT #3 BAL | DEBT #4 BAL | TOTAL BAL | PAID THIS MONTH
-------|-------------|-------------|-------------|-------------|-----------|----------------
-1     |             |             |             |             |           |
-2     |             |             |             |             |           |
-3     |             |             |             |             |           |
-4     |             |             |             |             |           |
-5     |             |             |             |             |           |
-6     |             |             |             |             |           |
-7     |             |             |             |             |           |
-8     |             |             |             |             |           |
-9     |             |             |             |             |           |
-10    |             |             |             |             |           |
-11    |             |             |             |             |           |
-12    |             |             |             |             |           |
-```
+1st target: [Creditor] — balance $[______] — pay $[______]/mo until gone
+2nd target: [Creditor] — balance $[______] — then roll up to $[______]/mo
+3rd target: [Creditor] — balance $[______] — then roll up to $[______]/mo
+4th target: [Creditor] — balance $[______] — then roll up to $[______]/mo
+5th target: [Creditor] — balance $[______] — then roll up to $[______]/mo
+6th target: [Creditor] — balance $[______] — then roll up to $[______]/mo
 
-## Step 4: Milestone log
+### Monthly payment log
 
-```
-DATE       | MILESTONE
------------|------------------------------------------
-           | Debt #___ PAID OFF! Rolled $______ into debt #___.
-           | Debt #___ PAID OFF! Rolled $______ into debt #___.
-           | Debt #___ PAID OFF! Rolled $______ into debt #___.
-           | HALFWAY THERE — total balance cut in half.
-           | DEBT FREE — final payment of $______ made on ________.
-```
+| Date | Debt paid to | Amount | Remaining balance |
+|------|--------------|--------|-------------------|
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
 
-## Quick reference: snowball vs avalanche
+### Progress milestones
 
-- SNOWBALL (smallest balance first): faster early wins, stronger motivation. Best if you have struggled to stay consistent.
-- AVALANCHE (highest APR first): less interest paid overall, mathematically optimal. Best if motivation is not an issue.
-- Either method works — the best one is the one you will actually follow for months.
+Starting total: $[______]
+
+- [ ] 25% paid — $[______] paid by [__/__/__]
+- [ ] 50% paid — $[______] paid by [__/__/__]
+- [ ] 75% paid — $[______] paid by [__/__/__]
+- [ ] DEBT FREE — $0 balance on [__/__/__]
+
+Progress bar (shade in as you go):
+[--------------------] 0% to [####################] 100%
+
+### This month
+
+Extra payment goal: $[______]
+Debts fully paid off this month: [Creditor], [Creditor]
+Notes: [________________________________________]
+
+---
+
+## Extra payment-log pages (print as needed)
+
+### Payment log — [Month / Year]
+
+| Date | Debt paid to | Amount | Remaining balance |
+|------|--------------|--------|-------------------|
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+
+### Payment log — [Month / Year]
+
+| Date | Debt paid to | Amount | Remaining balance |
+|------|--------------|--------|-------------------|
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
+| [__/__/__] | [Creditor] | $[______] | $[______] |
