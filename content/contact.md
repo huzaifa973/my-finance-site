@@ -26,7 +26,7 @@ Have a question about a guide, found a mistake, or want to suggest a tool we sho
 </form>
 <p class="form-status" hidden></p>
 
-Prefer email? Write to us directly at **hicomapny@gmail.com**.
+Prefer email? Write to us directly at **hicompany300@gmail.com**.
 
 ### What to contact us about
 

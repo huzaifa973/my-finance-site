@@ -1,13 +1,25 @@
 /* DollarWise forms — sends via FormSubmit (free form backend, no account needed).
-   Target inbox: hicomapny@gmail.com
+   Target inbox: hicompany300@gmail.com
    Any <form class="js-formsubmit"> on the site is intercepted and POSTed as JSON.
    Status messages go into the form's .form-status element. */
 (function () {
   "use strict";
-  var ENDPOINT = "https://formsubmit.co/ajax/hicomapny@gmail.com";
+  var ENDPOINT = "https://formsubmit.co/ajax/hicompany300@gmail.com";
+
+  function statusEl(form) {
+    // The .form-status element may sit inside the form or just after it.
+    var el = form.querySelector(".form-status");
+    if (el) return el;
+    var sib = form.nextElementSibling;
+    while (sib) {
+      if (sib.classList && sib.classList.contains("form-status")) return sib;
+      sib = sib.nextElementSibling;
+    }
+    return form.parentElement ? form.parentElement.querySelector(".form-status") : null;
+  }
 
   function setStatus(form, msg, ok) {
-    var el = form.querySelector(".form-status");
+    var el = statusEl(form);
     if (!el) return;
     el.textContent = msg;
     el.setAttribute("data-ok", ok ? "1" : "0");
